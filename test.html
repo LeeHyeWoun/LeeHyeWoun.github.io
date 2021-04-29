@@ -4,11 +4,17 @@
   <meta charset="utf-8">
     <title>CSS</title>
     <style>
-      body { padding: 0px; margin: 0px; }
+      a:link{color: white; text-decoration: none;}
+			a:visited { color: white; text-decoration: none;}
+			a:hover { color: #333333; text-decoration: none;}
+      body { font-family: 'Noto Sans KR', sans-serif; padding: 0px; margin: 0px; }
+      nav{position: absolute; top: 3%; width: 100%;}
+      td.nav{ text-align: center; width: 60px;}
+      video { width: 100%; min-height: 400px; background-color: black;}
       .jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
-      video { width: 100%; }
       .jb-text { position: absolute; top: 50%; width: 100%; }
-      .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+      .jb-text h1 { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+      .jb-text p { margin-top: -24px; text-align: center; font-size: 24px; color: #979797; }
     </style>
   </head>
   <body>
@@ -17,9 +23,22 @@
         <source src="resource/videos/Pixabay_1.mp4" type="video/mp4">
         <strong>Your browser does not support the video tag.</strong>
       </video>
-      <div class="jb-text">
-        <p>Lorem Ipsum Dolor</p>
+      <nav>
+        <table align="right">
+          <tr>
+            <td class="nav"><a href="about.html">ABOUT</a></td>
+            <td class="nav"><a href="test.html">WORK</a></td>
+            <td class="nav"><a href="">CONTECT</a></td>
+          </tr>
+        </table>
+      </nav>
+        <div class="jb-text">
+        <h1>Hi, I'm Hyewoun.</h1>
+        <p>nice to meet you.</p>
       </div>
+    </div>
+    <div>
+      ddd
     </div>
   </body>
 </html>

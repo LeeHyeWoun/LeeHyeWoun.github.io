@@ -5,11 +5,27 @@
 		<script type="text/javascript" src="resource/js/vue.js"></script>
 		<title>HyeWoun's Github Blog</title>
 		<link href="https://fonrs.googleaspis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-		<style>
+		<style type="text/css">
+			a:link{color: white; text-decoration: none;}
+			a:visited { color: white; text-decoration: none;}
+			a:hover { color: #333333; text-decoration: none;}
 			body{
 				font-family: 'Noto Sans KR', sans-serif;
 			}
-			table{
+			nav{
+				width: 100%;
+				height: 25px;
+				padding: 10px;		
+				background-color: rgb(100, 100, 100);
+			}
+			table#nav{
+				float: right;
+			}
+			td.nav{
+				text-align: center;
+				width: 80px;
+			}
+			table#language{
 				width: 80%;
 				min-width: 500px;
 				max-width: 800px;
@@ -22,6 +38,18 @@
 		</style>
 	</head>
 	<body>
+		<nav>
+			<table id=nav>
+				<tr>
+					<td class="nav"><a href="about.html">ABOUT</a></td>
+					<td class="nav"><a href="">WORK</a></td>
+					<td class="nav"><a href="">CONTECT</a></td>
+				</tr>
+			</table>
+			
+			
+			
+		</nav>
 		<div id="intro" align="center">
 			<h1>
 				Hello,<br>
@@ -30,9 +58,10 @@
 			</h1>
 			<p> 아직 준비중입니다...</p>
 		</div>
+		<!--
 		<details>
 			<summary align="center"><span style="font-size: 15pt;">Language</span></summary>
-			<table align="center">
+			<table id=language align="center">
 				<tr>
 					<td  align="center" width="130">
 						<img src="https://user-images.githubusercontent.com/48902155/116059784-2df49c00-a6bc-11eb-8633-cbbc41f0ae32.png">
@@ -157,7 +186,7 @@
 				</tr>
 			</table>
 		</details>
-		
+		-->
 
 
 	</body>

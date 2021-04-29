@@ -5,11 +5,11 @@
 		<script type="text/javascript" src="resource/js/vue.js"></script>
 	</head>
 	<body>
-		<h1 id="Introduce" v-bind:title="bmsg">{{ message }}</h1>
+		<h1 v-bind:title="bmsg">{{ message }}</h1>
 	</body>
 	<script>
-		var Introduce = new Vue({
-			//el: "h1",
+		var h1 = new Vue({
+			el: "h1",
 			data: {
 				message: "Hyewoun's Github Blog",
 				bmsg: "Hi, Nice to meet you!"

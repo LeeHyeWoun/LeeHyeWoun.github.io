@@ -6,8 +6,8 @@
     font-weight: normal;
     font-style: normal;
 }
-body{font-family: 'Noto Sans KR', sans-serif;}
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 20pt;}
 
-@media(min-width: 320px) and (max-width: 480px){
-    body{font-family: 'Noto Sans KR', sans-serif; font-size: 16pt;}
+@media(max-width: 480px){
+    body{font-family: 'Noto Sans KR', sans-serif; font-size: 100pt;}
 }

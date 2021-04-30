@@ -1,6 +1,6 @@
 nav{position: absolute; top: 3%; width: 100%; padding-left: 20px;}
-button.nav{font-size: 24px; font-family: 'Courgette'}
-table.nav{float: right; margin-right: 40px;}
+nav> button{font-size: 24px; font-family: 'Courgette'}
+nav> table{float: right; margin-right: 40px;}
 .nav a{color: white; text-decoration: none;}
 .nav a:hover {color: #333333; text-decoration: none;}
 .nav td{text-align: center; width: 80px;}

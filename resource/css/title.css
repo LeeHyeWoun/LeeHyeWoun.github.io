@@ -5,6 +5,8 @@
 .title-text p { margin-top: -24px; text-align: center; font-size: 24px; color: #979797; font-family: 'Courgette', sans-serif;}
 
 @media all and (max-width: 480px){
+    .title-box{min-height: 200px; max-height: 270px;}
+    .title-box video{min-height: 200px;}
     .title-text h1{font-size: 24pt;}
     .title-text p{font-size: 16pt;}
 }

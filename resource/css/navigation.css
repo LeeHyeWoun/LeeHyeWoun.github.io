@@ -5,6 +5,7 @@ nav> table{float: right; margin-right: 40px;}
 .nav td{text-align: center; width: 80px;}
 
 @media all and (max-width: 480px){
+    nav{top: 5px}
     nav> table{float:none; margin-left: auto; margin-right: auto;}
     .nav a{font-size: 10pt;}
 }

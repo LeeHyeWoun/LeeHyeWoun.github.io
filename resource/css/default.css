@@ -1,5 +1,5 @@
 body{
-    padding: 0px; margin: 0px; word-break: break-all;
+    padding: 0; margin: 0; word-break: break-all;
 
     /*드래그 비허용*/
     -ms-user-select: none; 

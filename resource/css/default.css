@@ -8,4 +8,11 @@ body{
     -khtml-user-select: none; 
     user-select:none;
 }
+main{
+    height: 100%; padding: 30px; 
+    margin-left: 10%; margin-right: 10%; margin-top: 30px;
+}
+@media only screen and (max-width: 480px){
+    main{padding: 10px; margin:10px;}
+}
 

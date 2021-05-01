@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
         <title>HyeWoun</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <style type="text/css">
 			a{color: white; text-decoration: none;}
 		  	a:hover { color: #333333; text-decoration: none;}
@@ -17,9 +18,9 @@
         <nav>
             <table id=nav>
                 <tr>
-                    <td class="nav"><a href="about.html">ABOUT</a></td>
-                    <td class="nav"><a onclick="alert('준비중입니다.');" style="cursor:pointer">WORK</a></td>
-                    <td class="nav"><a onclick="alert('준비중입니다.');" style="cursor:pointer">CONTECT</a></td>
+                    <td class="nav"><a href="./about">ABOUT</a></td>
+                    <td class="nav"><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">WORK</a></td>
+                    <td class="nav"><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">CONTECT</a></td>
                 </tr>
             </table>
         </nav>

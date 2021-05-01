@@ -8,11 +8,16 @@
 		<link rel="stylesheet" href="resource/css/font.css">
         <link rel="stylesheet" href="resource/css/default.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <style>
+            @media only screen and (max-width: 480px){
+                h2{font-size: 30pt;}
+            }
+        </style>
     </head>
     <body>
         <!--네비게이션-->
         <nav>
-            <table class='nav'>
+            <table class="nav">
                 <tr>
                     <td><a href="./index">HOME</a></td>
                     <td><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">WORK</a></td>

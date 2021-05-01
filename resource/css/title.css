@@ -7,6 +7,6 @@
 @media all and (max-width: 480px){
     .title-box{min-height: 200px; max-height: 270px;}
     .title-box video{min-height: 200px;}
-    .title-text h1{font-size: 24pt;}
-    .title-text p{font-size: 16pt;}
+    .title-text h1{margin-top: -20px; font-size: 24pt;}
+    .title-text p{margin-top: -20px; font-size: 16pt;}
 }

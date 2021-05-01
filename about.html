@@ -3,24 +3,22 @@
 	<head>
 		<meta charset="UTF-8">
         <title>HyeWoun</title>
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/48902155?v=4">
+		<link rel="stylesheet" href="resource/css/navigation.css"/>
+		<link rel="stylesheet" href="resource/css/font.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <style type="text/css">
-			a{color: white; text-decoration: none;}
-		  	a:hover { color: #333333; text-decoration: none;}
-    	  	body{ font-family: 'Noto Sans KR', sans-serif; padding: 0px; margin: 0px; }
- 	    	nav{position: absolute; top: 3%; width: 100%; background-color: rgb(24, 24, 24);}
-    	  	table#nav{float: right; margin-right: 20px;}
-    	  	td.nav{ text-align: center; width: 60px;}
-            .text-box h2 { margin-top: 100px; text-align: center; font-size: 24px; }
+    	  	body{padding: 0px; margin: 0px; }
+            .text-box h2 { margin-top: 100px; text-align: center;}
         </style>
     </head>
     <body>
-        <nav>
-            <table id=nav>
+        <nav style="background-color: rgb(58, 58, 58);">
+            <table class=nav>
                 <tr>
-                    <td class="nav"><a href="./about">ABOUT</a></td>
-                    <td class="nav"><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">WORK</a></td>
-                    <td class="nav"><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">CONTECT</a></td>
+                    <td><a href="./index">HOME</a></td>
+                    <td><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">WORK</a></td>
+                    <td><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">CONTECT</a></td>
                 </tr>
             </table>
         </nav>

@@ -1,7 +1,7 @@
 nav{position: absolute; top: 3%; width: 100%;}
 nav> table{float: right; margin-right: 40px;}
 .nav a{color: white; text-decoration: none;}
-.nav a:hover {color: #333333; text-decoration: none;}
+.nav a:hover {color: #08FDD8; text-decoration: none;}
 .nav td{text-align: center; width: 80px;}
 
 @media all and (max-width: 480px){

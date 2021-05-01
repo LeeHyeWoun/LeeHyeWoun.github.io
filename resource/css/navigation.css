@@ -4,6 +4,7 @@ nav> table{float: right; margin-right: 40px;}
 .nav a:hover {color: #08FDD8; text-decoration: none;}
 .nav td{text-align: center; width: 80px;}
 
+/*모바일 버전*/
 @media all and (max-width: 480px){
     nav{top: 5px}
     nav> table{float:none; margin-left: auto; margin-right: auto;}

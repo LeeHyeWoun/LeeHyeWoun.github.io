@@ -8,6 +8,7 @@
 }
 body{font-family: 'Noto Sans KR', sans-serif;}
 
+/*모바일 버전*/
 @media all and (max-width: 480px){
     body{font-size: 10pt;}
 }

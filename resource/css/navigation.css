@@ -3,6 +3,12 @@ nav> table{float: right; margin-right: 40px;}
 .nav a{color: white; text-decoration: none;}
 .nav a:hover {color: #08FDD8; text-decoration: none;}
 .nav td{text-align: center; width: 80px;}
+.here{
+    background-color: #08FDD8;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+}
 
 /*모바일 버전*/
 @media only screen and (max-width: 480px){

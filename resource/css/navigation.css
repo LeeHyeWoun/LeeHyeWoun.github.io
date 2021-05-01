@@ -4,9 +4,7 @@ nav> table{float: right; margin-right: 40px;}
 .nav a:hover {color: #08FDD8; text-decoration: none;}
 .nav td{text-align: center; width: 80px;}
 .here{
-    background-color: #08FDD8;
-    border-radius: 10px;
-    color: black;
+    color: #08FDD8;
     font-weight: 700;
 }
 

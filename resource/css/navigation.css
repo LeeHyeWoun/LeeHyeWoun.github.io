@@ -43,8 +43,7 @@ nav> table{
         }
     nav> table{
         float:none; 
-        margin-left: auto; 
-        margin-right: auto;
+        margin: auto;
     }
     .nav a{
         font-size: 10pt;

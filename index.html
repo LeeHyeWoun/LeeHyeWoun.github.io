@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="resource/css/navigation.css"/>
 		<link rel="stylesheet" href="resource/css/title.css"/>
 		<link rel="stylesheet" href="resource/css/font.css">
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<style>
     	  	body{ padding: 0; margin: 0; word-break: break-all;}
       		.main{height: 100%; padding: 30px; margin-left: 10%; margin-right: 10%; margin-top: 30px;}
@@ -30,8 +31,8 @@
 			<table class="nav">
 				<tr>
 					<td><a href="./about">ABOUT</a></td>
-					<td><a onclick="alert('준비중입니다.');" style="cursor:pointer">WORK</a></td>
-					<td><a onclick="alert('준비중입니다.');" style="cursor:pointer">CONTECT</a></td>
+					<td><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">WORK</a></td>
+					<td><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">CONTECT</a></td>
 				</tr>
 			</table>
 		</nav>

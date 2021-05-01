@@ -9,5 +9,5 @@
 body{font-family: 'Noto Sans KR', sans-serif;}
 
 @media all and (max-width: 480px){
-    body{font-size: 16pt;}
+    body{font-size: 10pt;}
 }

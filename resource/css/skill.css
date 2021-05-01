@@ -1,4 +1,56 @@
 .contain{
     display: table;
     margin: auto;
+    margin-bottom: 40px;
 }
+.contain img{
+    height: 48px;
+    width: 48px;
+}
+.skill{
+    text-align: center;
+}
+.item{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10%;
+    /*clip-path: circle(40px at center);*/
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
+    font-size: 8pt;
+    font-weight: 500;
+}
+.item p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #303030;
+}
+
+@media only screen and (max-width: 480px){
+    .contain{
+        margin-bottom: 40px;
+    }
+    .contain img{
+        height: 48px;
+        width: 48px;
+    }
+    .item{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10%;
+        /*clip-path: circle(40px at center);*/
+        box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
+        font-size: 8pt;
+        font-weight: 500;
+    }
+    .item p{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #303030;
+    }
+}
+
+  

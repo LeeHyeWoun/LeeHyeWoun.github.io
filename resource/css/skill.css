@@ -62,7 +62,7 @@
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
     .contain{
-        width: 272px;
+        width: calc(100vw-40px); /*272px;*/
     }
     .contain img{
         height: 48px;

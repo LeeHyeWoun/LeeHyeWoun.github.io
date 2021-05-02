@@ -36,14 +36,23 @@
     text-align: center;
     color: #303030;
 }
-/*
-.familiar{
-    background-color: rgb(255, 247, 177);
+#my_modal {
+    display: none;
+    width: 300px;
+    padding: 20px 60px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 3px;
 }
-.tried{
-    background-color: rgb(193, 236, 253);
+
+#my_modal .modal_close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
 }
-*/
 @media only screen and (min-width: 480px) and (max-width: 800px){
     .contain{
         width: 336px;

@@ -63,10 +63,13 @@
 							var arr = JSON.parse(resp);
 							var out = "";
 							for (var i = 0; i < arr.length; i++) {
-								out+="<h3>"+Object.keys(arr)[i]+"</h3>"+"<div class='contain'>";
+								let kind = Object.keys(arr)[i];
+								out+=
+								"<h3>"+kind+"</h3>"+
+								"<div class='contain'>";
 								for(var j=0; j<arr[i].length; j++){
 									out+="<button class='item' onclick='changeModalText()'>" +
-										"<img src='"+ arr[i][j].img + "'/>" +
+										"<img src='"+ arr[kind][j].img + "'/>" +
 										"</button>";
 								}								  
 								out+="</div>";

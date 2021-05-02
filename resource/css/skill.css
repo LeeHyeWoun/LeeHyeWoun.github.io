@@ -74,6 +74,8 @@
     }
     #my_modal {
         width: calc(100vw - 150px);
+        min-height: 30vh;
+        max-height: 80vh;
     }
 
 }

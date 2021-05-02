@@ -46,22 +46,21 @@
 				<img class="modal_close_btn" src="https://user-images.githubusercontent.com/48902155/116818324-cb147080-aba5-11eb-8b13-abb5d547cb1a.png"/>
 			</div>
 			<!--스킬 스택-->
+			<div class="skill">
 			<script type="text/javascript">
 				var xmlhttp = new XMLHttpRequest();
 				var url = "resource/json/skills.json";
 		  
 				xmlhttp.onreadystatechange = function() {
-				  if (this.readyState == 4 && this.status == 200) {
-					myfunc(xmlhttp.responseText);
-				  }
+					if (this.readyState == 4 && this.status == 200) {
+						myfunc(xmlhttp.responseText);}
 				};
 				xmlhttp.open("GET", url, true);
 				xmlhttp.send();
 		  
 				function myfunc(resp) {
 				  	var arr = JSON.parse(resp);
-				  	var out = "<div class='skill'>";
-					out+="<h3>Language</h3>";
+				  	var out = "<h3>Language</h3>";
 					out+="<div class='contain'>";
 		  
 				  	for (var i = 0; i < arr.length; i++) {
@@ -70,10 +69,11 @@
 					  	"<img src='"+ arr[i].img + "'/>" +
 					  	"</button>";
 				  	}
-					out+="</div></div>";
-				  	document.getElementById('demo').innerHTML = out;
+					out+="</div>";
+				  	document.getElementsByClassName('skill')[0].innerHTML = out;
 				}
 			  </script>
+			  </div>
 			<!--
 			<div class="skill">
 				<h3>Language</h3>

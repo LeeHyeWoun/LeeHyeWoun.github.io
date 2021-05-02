@@ -1,3 +1,6 @@
+.skill{
+    text-align: center;
+}
 .contain{
     display: table;
     margin: auto;
@@ -7,18 +10,20 @@
     height: 72px;
     width: 72px;
 }
-.skill{
-    text-align: center;
-}
 .item{
     float: left;
     margin: 10px;
     padding: 5px;
     background-color: white;
     border-radius: 10%;
+    border: 0;
     /*clip-path: circle(40px at center);*/
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
+}
+.item:focus{
+    background: #808080;
+    outline: 0;
 }
 .item p{
     margin: 0;
@@ -26,6 +31,14 @@
     text-align: center;
     color: #303030;
 }
+/*
+.familiar{
+    background-color: rgb(255, 247, 177);
+}
+.tried{
+    background-color: rgb(193, 236, 253);
+}
+*/
 @media only screen and (min-width: 480px) and (max-width: 800px){
     .contain{
         width: 336px;

@@ -1,7 +1,6 @@
-function changeModalText(skill_name) {
-
+function changeModalText() {
     let title = document.getElementsByClassName("modal_title")[0];
-    title.innerText=skill_name;
+    title.innerText='test';
 }
  
 window.onload=function(){

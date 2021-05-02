@@ -1,24 +1,6 @@
 function changeModalText(skill_name) {
-
     let title = document.getElementsByClassName("modal_title")[0];
-    
-    switch(skill_name){
-        case 0:
-            title.innerText="c언어";
-            break;
-        case 1:
-            title.innerText="c++";
-            break;
-        case 2:
-            title.innerText="c#";
-            break;
-        case 3:
-            title.innerText="java";
-            break;
-        default:
-            title.innerText=skill_id;
-            break;
-    }
+    title.innerText=skill_name;
  }
  
 window.onload=function(){

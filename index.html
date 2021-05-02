@@ -39,11 +39,41 @@
 		</nav>
 		<!--본문-->
 		<main>
+			<!--모달-->
 			<div id="my_modal">
 				<h3 class="modal_title">Title</h3>
 				<p class="modal_text">설명 추가하기</p>
 				<img class="modal_close_btn" src="https://user-images.githubusercontent.com/48902155/116818324-cb147080-aba5-11eb-8b13-abb5d547cb1a.png"/>
 			</div>
+			<!--스킬 스택-->
+			<script type="text/javascript">
+				var xmlhttp = new XMLHttpRequest();
+				var url = "resource/json/skills.json";
+		  
+				xmlhttp.onreadystatechange = function() {
+				  if (this.readyState == 4 && this.status == 200) {
+					myfunc(xmlhttp.responseText);
+				  }
+				};
+				xmlhttp.open("GET", url, true);
+				xmlhttp.send();
+		  
+				function myfunc(resp) {
+				  	var arr = JSON.parse(resp);
+				  	var out = "<div class='skill'>";
+					out+="<h3>Language</h3>";
+					out+="<div class='contain'>";
+		  
+				  	for (var i = 0; i < arr.length; i++) {
+						out+=
+					  	"<button class='item tried' onclick='changeModalText("+i+")'>"+
+					  	"<img src='"+ arr[i].img + "'/>" +
+					  	"</button>";
+				  	}
+				  	document.getElementById('demo').innerHTML = out;
+				}
+			  </script>
+			<!--
 			<div class="skill">
 				<h3>Language</h3>
 				<div class="contain">
@@ -97,6 +127,8 @@
 					</button>
 				</div>
 			</div>
+			-->
+			<!--나머지 본문-->
 			<div>
 				<p> text </p>
 				<span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>

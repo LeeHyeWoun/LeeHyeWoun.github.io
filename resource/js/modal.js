@@ -1,7 +1,8 @@
 function changeModalText(skill_name) {
-    /*
-    let title = document.getElementsByClassName("modal_title")[0];
 
+    let title = document.getElementsByClassName("modal_title")[0];
+    
+    /*
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     xobj.open('GET', '../json/skills.json', true);
@@ -79,9 +80,12 @@ window.onload=function(){
         return this;
     };
     
-    document.getElementsByClassName("item")[0].addEventListener('click', function() {
-        // 모달창 띄우기
-        modal('my_modal');
-    });
+    //아이템 클릭 시 모달 띄우기
+    var items = document.getElementsByClassName("item");
+    for(let i=0; i<items.length; i++){
+        items[i].addEventListener('click', function() {
+            modal('my_modal');
+        });
+    }
 }
 

@@ -2,17 +2,6 @@ function changeModalText(skill_name) {
 
     let title = document.getElementsByClassName("modal_title")[0];
     
-    /*
-    var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    xobj.open('GET', '../json/skills.json', true);
-    xobj.onreadystatechange = function () {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-            callback(JSON.parse(xobj.responseText));
-        }
-    };
-    xobj.send(null);
-    */
     switch(skill_name){
         case 0:
             title.innerText="c언어";
@@ -31,12 +20,13 @@ function changeModalText(skill_name) {
             break;
     }
  }
+ 
 window.onload=function(){
     function modal(id) {
         var zIndex = 9999;
         var modal = document.getElementById(id);
     
-        // 모달 div 뒤에 희끄무레한 레이어
+        // 모달 배경 레이어
         var bg = document.createElement('div');
         bg.setStyle({
             position: 'fixed',
@@ -46,12 +36,11 @@ window.onload=function(){
             width: '100%',
             height: '100%',
             overflow: 'auto',
-            // 레이어 색갈은 여기서 바꾸면 됨
             backgroundColor: 'rgba(0,0,0,0.4)'
         });
         document.body.append(bg);
     
-        // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+        // 닫기 이벤트
         modal.querySelector('.modal_close_btn').addEventListener('click', function() {
             bg.remove();
             modal.style.display = 'none';
@@ -62,7 +51,7 @@ window.onload=function(){
             display: 'block',
             boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     
-            // 시꺼먼 레이어 보다 한칸 위에 보이기
+            // 모달 배경 레이어 위에 모달 보이기
             zIndex: zIndex + 1,
     
             // div center 정렬

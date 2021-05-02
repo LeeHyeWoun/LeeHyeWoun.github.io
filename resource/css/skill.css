@@ -62,7 +62,7 @@
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
     .contain{
-        width: calc(100vw-20px); /*272px;*/
+        width: 272px;
     }
     .contain img{
         height: 48px;
@@ -73,7 +73,7 @@
         font-size: 8pt;
     }
     #my_modal {
-        width: 200px;
+        width: calc(100vw-50px);
     }
 
 }

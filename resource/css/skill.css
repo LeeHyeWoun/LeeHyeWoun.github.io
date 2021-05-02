@@ -23,15 +23,12 @@
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
-.item:hover{
+.item:hover, .item:focus{
     filter: brightness(70%);
     outline: 0;
 }
 .item:hover img{
     filter: blur(1px);
-}
-.item:focus{
-    outline: 0;
 }
 .item p{
     margin: 0;

@@ -1,3 +1,35 @@
+function changeModalText(skill_name) {
+    /*
+    let title = document.getElementsByClassName("modal_title")[0];
+
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', '../json/skills.json', true);
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            callback(JSON.parse(xobj.responseText));
+        }
+    };
+    xobj.send(null);
+    */
+    switch(skill_name){
+        case 0:
+            title.innerText="c언어";
+            break;
+        case 1:
+            title.innerText="c++";
+            break;
+        case 2:
+            title.innerText="c#";
+            break;
+        case 3:
+            title.innerText="java";
+            break;
+        default:
+            title.innerText=skill_id;
+            break;
+    }
+ }
 window.onload=function(){
     function modal(id) {
         var zIndex = 9999;
@@ -40,27 +72,6 @@ window.onload=function(){
             webkitTransform: 'translate(-50%, -50%)'
         });
     }
-
-    function changeModalText(skill_id) {
-        let x = document.getElementsByClassName("modal_text")[0];
-        switch(skill_id){
-            case "skill_0":
-                x.innerText="c언어";
-                break;
-            case "skill_1":
-                x.innerText="c++";
-                break;
-            case "skill_2":
-                x.innerText="c#";
-                break;
-            case "skill_3":
-                x.innerText="java";
-                break;
-            default:
-                x.innerText=skill_id;
-                break;
-        }
-     }
     
     // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
     Element.prototype.setStyle = function(styles) {
@@ -70,7 +81,7 @@ window.onload=function(){
     
     document.getElementsByClassName("item")[0].addEventListener('click', function() {
         // 모달창 띄우기
-        changeModalText("default");
         modal('my_modal');
     });
 }
+

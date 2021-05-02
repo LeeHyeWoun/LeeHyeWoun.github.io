@@ -1,5 +1,5 @@
 {
-  "language":[
+  "Language":[
         {
             "title":"c",
             "img":"https://user-images.githubusercontent.com/48902155/116791862-107a6480-aaf8-11eb-9924-c6ef9a553576.png",
@@ -31,7 +31,7 @@
             "level":2
         }
     ],
-    "front-end":[
+    "Front-end":[
         {
             "title":"android",
             "img":"https://user-images.githubusercontent.com/48902155/116793268-c47fed80-ab00-11eb-88ee-e8e1ca5b2c08.png",
@@ -51,7 +51,7 @@
             "level":2
         }
     ],
-    "editor":[
+    "Editor":[
         {
             "title":"visual studio",
             "img":"https://user-images.githubusercontent.com/48902155/116792956-d8c2eb00-aafe-11eb-864e-cecd07d65397.png",

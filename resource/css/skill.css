@@ -1,5 +1,7 @@
 .skill{
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .contain{
     display: table;
@@ -21,8 +23,11 @@
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
+.item:hover{
+    filter: brightness(50%);
+    outline: 0;
+}
 .item:focus{
-    background: #808080;
     outline: 0;
 }
 .item p{

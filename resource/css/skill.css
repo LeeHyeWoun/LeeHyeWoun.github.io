@@ -1,7 +1,7 @@
 .skill{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .contain{
     display: table;
@@ -26,6 +26,9 @@
 .item:hover{
     filter: brightness(50%);
     outline: 0;
+}
+.item:hover img{
+    filter: blur(1px);
 }
 .item:focus{
     outline: 0;

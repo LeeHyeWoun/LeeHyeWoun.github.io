@@ -24,7 +24,7 @@
     font-weight: 500;
 }
 .item:hover{
-    filter: brightness(50%);
+    filter: brightness(70%);
     outline: 0;
 }
 .item:hover img{

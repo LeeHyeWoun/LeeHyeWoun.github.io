@@ -59,10 +59,10 @@
 				xmlhttp.send();
 		  
 				function myfunc(resp) {
-				  	var arr = JSON.parse(resp);
+					var arr = JSON.parse(resp);
+					/*언어*/
 				  	var out = "<h3>Language</h3>";
 					out+="<div class='contain'>";
-		  
 				  	for (var i = 0; i < arr.length; i++) {
 						out+=
 					  	"<button class='item tried' onclick='changeModalText("+i+")'>"+
@@ -70,6 +70,7 @@
 					  	"</button>";
 				  	}
 					out+="</div>";
+					/*출력*/
 				  	document.getElementsByClassName('skill')[0].innerHTML = out;
 				}
 			  </script>

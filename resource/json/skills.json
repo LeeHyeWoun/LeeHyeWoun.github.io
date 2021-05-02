@@ -25,13 +25,55 @@
     },
     {
         "title":"python",
-        "img":"https://user-images.githubusercontent.com/48902155/116791911-6c44ed80-aaf8-11eb-8d8c-684a15744265.pn",
+        "img":"https://user-images.githubusercontent.com/48902155/116791911-6c44ed80-aaf8-11eb-8d8c-684a15744265.png",
         "detail":"eeeee",
         "level":2
     },
     {
         "title":"android",
         "img":"https://user-images.githubusercontent.com/48902155/116793268-c47fed80-ab00-11eb-88ee-e8e1ca5b2c08.png",
+        "detail":"ffffff",
+        "level":2
+    },
+    {
+        "title":"html5",
+        "img":"https://user-images.githubusercontent.com/48902155/116793366-5daf0400-ab01-11eb-9393-478c13d55b80.png",
+        "detail":"ffffff",
+        "level":2
+    },
+    {
+        "title":"css3",
+        "img":"https://user-images.githubusercontent.com/48902155/116793383-73bcc480-ab01-11eb-9880-474bb9cb25bc.png",
+        "detail":"ffffff",
+        "level":2
+    },
+    {
+        "title":"visual studio",
+        "img":"https://user-images.githubusercontent.com/48902155/116792956-d8c2eb00-aafe-11eb-864e-cecd07d65397.png",
+        "detail":"ffffff",
+        "level":2
+    },
+    {
+        "title":"visual studio code",
+        "img":"https://user-images.githubusercontent.com/48902155/116792987-0dcf3d80-aaff-11eb-9002-1e2f67ec640d.png",
+        "detail":"ffffff",
+        "level":2
+    },
+    {
+        "title":"git",
+        "img":"https://user-images.githubusercontent.com/48902155/116790294-4f0b2180-aaee-11eb-9eac-bf4253fbc02b.png",
+        "detail":"ffffff",
+        "level":2
+    },
+    {
+        "title":"notion",
+        "img":"https://user-images.githubusercontent.com/48902155/116793234-897dba00-ab00-11eb-9d7f-8de737aa195c.png",
+        "detail":"ffffff",
+        "level":2
+    },
+    {
+        "title":"unity",
+        "img":"https://user-images.githubusercontent.com/48902155/116793072-82a27780-aaff-11eb-84b4-8a03d3c0fd3e.png",
         "detail":"ffffff",
         "level":2
     }

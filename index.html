@@ -63,10 +63,10 @@
 							var arr = JSON.parse(resp);
 							/*언어*/
 							var out = "<h3>Language</h3>"+"<div class='contain'>";
-							for (var i = 0; i < arr.length; i++) {
+							for (var i = 0; i < arr['language'].length; i++) {
 								out+=
 								  "<button class='item' onclick='changeModalText()'>"+
-								  "<img src='"+ arr[i].img + "'/>" +
+								  "<img src='"+ arr['language'][i].img + "'/>" +
 								  "</button>";
 							}
 							out+="</div>";

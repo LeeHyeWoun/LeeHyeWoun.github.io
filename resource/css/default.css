@@ -11,7 +11,7 @@ body{
     */
 }
 main{
-    height: 100vh; padding: 30px;
+    padding: 30px;
     margin-left: 10vw; margin-right: 10vw; margin-top: 30px;
 }
 @media only screen and (max-width: 480px){

@@ -25,9 +25,10 @@ nav> table{
     text-align: center; 
     width: 80px;
 }
-.here{
+#here{
     color: #08FDD8;
     font-weight: 700;
+    scroll-behavior:smooth;
 }
 
 /*모바일 버전*/

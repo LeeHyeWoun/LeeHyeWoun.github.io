@@ -1,7 +1,16 @@
-function changeModalText(item) {
-    var _item = JSON.stringify(item);
-    document.getElementsByClassName("modal_title")[0].innerText="test";
-    document.getElementsByClassName("modal_text")[0].innerText=_item;
+function changeModalText(kind, num) {
+    var xmlhttp = new XMLHttpRequest();
+    var url = "../json/skills.json";
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var arr = JSON.parse(xmlhttp.responseText);
+            document.getElementsByClassName("modal_title")[0].innerText=arr[kind][num].title;
+            document.getElementsByClassName("modal_text")[0].innerText=arr[kind][num].detail;
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
 }
  
 window.onload=function(){
@@ -9,23 +18,22 @@ window.onload=function(){
         var zIndex = 10;
         var modal = document.getElementById(id);
     
-        // 모달 배경 레이어
-        var bg = document.createElement('div');
-        bg.setStyle({
+        var back_layer = document.createElement('div');
+        back_layer.setStyle({
             position: 'fixed',
             zIndex: zIndex,
             left: '0px',
             top: '0px',
-            width: '100%',
-            height: '100%',
+            width: '100vw',
+            height: '100vh',
             overflow: 'auto',
             backgroundColor: 'rgba(0,0,0,0.4)'
         });
-        document.body.append(bg);
+        document.body.append(back_layer);
     
         // 닫기 이벤트
         modal.querySelector('.modal_close_btn').addEventListener('click', function() {
-            bg.remove();
+            back_layer.remove();
             modal.style.display = 'none';
         });
     

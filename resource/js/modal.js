@@ -6,7 +6,7 @@ function changeModalText(item) {
  
 window.onload=function(){
     function modal(id) {
-        var zIndex = 9999;
+        var zIndex = 10;
         var modal = document.getElementById(id);
     
         // 모달 배경 레이어

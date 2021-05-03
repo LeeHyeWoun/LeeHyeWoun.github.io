@@ -46,7 +46,6 @@
     background-color: #fefefe;
     border-radius: 8px;
 }
-
 #my_modal .modal_close_btn {
     position: absolute;
     top: 10px;
@@ -54,6 +53,10 @@
     padding: 5px;
     width: 24px;
     height: 24px;
+}
+.modal_img{
+    height: 72px;
+    width: 72px;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 800px){

@@ -26,7 +26,7 @@
 #name{
     color: #ddd;
 }
-.content{
+.contents{
     display: table;
     margin: auto;
     margin-top: 40px;
@@ -34,10 +34,17 @@
     padding: 10px;
     border: #aaa 1px solid;
 }
+.contents dt{
+    color: #08FDD8;
+    font-weight: 600;
+}
+.content{
+    margin-bottom: 20px;
+}
 
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
-    .profile, .content{
+    .profile, .contents{
         width: 300px;
     }
 

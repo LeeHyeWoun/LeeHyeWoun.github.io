@@ -5,7 +5,7 @@ function changeModalText(kind, num) {
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var arr = JSON.parse(xmlhttp.responseText);
-            document.getElementsByClassName("modal_img").setAttribute('src') = arr[kind][num].img;
+            document.getElementsByClassName("modal_img")[0].setAttribute('src') = arr[kind][num].img;
             document.getElementsByClassName("modal_title")[0].innerText = arr[kind][num].title;
             document.getElementsByClassName("modal_detail")[0].innerText = arr[kind][num].detail;
         }
@@ -36,10 +36,16 @@ window.onload=function(){
         back_layer.addEventListener('click', function() {
             back_layer.remove();
             modal.style.display = 'none';
+            document.getElementsByClassName("modal_img")[0].setAttribute('src') = "";
+            document.getElementsByClassName("modal_title")[0].innerText = "";
+            document.getElementsByClassName("modal_detail")[0].innerText = "";
         });
         modal.querySelector('.modal_close_btn').addEventListener('click', function() {
             back_layer.remove();
             modal.style.display = 'none';
+            document.getElementsByClassName("modal_img")[0].setAttribute('src') = "";
+            document.getElementsByClassName("modal_title")[0].innerText = "";
+            document.getElementsByClassName("modal_detail")[0].innerText = "";
         });
     
         modal.setStyle({

@@ -1,6 +1,6 @@
 function changeModalText(kind, num) {
     var xmlhttp = new XMLHttpRequest();
-    var url = "../json/skills.json";
+    var url = "json/skills.json";
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {

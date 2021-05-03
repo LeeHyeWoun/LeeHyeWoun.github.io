@@ -1,12 +1,13 @@
-.profile{
-    display: table;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 300px;
-    padding: 10px;
-    border: #aaa 1px solid;
+.profile, .contents{
+    float: left;
+    margin-top: 20px;
 }
+.profile {
+    width: 300px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+ 
 #profile_img{
     display: table;
     margin: auto;
@@ -15,37 +16,67 @@
     background-color: white;
     border-radius: 10%;
     border: 0;
-    /*clip-path: circle(40px at center);*/
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
 #title{
-    color: #aaa;
-    line-height: 180%;
+    color: #666;
+    line-height: 150%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #name{
-    color: #ddd;
-}
-.contents{
-    display: table;
-    margin: auto;
-    margin-top: 40px;
-    width: 100%;
-    padding: 10px;
-    border: #aaa 1px solid;
+    color: #222;
 }
 .contents dt{
-    color: #08FDD8;
+    color: #666;
     font-weight: 600;
 }
 .content{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
+/*화면이 좁을 때*/
+@media only screen and (max-width: 900px) and (min-width: 480px){
+    .profile, .contents{
+        float: none;
+        display: table;
+        margin: auto;
+        width: 300px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    .content{
+        margin-bottom: 20px;
+    }
+}
+
 
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
     .profile, .contents{
+        display: table;
+        margin: auto;
         width: 300px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 10px;
     }
+    .content{
+        margin-bottom: 20px;
+    }
+}
 
+/*다크 모드 버전*/
+@media (prefers-color-scheme: dark) {
+    #title{
+        color: #aaa;
+    }
+    #name{
+        color: #ddd;
+    }
+    .contents dt{
+        color: #08FDD8;
+    }    
 }

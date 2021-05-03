@@ -36,14 +36,14 @@ window.onload=function(){
         back_layer.addEventListener('click', function() {
             back_layer.remove();
             modal.style.display = 'none';
-            document.getElementsByClassName("modal_img")[0].setAttribute('src') = "";
+            document.getElementsByClassName("modal_img")[0].src = "";
             document.getElementsByClassName("modal_title")[0].innerText = "";
             document.getElementsByClassName("modal_detail")[0].innerText = "";
         });
         modal.querySelector('.modal_close_btn').addEventListener('click', function() {
             back_layer.remove();
             modal.style.display = 'none';
-            document.getElementsByClassName("modal_img")[0].setAttribute('src') = "";
+            document.getElementsByClassName("modal_img")[0].src = "";
             document.getElementsByClassName("modal_title")[0].innerText = "";
             document.getElementsByClassName("modal_detail")[0].innerText = "";
         });
@@ -61,13 +61,13 @@ window.onload=function(){
         });
     }
     
-    // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+    //set style
     Element.prototype.setStyle = function(styles) {
         for (var k in styles) this.style[k] = styles[k];
         return this;
     };
     
-    //아이템 클릭 시 모달 띄우기
+    //click event
     var items = document.getElementsByClassName("item");
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {

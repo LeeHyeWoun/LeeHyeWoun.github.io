@@ -30,8 +30,12 @@ window.onload=function(){
             backgroundColor: 'rgba(0,0,0,0.4)'
         });
         document.body.append(back_layer);
-    
-        // 닫기 이벤트
+
+        // close event
+        back_layer.addEventListener('click', function() {
+            back_layer.remove();
+            modal.style.display = 'none';
+        });
         modal.querySelector('.modal_close_btn').addEventListener('click', function() {
             back_layer.remove();
             modal.style.display = 'none';

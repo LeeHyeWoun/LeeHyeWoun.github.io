@@ -42,7 +42,7 @@
 			<!--모달-->
 			<div id="my_modal">
 				<h3 class="modal_title">Title</h3>
-				<p class="modal_text">설명 추가하기</p>
+				<p class="modal_text">detail</p>
 				<img class="modal_close_btn" src="https://user-images.githubusercontent.com/48902155/116818324-cb147080-aba5-11eb-8b13-abb5d547cb1a.png"/>
 			</div>
 			<!--스킬 스택-->
@@ -68,7 +68,7 @@
 								"<h3>"+kind+"</h3>"+
 								"<div class='contain'>";
 								for(var j=0; j<arr[kind].length; j++){
-									out+="<button class='item' onclick=\"changeModalText('"+arr[kind][j].title+"')\">" +
+									out+="<button class='item' onclick=\"changeModalText('" + arr[kind][j].title + arr[kind][j].detail+"')\">" +
 										"<img src='"+ arr[kind][j].img + "'/>" +
 										"</button>";
 								}								  

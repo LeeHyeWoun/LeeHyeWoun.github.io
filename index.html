@@ -47,6 +47,7 @@
 			</div>
 			<!--스킬 스택-->
 			<div class="skill">
+				<p id="test"> text </p>
 				<div id="skill_items">
 					<script type="text/javascript">
 						var xmlhttp = new XMLHttpRequest();
@@ -75,6 +76,7 @@
 								out+="</div>";
 							}
 							document.getElementById('skill_items').innerHTML = out;
+							document.getElementById('test').innerText = out;
 						}
 					</script>
 				</div>

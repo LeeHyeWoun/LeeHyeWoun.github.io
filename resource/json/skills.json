@@ -3,31 +3,31 @@
         {
             "title":"c",
             "img":"https://user-images.githubusercontent.com/48902155/116791862-107a6480-aaf8-11eb-9924-c6ef9a553576.png",
-            "detail":"aaaaa",
+            "detail":"주 사용 개발환경 : Visual Studio, Visual Studio Code",
             "level":2
         },
         {
             "title":"c++",
             "img":"https://user-images.githubusercontent.com/48902155/116791840-ecb71e80-aaf7-11eb-9d9c-6e393c611fb7.png",
-            "detail":"bbbb",
+            "detail":"주 사용 개발환경 : Visual Studio, Visual Studio Code",
             "level":3
         },
         {
             "title":"c#",
             "img":"https://user-images.githubusercontent.com/48902155/116791863-12dcbe80-aaf8-11eb-90b4-bceab4ec8ef1.png",
-            "detail":"cccccc",
+            "detail":"주 사용 개발환경 : Unity",
             "level":3
         },
         {
             "title":"java",
             "img":"https://user-images.githubusercontent.com/48902155/116791921-7830af80-aaf8-11eb-8c34-359e5323d24c.png",
-            "detail":"ddddd",
+            "detail":"주 사용 개발환경 : Android studio, Eclipse",
             "level":3
         },
         {
             "title":"python",
             "img":"https://user-images.githubusercontent.com/48902155/116791911-6c44ed80-aaf8-11eb-8d8c-684a15744265.png",
-            "detail":"eeeee",
+            "detail":"주 사용 개발환경 : Jupyter Notebook",
             "level":2
         }
     ],

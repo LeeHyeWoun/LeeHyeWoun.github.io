@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>HyeWoun</title>
+		<link rel="icon" href="https://avatars.githubusercontent.com/u/48902155?v=4">
+		<link rel="stylesheet" href="resource/css/navigation.css"/>
+		<link rel="stylesheet" href="resource/css/title.css"/>
+		<link rel="stylesheet" href="resource/css/skill.css"/>
+		<link rel="stylesheet" href="resource/css/font.css"/>
+		<link rel="stylesheet" href="resource/css/default.css"/>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="text/javascript" src="resource/js/modal.js"></script>
+	</head>
+	<body>
+		<!--대문-->
+	  	<header>
+			<video muted autoplay loop>
+				<source src="resource/videos/Pixabay_1.mp4" type="video/mp4"/>
+				<strong>Your browser does not support the video tag.</strong>
+			</video>
+			<div class="title-text">
+				<h1>Hi, I'm Hyewoun.</h1>
+				<p>nice to meet you.</p>
+			</div>
+		</header>
+		<!--네비게이션-->
+		<nav>
+			<table class="nav">
+				<tr>
+					<td><a href="#" id="here">HOME</a></td>
+					<td><a href="./about">ABOUT</a></td>
+					<td><a href="./work">WORK</a></td>
+					<td><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">CONTECT</a></td>
+				</tr>
+			</table>
+		</nav>
+		<!--본문-->
+		<main>
+			<!--모달-->
+			<div id="my_modal">
+				<h3 class="modal_title">Title</h3>
+				<p class="modal_text">detail</p>
+				<img class="modal_close_btn" src="https://user-images.githubusercontent.com/48902155/116818324-cb147080-aba5-11eb-8b13-abb5d547cb1a.png"/>
+			</div>
+			<!--스킬 스택-->
+			<div class="skill">
+				<div id="skill_items">
+					<script type="text/javascript">
+						var xmlhttp = new XMLHttpRequest();
+						var url = "resource/json/skills.json";
+				  
+						xmlhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								myfunc(xmlhttp.responseText);}
+						};
+						xmlhttp.open("GET", url, true);
+						xmlhttp.send();
+				  
+						function myfunc(resp) {
+							var arr = JSON.parse(resp);
+							var out = "";
+							for (var i = 0; i < Object.keys(arr).length; i++) {
+								let kind = Object.keys(arr)[i];
+								out+=
+								"<h3>"+kind+"</h3>"+
+								"<div class='contain'>";
+								for(var j=0; j<arr[kind].length; j++){
+									out+="<button class='item' onclick=\"changeModalText('" + arr[kind][j] + "')\">" +
+										"<img src='"+ arr[kind][j].img + "'/>" +
+										"</button>";
+								}								  
+								out+="</div>";
+							}
+							document.getElementById('skill_items').innerHTML = out;
+						}
+					</script>
+				</div>
+			</div>
+			<!--나머지 본문-->
+			<div>
+				<p> text </p>
+				<span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+			</div>
+		</main>
+	</body>
+</html>

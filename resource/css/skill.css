@@ -71,6 +71,7 @@
     height: 72px;
     width: 72px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 800px){

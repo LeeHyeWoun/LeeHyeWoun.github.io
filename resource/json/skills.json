@@ -1,19 +1,19 @@
 {
   "Language":[
         {
-            "title":"c",
+            "title":"C언어",
             "img":"https://user-images.githubusercontent.com/48902155/116791862-107a6480-aaf8-11eb-9924-c6ef9a553576.png",
             "detail":"주 사용 개발환경 : Visual Studio, Visual Studio Code",
             "level":2
         },
         {
-            "title":"c++",
+            "title":"C++",
             "img":"https://user-images.githubusercontent.com/48902155/116791840-ecb71e80-aaf7-11eb-9d9c-6e393c611fb7.png",
             "detail":"주 사용 개발환경 : Visual Studio, Visual Studio Code",
             "level":3
         },
         {
-            "title":"c#",
+            "title":"C#",
             "img":"https://user-images.githubusercontent.com/48902155/116791863-12dcbe80-aaf8-11eb-90b4-bceab4ec8ef1.png",
             "detail":"주 사용 개발환경 : Unity",
             "level":3

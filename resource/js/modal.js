@@ -1,6 +1,7 @@
-function changeModalText(title, detail) {
-    document.getElementsByClassName("modal_title")[0].innerText=title;
-    document.getElementsByClassName("modal_text")[0].innerText=detail;
+function changeModalText(item) {
+    var _item = JSON.stringify(item);
+    document.getElementsByClassName("modal_title")[0].innerText="test";
+    document.getElementsByClassName("modal_text")[0].innerText=_item;
 }
  
 window.onload=function(){

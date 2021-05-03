@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HyeWoun</title>
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/48902155?v=4">
+		<link rel="stylesheet" href="resource/css/navigation.css"/>
+		<link rel="stylesheet" href="resource/css/font.css">
+        <link rel="stylesheet" href="resource/css/default.css">
+        <link rel="stylesheet" href="resource/css/about.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <!--네비게이션-->
+        <nav>
+            <table class="nav">
+                <tr>
+                    <td><a href="./">HOME</a></td>
+                    <td><a href="#" id="here">ABOUT</a></td>
+                    <td><a href="./work">WORK</a></td>
+                    <td><a onclick="swal('Sorry','아직 준비되지 않은 페이지입니다.', 'error');" style="cursor:pointer">CONTECT</a></td>
+                </tr>
+            </table>
+        </nav>
+        <!--본문-->
+        <main>
+            <div class="profile">
+                <img id="profile_img" src="https://avatars.githubusercontent.com/u/48902155?v=4"/>                
+                <h1 id="title">성장하는 개발자<br><span id="name">이혜원</span>입니다.</h3>
+                <p id="description">Learn to share, Share to learn</p>
+                <p id="detail">최근에는 AI에 관심이 많습니다.</p>
+            </div>
+            <div class="content">
+                <dl class="graduation">
+                    <dt>GRADUATION</dt>
+                    <dd>가좌고등학교</dd>
+                    <dd>서울여자대학교</dd>
+                </dl>
+                <dl class="project">
+                    <dt>PROJECT</dt>
+                    <dd>PRE:ARTH</dd>
+                </dl>
+                <dl class="about">
+                    <dt>About</dt>
+                    <dd>멋진 개발자가 되고 싶습니다.</dd>
+                </dl>
+            </div>
+        </main>
+    </body>
+</html>

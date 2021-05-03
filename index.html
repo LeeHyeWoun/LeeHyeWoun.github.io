@@ -47,7 +47,6 @@
 			</div>
 			<!--스킬 스택-->
 			<div class="skill">
-				<p id="test"> text </p>
 				<div id="skill_items">
 					<script type="text/javascript">
 						var xmlhttp = new XMLHttpRequest();
@@ -63,20 +62,19 @@
 						function myfunc(resp) {
 							var arr = JSON.parse(resp);
 							var out = "";
-							for (var i = 0; i < arr.length; i++) {
+							for (var i = 0; i < Object.keys(arr).length; i++) {
 								let kind = Object.keys(arr)[i];
 								out+=
 								"<h3>"+kind+"</h3>"+
 								"<div class='contain'>";
 								for(var j=0; j<arr[kind].length; j++){
-									out+="<button class='item' onclick='changeModalText()'>" +
+									out+="<button class='item' onclick='changeModalText("+arr[kind][j].title+")'>" +
 										"<img src='"+ arr[kind][j].img + "'/>" +
 										"</button>";
 								}								  
 								out+="</div>";
 							}
 							document.getElementById('skill_items').innerHTML = out;
-							document.getElementById('test').innerText = out;
 						}
 					</script>
 				</div>

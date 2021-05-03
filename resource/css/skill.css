@@ -44,7 +44,6 @@
     width: 300px;
     padding: 20px 60px;
     background-color: #fefefe;
-    border: 1px solid #888;
     border-radius: 8px;
 }
 
@@ -56,6 +55,7 @@
     width: 24px;
     height: 24px;
 }
+
 @media only screen and (min-width: 480px) and (max-width: 800px){
     .contain{
         width: 336px;

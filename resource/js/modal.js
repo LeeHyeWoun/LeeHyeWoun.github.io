@@ -46,13 +46,14 @@ window.onload=function(){
     function contest(kind, num) {
         var xmlhttp = new XMLHttpRequest();
         var url = "resource/json/skills.json";
-        var arr = JSON.parse(xmlhttp.responseText);
     
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                img.src = arr[kind][num].img;
-                title.innerText = arr[kind][num].title;
-                detail.innerText = arr[kind][num].detail;
+                var arr = JSON.parse(xmlhttp.responseText);
+                var content = arr[kind][num];
+                img.src = content.img;
+                title.innerText = content.title;
+                detail.innerText = content.detail;
             }
         };
         xmlhttp.open("GET", url, true);

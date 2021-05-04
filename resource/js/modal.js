@@ -57,14 +57,17 @@ window.onload=function(){
 
     function content(kind, num) {
         xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var arr = JSON.parse(xmlhttp.responseText);
-                var content = arr[kind][num];
-                modal_img.src = content.img;
-                modal_title.innerText = content.title;
-                modal_detail.innerText = content.detail;
-            }else if(this.readyState > 5){
-                alert("error : " + this.status); 
+            if (this.readyState == 4) {
+                if(this.status == 200){
+                    var arr = JSON.parse(xmlhttp.responseText);
+                    var content = arr[kind][num];
+                    modal_img.src = content.img;
+                    modal_title.innerText = content.title;
+                    modal_detail.innerText = content.detail;
+                }
+                else{
+                    alert(this.status + " : "+ this.statusText); 
+                }
             }
         };
         xmlhttp.open("GET", url, true);

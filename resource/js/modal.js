@@ -41,9 +41,11 @@ window.onload=function(){
         }
         modal_detail.innerText = out;
 
-        if(current_data == [0,0]){
-            modal_left.style.display = 'none';
-            return;
+        if(current_data[0] == 0){
+            if(current_data[1] == 0){
+                modal_left.style.display = 'none';
+                return;
+            }
         }
         else if(current_data[0] == contains.length-1){
             if(current_data[1] == contains[contains.length-1].childElementCount - 1 ){

@@ -1,3 +1,4 @@
+/*
 function changeModalText(kind, num) {
     var xmlhttp = new XMLHttpRequest();
     var url = "resource/json/skills.json";
@@ -13,7 +14,7 @@ function changeModalText(kind, num) {
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
- 
+*/
 window.onload=function(){
     function modal(id) {
         var modal = document.getElementById(id);
@@ -59,8 +60,23 @@ window.onload=function(){
     
     //click event
     var items = document.getElementsByClassName("item");
+    var xmlhttp = new XMLHttpRequest();
+    var url = "resource/json/skills.json";
+
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
+        
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var arr = JSON.parse(xmlhttp.responseText);
+                    document.getElementsByClassName("modal_img")[0].src = arr['Language'][0].img;
+                    document.getElementsByClassName("modal_title")[0].innerText = arr['Language'][0].title;
+                    document.getElementsByClassName("modal_detail")[0].innerText = arr['Language'][0].detail;
+                }
+            };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        
             modal('my_modal');
         });
     }

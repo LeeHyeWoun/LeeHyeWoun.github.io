@@ -11,9 +11,30 @@ window.onload=function(){
     var modal_detail = modal.querySelector('.modal_detail');
     var modal_close = modal.querySelector('.modal_close_btn');
     var modal_layer;
+
+    //json parsing
+    var arr;
     var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if(this.status == 200){
+                arr = JSON.parse(xmlhttp.responseText);
+            }
+            else{
+                alert(this.status + " : "+ this.statusText); 
+            }
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
 
-
+    function setContent(kind, num) {
+        var content = arr[kind][num];
+        modal_img.src = content.img;
+        modal_title.innerText = content.title;
+        modal_detail.innerText = content.detail;
+    }    
+    
     function open_modal() {
         //pop modal_layer
         modal_layer = document.createElement('div');
@@ -53,31 +74,12 @@ window.onload=function(){
         for (var k in styles) this.style[k] = styles[k];
         return this;
     };
-
-    function content(kind, num) {
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if(this.status == 200){
-                    var arr = JSON.parse(xmlhttp.responseText);
-                    var content = arr[kind][num];
-                    modal_img.src = content.img;
-                    modal_title.innerText = content.title;
-                    modal_detail.innerText = content.detail;
-                }
-                else{
-                    alert(this.status + " : "+ this.statusText); 
-                }
-            }
-        };
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
-    }
     
     //click event
     for(let i=0; i<contains.length; i++){
         for(let j=0; j<contains[i].childElementCount; j++){
             contains[i].children[j].addEventListener('click', function(){
-                content(contains[i].id, j);
+                setContent(contains[i].id, j);
                 open_modal();
             });
         }

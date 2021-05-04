@@ -12,19 +12,18 @@ window.onload=function(){
         document.body.append(back_layer);
 
         // close event
-        back_layer.addEventListener('click', function() {
+        function close(){
             back_layer.remove();
             modal.style.display = 'none';
             img.src = "";
             title.innerText = "";
             detail.innerText = "";
+        }
+        back_layer.addEventListener('click', function() {
+            close();
         });
         modal.querySelector('.modal_close_btn').addEventListener('click', function() {
-            back_layer.remove();
-            modal.style.display = 'none';
-            img.src = "";
-            title.innerText = "";
-            detail.innerText = "";
+            close();
         });
     
         modal.setStyle({

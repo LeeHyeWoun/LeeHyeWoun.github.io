@@ -108,6 +108,7 @@ window.onload=function(){
             num_kind--;
             num_value = contains[num_kind].childElementCount - 1;
         }
+        alert("num_kind: "+num_kind+"\nnum_value: "+num_value);
         
         setContent(contains[num_kind].id, num_value);
     });
@@ -121,6 +122,7 @@ window.onload=function(){
             num_kind++;
             num_value = 0;
         }
+        alert("num_kind: "+num_kind+"\nnum_value: "+num_value);
 
         setContent(contains[num_kind].id, num_value);
     });

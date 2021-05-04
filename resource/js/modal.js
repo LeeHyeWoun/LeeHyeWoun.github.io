@@ -81,10 +81,11 @@ window.onload=function(){
     }
     */
     for(let i=0; i<contains.length; i++){
-        var _id = contains[i].id;
-        for(let j=0; j<contains[i].childElementCount; j++){
-            contains[i].children[j].addEventListener('click', function(){
-                content(_id, 0);
+        var contain = contains[i];
+        
+        for(let j=0; j<contain.childElementCount; j++){
+            contain.children[j].addEventListener('click', function(){
+                content(contain.id, j);
                 open_modal();
             });
         }

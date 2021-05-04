@@ -11,6 +11,7 @@ window.onload=function(){
     var modal_detail = modal.querySelector('.modal_detail');
     var modal_close = modal.querySelector('.modal_close_btn');
     var modal_layer;
+    var current_data=[0, 0];
 
     //json parsing
     var arr;
@@ -32,12 +33,18 @@ window.onload=function(){
         var content = arr[kind][num];
         modal_img.src = content.img;
         modal_title.innerText = content.title;
-        var out = '';
+        var out ='';
         for(let i=0; i<content.detail.length; i++){
             out+=content.detail[i]+'\n';
         }
         modal_detail.innerText = out;
-    }    
+    }
+
+    function chageContect(){
+        var num_kind = current_data[0];
+        var num_value = current_data[1];
+        setContent(contains[num_kind].id, num_value);
+    }
     
     function open_modal() {
         //pop modal_layer
@@ -89,6 +96,7 @@ window.onload=function(){
     for(let i=0; i<contains.length; i++){
         for(let j=0; j<contains[i].childElementCount; j++){
             contains[i].children[j].addEventListener('click', function(){
+                current_data = [i, j];
                 setContent(contains[i].id, j);
                 open_modal();
             });

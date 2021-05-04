@@ -1,5 +1,7 @@
 body{
-    padding: 0; margin: 0; word-break: break-all;
+    padding: 0; 
+    margin: 0; 
+    word-break: break-all;
 
     /*드래그 비허용*/
     /*
@@ -12,9 +14,11 @@ body{
 }
 main{
     padding: 30px;
-    margin-left: 10vw; margin-right: 10vw; margin-top: 30px;
+    margin: 30px 10vw;
 }
 @media only screen and (max-width: 480px){
-    main{padding: 10px; margin:10px;}
+    main{
+        padding: 10px; 
+        margin:10px;}
 }
 

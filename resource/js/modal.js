@@ -5,6 +5,7 @@ window.onload=function(){
     let url = "resource/json/skills.json";
 
     var items = document.getElementsByClassName("item");
+    var contains = document.getElementsByClassName("contain");
     var modal = document.getElementById(id_modal);    
     var modal_img = modal.querySelector('.modal_img');
     var modal_title = modal.querySelector('.modal_title');
@@ -79,14 +80,14 @@ window.onload=function(){
         });
     }
     */
-    // for(let i=0; i<items.length; i++){
-    //     items[i].addEventListener('click', function() {
-    //         var _id = items[i].id;
-    //         content(_id, 0);
-    //         open_modal();
-    //     });
-    // }
-    alert(items[0].id);
-
+    for(let i=0; i<contains.length; i++){
+        var _id = contains[i].id;
+        for(let j=0; j<contains[i].childElementCount; j++){
+            contains[i].children[j].addEventListener('click', function(){
+                content(_id, 0);
+                open_modal();
+            });
+        }
+    }
 }
 

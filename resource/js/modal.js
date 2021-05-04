@@ -103,16 +103,16 @@ window.onload=function(){
         var num_kind = current_data[0];
         var num_value = current_data[1];
 
-        if(num_value <= 0 ){
+        num_value--;
+
+        if(num_value < 0 ){
             if(num_kind <= 0){ return; }
+
             num_kind--;
             num_value = contains[num_kind].childElementCount - 1;
         }
-        else{
-            num_value--;
-        }
-        alert("num_kind: "+num_kind+"\nnum_value: "+num_value);
-        
+
+        current_data = [num_kind, num_value];
         setContent(contains[num_kind].id, num_value);
     });
 
@@ -120,17 +120,16 @@ window.onload=function(){
         var num_kind = current_data[0];
         var num_value = current_data[1];
 
-        if(num_value >= contains[num_kind].childElementCount - 1 ){
+        num_value++;
+
+        if(num_value > contains[num_kind].childElementCount - 1 ){
             if(num_kind >= contains.length-1){ return; }
 
             num_kind++;
             num_value = 0;
         }
-        else{
-            num_value++;
-        }
-        alert("num_kind: "+num_kind+"\nnum_value: "+num_value);
 
+        current_data = [num_kind, num_value];
         setContent(contains[num_kind].id, num_value);
     });
 }

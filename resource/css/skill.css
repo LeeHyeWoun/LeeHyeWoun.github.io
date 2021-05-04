@@ -32,7 +32,7 @@
 #my_modal {
     display: none;
     width: 500px;
-    padding: 20px 60px;
+    padding: 20px 40px;
     background-color: #fefefe;
     border-radius: 8px;
 
@@ -61,7 +61,11 @@
     height: 72px;
     width: 72px;
     margin-right: 20px;
-    margin-bottom: 20px;
+}
+.modal_detail{
+    float: left;
+    max-height: 300px;;
+    overflow: auto;
 }
 #modal_layer{
     position: fixed;
@@ -70,7 +74,7 @@
     top: 0px;
     width: 100vw;
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -79,7 +83,7 @@
         width: 336px;
     }
     #my_modal {
-        width: 300px;
+        width: 400px;
     }
 }
 
@@ -97,16 +101,19 @@
         font-size: 8pt;
     }
     #my_modal {
-        width: calc(100vw - 150px);
+        width: calc(100vw - 100px);
         min-height: 30vh;
-        max-height: 80vh;
+        padding: 20px 30px;
     }
     .modal_img{
         float: none;
         display: block;
         margin-right: auto;
         margin-left: auto;
-    }   
+    }
+    .modal_detail{
+        max-height: 300px;
+    }
 }
 
 /*다크 모드 버전*/

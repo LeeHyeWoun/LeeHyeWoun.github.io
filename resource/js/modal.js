@@ -62,6 +62,8 @@ window.onload=function(){
                 modal_img.src = content.img;
                 modal_title.innerText = content.title;
                 modal_detail.innerText = content.detail;
+            }else{
+                alert("error : " + httpRequest.status); 
             }
         };
         xmlhttp.open("GET", url, true);
@@ -79,7 +81,7 @@ window.onload=function(){
     */
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
-            var _id = String(items[i].id);
+            var _id = "'" + items[i].id + "'";
             content(_id, 0);
             open_modal();
         });

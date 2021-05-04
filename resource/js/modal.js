@@ -63,7 +63,7 @@ window.onload=function(){
                 modal_img.src = content.img;
                 modal_title.innerText = content.title;
                 modal_detail.innerText = content.detail;
-            }else{
+            }else if(this.readyState > 5){
                 alert("error : " + this.status); 
             }
         };
@@ -81,11 +81,9 @@ window.onload=function(){
     }
     */
     for(let i=0; i<contains.length; i++){
-        var contain = contains[i];
-        
-        for(let j=0; j<contain.childElementCount; j++){
-            contain.children[j].addEventListener('click', function(){
-                content(contain.id, j);
+        for(let j=0; j<contains[i].childElementCount; j++){
+            contains[i].children[j].addEventListener('click', function(){
+                content(contains[i].id, j);
                 open_modal();
             });
         }

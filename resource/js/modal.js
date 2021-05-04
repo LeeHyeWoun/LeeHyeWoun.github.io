@@ -66,7 +66,7 @@ window.onload=function(){
     //click event
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
-            contest('Language', 0);
+            contest(items[i].classList.item(1), 0);
             modal('my_modal');
         });
     }

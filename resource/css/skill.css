@@ -88,6 +88,9 @@
     .contain{
         width: 336px;
     }
+    #my_modal {
+        width: 300px;
+    }
 }
 
 /*모바일 버전*/

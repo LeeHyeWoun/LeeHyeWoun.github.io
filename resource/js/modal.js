@@ -79,13 +79,14 @@ window.onload=function(){
         });
     }
     */
-    for(let i=0; i<items.length; i++){
-        items[i].addEventListener('click', function() {
-            var _id = "'" + items[i].id + "'";
-            content(_id, 0);
-            open_modal();
-        });
-    }
+    // for(let i=0; i<items.length; i++){
+    //     items[i].addEventListener('click', function() {
+    //         var _id = items[i].id;
+    //         content(_id, 0);
+    //         open_modal();
+    //     });
+    // }
+    alert(items[0].id);
 
 }
 

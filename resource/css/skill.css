@@ -103,6 +103,7 @@
     }
     #my_modal {
         width: 400px;
+        padding-bottom: 70px;
     }
     .modal_left_btn, .modal_right_btn{
         top: auto;
@@ -135,7 +136,7 @@
     #my_modal {
         width: calc(100vw - 100px);
         min-height: 30vh;
-        padding: 20px 30px;
+        padding: 20px 30px 90px 30px;
     }
     .modal_left_btn, .modal_right_btn{
         top: auto;

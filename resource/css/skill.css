@@ -35,6 +35,7 @@
     padding: 20px 40px;
     background-color: #fefefe;
     border-radius: 8px;
+    min-height: 200px;
 
     /*
     position: fixed;
@@ -48,13 +49,30 @@
     -webkit-transform: translate(-50%, -50%);
     */
 }
-#my_modal .modal_close_btn {
+.modal_close_btn {
     position: absolute;
     top: 10px;
     right: 10px;
     padding: 5px;
     width: 24px;
     height: 24px;
+}
+.modal_left_btn, .modal_right_btn{
+    position: absolute;
+    top: 50%;
+    padding: 5px;
+    width: 50px;
+}
+.modal_left_btn:hover, .modal_right_btn:hover{
+    filter: brightness(0.5);
+}
+.modal_left_btn{
+    left: -80px;
+    transform: translate(0, -50%) rotate(180deg)
+}
+.modal_right_btn{
+    right: -80px;
+    transform: translate(-0, -50%);
 }
 .modal_img{
     float: left;
@@ -67,6 +85,7 @@
     max-height: 300px;;
     overflow: auto;
 }
+
 #modal_layer{
     position: fixed;
     z-index: 10;
@@ -84,6 +103,19 @@
     }
     #my_modal {
         width: 400px;
+    }
+    .modal_left_btn, .modal_right_btn{
+        top: auto;
+        bottom: 20px;
+        width: 30px;
+    }
+    .modal_left_btn{
+        left: 20px;
+        transform: rotate(180deg)
+    }
+    .modal_right_btn{
+        right: 20px;
+        transform: none;
     }
 }
 
@@ -104,6 +136,19 @@
         width: calc(100vw - 100px);
         min-height: 30vh;
         padding: 20px 30px;
+    }
+    .modal_left_btn, .modal_right_btn{
+        top: auto;
+        bottom: 20px;
+        width: 30px;
+    }
+    .modal_left_btn{
+        left: 20px;
+        transform: rotate(180deg)
+    }
+    .modal_right_btn{
+        right: 20px;
+        transform: none;
     }
     .modal_img{
         float: none;

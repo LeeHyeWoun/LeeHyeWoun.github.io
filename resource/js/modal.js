@@ -13,7 +13,7 @@ window.onload=function(){
 
     function popup_modal() {
         modal_layer = document.createElement('div');
-        modal_layer.className='modal_layer';
+        modal_layer.id='modal_layer';
         document.body.append(modal_layer);
 
         // close event

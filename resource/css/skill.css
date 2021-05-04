@@ -63,7 +63,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
 }
-.modal_layer{
+#modal_layer{
     position: fixed;
     z-index: 10;
     left: 0px;
@@ -92,7 +92,7 @@
         height: 48px;
         width: 48px;
     }
-    .item{
+    .contain> button{
         margin: 5px;
         font-size: 8pt;
     }
@@ -111,7 +111,7 @@
 
 /*다크 모드 버전*/
 @media (prefers-color-scheme: dark) {
-    .modal_back_layer{
+    #modal_layer{
         background-color: rgba(0,0,0,0.8);
     }
 }

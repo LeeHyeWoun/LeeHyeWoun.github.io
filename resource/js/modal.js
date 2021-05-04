@@ -75,14 +75,6 @@ window.onload=function(){
     }
     
     //click event
-    /*
-    for(let i=0; i<items.length; i++){
-        items[i].addEventListener('click', function() {
-            content('Language', 0);
-            open_modal();
-        });
-    }
-    */
     for(let i=0; i<contains.length; i++){
         for(let j=0; j<contains[i].childElementCount; j++){
             contains[i].children[j].addEventListener('click', function(){

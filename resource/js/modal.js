@@ -46,7 +46,7 @@ window.onload=function(){
         return this;
     };
 
-    function contest(kind, num) {
+    function content(kind, num) {
         var xmlhttp = new XMLHttpRequest();
         var url = "resource/json/skills.json";
     
@@ -66,7 +66,7 @@ window.onload=function(){
     //click event
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
-            contest(items[i].classList.item(1), 0);
+            content('Language', 0);
             modal('my_modal');
         });
     }

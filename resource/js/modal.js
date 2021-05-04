@@ -3,28 +3,28 @@ window.onload=function(){
     let id_modal = 'my_modal';
     let url = "resource/json/skills.json";
 
+    var items = document.getElementsByClassName("item");
     var modal = document.getElementById(id_modal);    
     var modal_img = modal.querySelector('.modal_img');
     var modal_title = modal.querySelector('.modal_title');
     var modal_detail = modal.querySelector('.modal_detail');
     var modal_close = modal.querySelector('.modal_close_btn');
-    var items = document.getElementsByClassName("item");
+    var modal_layer;
 
     function popup_modal() {
-        var back_layer = document.createElement('div');
-        
-        back_layer.className='modal_back_layer';
-        document.body.append(back_layer);
+        modal_layer = document.createElement('div');
+        modal_layer.className='modal_layer';
+        document.body.append(modal_layer);
 
         // close event
         function close(){
-            back_layer.remove();
+            modal_layer.remove();
             modal.style.display = 'none';
             modal_img.src = "";
             modal_title.innerText = "";
             modal_detail.innerText = "";
         }
-        back_layer.addEventListener('click', function() {
+        modal_layer.addEventListener('click', function() {
             close();
         });
         modal_close.addEventListener('click', function() {

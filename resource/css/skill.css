@@ -63,7 +63,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
 }
-.modal_back_layer{
+.modal_layer{
     position: fixed;
     z-index: 10;
     left: 0px;

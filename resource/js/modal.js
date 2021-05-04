@@ -10,14 +10,17 @@ window.onload=function(){
     var modal_detail = modal.querySelector('.modal_detail');
     var modal_close = modal.querySelector('.modal_close_btn');
     var modal_layer;
+    var xmlhttp = new XMLHttpRequest();
 
-    function popup_modal() {
+
+    function open_modal() {
+        //pop modal_layer
         modal_layer = document.createElement('div');
         modal_layer.id='modal_layer';
         document.body.append(modal_layer);
 
-        // close event
-        function close(){
+        //close modal
+        function close_modal(){
             modal_layer.remove();
             modal.style.display = 'none';
             modal_img.src = "";
@@ -25,10 +28,10 @@ window.onload=function(){
             modal_detail.innerText = "";
         }
         modal_layer.addEventListener('click', function() {
-            close();
+            close_modal();
         });
         modal_close.addEventListener('click', function() {
-            close();
+            close_modal();
         });
     
         modal.setStyle({
@@ -51,7 +54,6 @@ window.onload=function(){
     };
 
     function content(kind, num) {
-        var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var arr = JSON.parse(xmlhttp.responseText);
@@ -69,7 +71,7 @@ window.onload=function(){
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
             content('Language', 0);
-            popup_modal();
+            open_modal();
         });
     }
 }

@@ -64,7 +64,7 @@ window.onload=function(){
                 modal_title.innerText = content.title;
                 modal_detail.innerText = content.detail;
             }else{
-                alert("error : " + httpRequest.status); 
+                alert("error : " + this.status); 
             }
         };
         xmlhttp.open("GET", url, true);

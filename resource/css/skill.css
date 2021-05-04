@@ -112,7 +112,7 @@
 /*다크 모드 버전*/
 @media (prefers-color-scheme: dark) {
     #modal_layer{
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.9);
     }
 }
   

@@ -40,6 +40,19 @@ window.onload=function(){
             out+=content.detail[i]+'\n';
         }
         modal_detail.innerText = out;
+
+        if(current_data == [0,0]){
+            modal_left.style.display = 'none';
+            return;
+        }
+        else if(current_data[0] == contains.length-1){
+            if(current_data[1] == contains[contains.length-1].childElementCount - 1 ){
+                modal_right.style.display = 'none';
+                return;
+            }
+        }
+        modal_left.style.display = 'block';
+        modal_right.style.display = 'block';        
     }
 
     function open_modal() {
@@ -123,7 +136,7 @@ window.onload=function(){
         num_value++;
 
         if(num_value > contains[num_kind].childElementCount - 1 ){
-            if(num_kind >= contains.length-1){ return; }
+            if(num_kind >= contains.length - 1){ return; }
 
             num_kind++;
             num_value = 0;

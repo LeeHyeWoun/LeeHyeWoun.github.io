@@ -32,7 +32,11 @@ window.onload=function(){
         var content = arr[kind][num];
         modal_img.src = content.img;
         modal_title.innerText = content.title;
-        modal_detail.innerText = content.detail;
+        var out = '';
+        for(let i=0; i<content.detail.length; i++){
+            out+=content.detail[i]+'\n';
+        }
+        modal_detail.innerText = out;
     }    
     
     function open_modal() {

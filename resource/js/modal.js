@@ -1,10 +1,13 @@
 window.onload=function(){
+
+    var img = document.getElementsByClassName("modal_img")[0];
+    var title = document.getElementsByClassName("modal_title")[0];
+    var detail = document.getElementsByClassName("modal_detail")[0];
+    var items = document.getElementsByClassName("item");
+
     function modal(id) {
         var modal = document.getElementById(id);    
         var back_layer = document.createElement('div');
-        var img = document.getElementsByClassName("modal_img")[0];
-        var title = document.getElementsByClassName("modal_title")[0];
-        var detail = document.getElementsByClassName("modal_detail")[0];
         back_layer.className='modal_back_layer';
         document.body.append(back_layer);
 
@@ -61,7 +64,6 @@ window.onload=function(){
     }
     
     //click event
-    var items = document.getElementsByClassName("item");
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
             contest('Language', 0);

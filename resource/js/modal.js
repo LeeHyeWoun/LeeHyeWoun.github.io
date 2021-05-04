@@ -2,6 +2,9 @@ window.onload=function(){
     function modal(id) {
         var modal = document.getElementById(id);    
         var back_layer = document.createElement('div');
+        var img = document.getElementsByClassName("modal_img")[0];
+        var title = document.getElementsByClassName("modal_title")[0];
+        var detail = document.getElementsByClassName("modal_detail")[0];
         back_layer.className='modal_back_layer';
         document.body.append(back_layer);
 
@@ -9,16 +12,16 @@ window.onload=function(){
         back_layer.addEventListener('click', function() {
             back_layer.remove();
             modal.style.display = 'none';
-            document.getElementsByClassName("modal_img")[0].src = "";
-            document.getElementsByClassName("modal_title")[0].innerText = "";
-            document.getElementsByClassName("modal_detail")[0].innerText = "";
+            img.src = "";
+            title.innerText = "";
+            detail.innerText = "";
         });
         modal.querySelector('.modal_close_btn').addEventListener('click', function() {
             back_layer.remove();
             modal.style.display = 'none';
-            document.getElementsByClassName("modal_img")[0].src = "";
-            document.getElementsByClassName("modal_title")[0].innerText = "";
-            document.getElementsByClassName("modal_detail")[0].innerText = "";
+            img.src = "";
+            title.innerText = "";
+            detail.innerText = "";
         });
     
         modal.setStyle({
@@ -47,9 +50,9 @@ window.onload=function(){
     
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementsByClassName("modal_img")[0].src = arr[kind][num].img;
-                document.getElementsByClassName("modal_title")[0].innerText = arr[kind][num].title;
-                document.getElementsByClassName("modal_detail")[0].innerText = arr[kind][num].detail;
+                img.src = arr[kind][num].img;
+                title.innerText = arr[kind][num].title;
+                detail.innerText = arr[kind][num].detail;
             }
         };
         xmlhttp.open("GET", url, true);

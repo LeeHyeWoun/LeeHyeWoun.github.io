@@ -73,6 +73,16 @@
     margin-right: 20px;
     margin-bottom: 20px;
 }
+.modal_back_layer{
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
 
 @media only screen and (min-width: 480px) and (max-width: 800px){
     .contain{
@@ -103,7 +113,13 @@
         display: block;
         margin-right: auto;
         margin-left: auto;
-    }    
+    }   
 }
 
+/*다크 모드 버전*/
+@media (prefers-color-scheme: dark) {
+    .modal_back_layer{
+        background-color: rgba(0,0,0,0.8);
+    }
+}
   

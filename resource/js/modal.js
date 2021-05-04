@@ -16,20 +16,10 @@ function changeModalText(kind, num) {
  
 window.onload=function(){
     function modal(id) {
-        var zIndex = 10;
         var modal = document.getElementById(id);
     
         var back_layer = document.createElement('div');
-        back_layer.setStyle({
-            position: 'fixed',
-            zIndex: zIndex,
-            left: '0px',
-            top: '0px',
-            width: '100vw',
-            height: '100vh',
-            overflow: 'auto',
-            backgroundColor: 'rgba(0,0,0,0.4)'
-        });
+        back_layer.className='modal_back_layer';
         document.body.append(back_layer);
 
         // close event
@@ -52,7 +42,7 @@ window.onload=function(){
             position: 'fixed',
             display: 'block',
             boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-            zIndex: zIndex + 1,
+            zIndex: 11,
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',

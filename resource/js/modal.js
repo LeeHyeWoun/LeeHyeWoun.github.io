@@ -45,21 +45,23 @@ window.onload=function(){
         return this;
     };
 
+    var xmlhttp = new XMLHttpRequest();
+    var url = "resource/json/skills.json";
+    var arr = [];
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            arr = JSON.parse(xmlhttp.responseText);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
     function content(kind, num) {
-        var xmlhttp = new XMLHttpRequest();
-        var url = "resource/json/skills.json";
-    
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var arr = JSON.parse(xmlhttp.responseText);
-                var content = arr[kind][num];
-                img.src = content.img;
-                title.innerText = content.title;
-                detail.innerText = content.detail;
-            }
-        };
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
+            var content = arr[kind][num];
+            img.src = content.img;
+            title.innerText = content.title;
+            detail.innerText = content.detail;
     }
     
     //click event

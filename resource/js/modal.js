@@ -4,10 +4,10 @@ window.onload=function(){
     let url = "resource/json/skills.json";
 
     var modal = document.getElementById(id_modal);    
-    var img = document.getElementsByClassName("modal_img")[0];
-    var title = document.getElementsByClassName("modal_title")[0];
-    var detail = document.getElementsByClassName("modal_detail")[0];
-    var btn_close = modal.querySelector('.modal_close_btn');
+    var modal_img = modal.querySelector('.modal_img');
+    var modal_title = modal.querySelector('.modal_title');
+    var modal_detail = modal.querySelector('.modal_detail');
+    var modal_close = modal.querySelector('.modal_close_btn');
     var items = document.getElementsByClassName("item");
 
     function popup_modal() {
@@ -20,14 +20,14 @@ window.onload=function(){
         function close(){
             back_layer.remove();
             modal.style.display = 'none';
-            img.src = "";
-            title.innerText = "";
-            detail.innerText = "";
+            modal_img.src = "";
+            modal_title.innerText = "";
+            modal_detail.innerText = "";
         }
         back_layer.addEventListener('click', function() {
             close();
         });
-        btn_close.addEventListener('click', function() {
+        modal_close.addEventListener('click', function() {
             close();
         });
     
@@ -56,9 +56,9 @@ window.onload=function(){
             if (this.readyState == 4 && this.status == 200) {
                 var arr = JSON.parse(xmlhttp.responseText);
                 var content = arr[kind][num];
-                img.src = content.img;
-                title.innerText = content.title;
-                detail.innerText = content.detail;
+                modal_img.src = content.img;
+                modal_title.innerText = content.title;
+                modal_detail.innerText = content.detail;
             }
         };
         xmlhttp.open("GET", url, true);

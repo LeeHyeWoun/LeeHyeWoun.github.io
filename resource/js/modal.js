@@ -1,24 +1,6 @@
-/*
-function changeModalText(kind, num) {
-    var xmlhttp = new XMLHttpRequest();
-    var url = "resource/json/skills.json";
-
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var arr = JSON.parse(xmlhttp.responseText);
-            document.getElementsByClassName("modal_img")[0].src = arr[kind][num].img;
-            document.getElementsByClassName("modal_title")[0].innerText = arr[kind][num].title;
-            document.getElementsByClassName("modal_detail")[0].innerText = arr[kind][num].detail;
-        }
-    };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-}
-*/
 window.onload=function(){
     function modal(id) {
-        var modal = document.getElementById(id);
-    
+        var modal = document.getElementById(id);    
         var back_layer = document.createElement('div');
         back_layer.className='modal_back_layer';
         document.body.append(back_layer);
@@ -57,26 +39,28 @@ window.onload=function(){
         for (var k in styles) this.style[k] = styles[k];
         return this;
     };
+
+    function contest(kind, num) {
+        var xmlhttp = new XMLHttpRequest();
+        var url = "resource/json/skills.json";
+        var arr = JSON.parse(xmlhttp.responseText);
+    
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementsByClassName("modal_img")[0].src = arr[kind][num].img;
+                document.getElementsByClassName("modal_title")[0].innerText = arr[kind][num].title;
+                document.getElementsByClassName("modal_detail")[0].innerText = arr[kind][num].detail;
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
     
     //click event
     var items = document.getElementsByClassName("item");
-    var xmlhttp = new XMLHttpRequest();
-    var url = "resource/json/skills.json";
-
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
-        
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    var arr = JSON.parse(xmlhttp.responseText);
-                    document.getElementsByClassName("modal_img")[0].src = arr['Language'][0].img;
-                    document.getElementsByClassName("modal_title")[0].innerText = arr['Language'][0].title;
-                    document.getElementsByClassName("modal_detail")[0].innerText = arr['Language'][0].detail;
-                }
-            };
-            xmlhttp.open("GET", url, true);
-            xmlhttp.send();
-        
+            contest('Language', 0);
             modal('my_modal');
         });
     }

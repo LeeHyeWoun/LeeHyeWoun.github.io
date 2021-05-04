@@ -3,14 +3,16 @@ window.onload=function(){
     let id_modal = 'my_modal';
     let url = "resource/json/skills.json";
 
+    var modal = document.getElementById(id_modal);    
     var img = document.getElementsByClassName("modal_img")[0];
     var title = document.getElementsByClassName("modal_title")[0];
     var detail = document.getElementsByClassName("modal_detail")[0];
+    var btn_close = modal.querySelector('.modal_close_btn');
     var items = document.getElementsByClassName("item");
 
-    function modal(id) {
-        var modal = document.getElementById(id);    
+    function popup_modal() {
         var back_layer = document.createElement('div');
+        
         back_layer.className='modal_back_layer';
         document.body.append(back_layer);
 
@@ -25,7 +27,7 @@ window.onload=function(){
         back_layer.addEventListener('click', function() {
             close();
         });
-        modal.querySelector('.modal_close_btn').addEventListener('click', function() {
+        btn_close.addEventListener('click', function() {
             close();
         });
     
@@ -67,7 +69,7 @@ window.onload=function(){
     for(let i=0; i<items.length; i++){
         items[i].addEventListener('click', function() {
             content('Language', 0);
-            modal(id_modal);
+            popup_modal();
         });
     }
 }

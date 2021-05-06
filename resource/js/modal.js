@@ -21,10 +21,9 @@ window.onload=function(){
     fetch(url)
         .then((res)=>res.json())
         .then((data)=>{arr = data;})
-        .then(function(){
-            skills.classList.toggle(".skill_act");
-        })
         .catch(error=>console.error(error));
+    
+    skills.classList.toggle(".skill_act");
 
     function setContent(kind, num) {
         var content = arr[kind][num];

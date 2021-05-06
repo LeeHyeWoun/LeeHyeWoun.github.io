@@ -15,16 +15,34 @@ window.onload=function(){
     var modal_right = modal.querySelector('.modal_right_btn');
     var modal_layer;
     var arr;
+    var opacity =0;
+    var intervalID=0;
     var current_data=[0, 0];
 
     //json parsing
     fetch(url)
-        .then((res)=>res.json())
-        .then((data)=>{arr = data;})
-        .then(function(){
-            skills.classList.toggle("skill_act");
-        })
-        .catch(error=>console.error(error));
+    .then((res)=>res.json())
+    .then((data)=>{arr = data;})
+    .then(function(){
+        intervalID = setInterval(fade_in,200);
+    })
+    .catch(error=>console.error(error));
+
+    function fade_in(){
+        var div = document.getElementById("img1");
+		opacity = Number(window.getComputedStyle(div).getPropertyValue("opacity"));
+		
+		if(opacity<1){
+        	//Fade in 핵심 부분
+			opacity = opacity+0.1;
+			skills.style.opacity=opacity;
+			//img.style.opacity=opacity;
+		}
+		else{
+			clearInterval(intervalID);
+		}
+    }
+
 
     function setContent(kind, num) {
         var content = arr[kind][num];

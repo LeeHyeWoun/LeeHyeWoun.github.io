@@ -17,12 +17,9 @@ window.onload=function(){
 
     //json parsing
     var arr;
-    function load_json(){
-        return fetch(url)
+    fetch(url)
         .then((Response)=>Response.json())
-        .then((json)=>json)
-    }
-    load_json().then((data)=>{arr = data;});
+        .then((data)=>{arr = data;})
 
     function setContent(kind, num) {
         var content = arr[kind][num];

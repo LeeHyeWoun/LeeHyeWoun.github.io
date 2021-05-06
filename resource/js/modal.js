@@ -16,17 +16,15 @@ window.onload=function(){
     var current_data=[0, 0];
 
     //json parsing
-    function loadJSON(callback){
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", url, true);
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                callback(JSON.parse(xmlhttp.responseText));
-            }
-        };
-        xmlhttp.send();
-    }
-    var arr = loadJSON();
+    var arr;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+                arr = JSON.parse(xmlhttp.responseText);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
 
     function setContent(kind, num) {
         var content = arr[kind][num];

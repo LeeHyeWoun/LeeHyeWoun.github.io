@@ -16,20 +16,17 @@ window.onload=function(){
     var current_data=[0, 0];
 
     //json parsing
-    var arr;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-            if(this.status == 200){
-                arr = JSON.parse(xmlhttp.responseText);
+    function loadJSON(callback){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", url, true);
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                callback(JSON.parse(xmlhttp.responseText));
             }
-            else{
-                alert(this.status + " : "+ this.statusText); 
-            }
-        }
-    };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
+        };
+        xmlhttp.send();
+    }
+    var arr = loadJSON();
 
     function setContent(kind, num) {
         var content = arr[kind][num];

@@ -2,122 +2,131 @@
   "Language":[
         {
             "title":"C언어",
-            "img":"https://user-images.githubusercontent.com/48902155/116791862-107a6480-aaf8-11eb-9924-c6ef9a553576.png",
+            "img":"resource/img/icons8-c-programming-144.png",
             "detail":[
                 "주 사용 개발환경 : Visual Studio, Visual Studio Code",
-                "skill level 3 : 기초적인 수준에서 업무 수행 가능",
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계",
                 "관련 경험이 있으며, 때때로 인터넷 검색 혹은 책을 참고하여 문제를 해결함"
             ],
             "level":2
         },
         {
             "title":"C++",
-            "img":"https://user-images.githubusercontent.com/48902155/116791840-ecb71e80-aaf7-11eb-9d9c-6e393c611fb7.png",
+            "img":"resource/img/icons8-c++-144.png",
             "detail":[
                 "주 사용 개발환경 : Visual Studio, Visual Studio Code",
-                "skill level 3 : 기초적인 수준에서 업무 수행 가능",
+                "기초적인 수준에서 업무 수행 가능",
                 "관련 경험이 있으며, 때때로 인터넷 검색 혹은 책을 참고하여 문제를 해결함"
             ],
             "level":3
         },
         {
             "title":"C#",
-            "img":"https://user-images.githubusercontent.com/48902155/116791863-12dcbe80-aaf8-11eb-90b4-bceab4ec8ef1.png",
+            "img":"resource/img/icons8-c-sharp-logo-144.png",
             "detail":[
                 "주 사용 개발환경 : Unity",
-                "skill level 3 : 기초적인 수준에서 업무 수행 가능",
+                "기초적인 수준에서 업무 수행 가능",
                 "관련 경험이 있으며, 때때로 관련 라이브러리 API를 확인하거나 스택오버플로우와 깃허브 등의 다른 개발자들의 문제 해결 방식을 참고함. 해당 언어로 게임을 제작한 경험이 있으며 이는 플레이스토어에 출시됨."
             ],
             "level":3
         },
         {
-            "title":"java",
-            "img":"https://user-images.githubusercontent.com/48902155/116791921-7830af80-aaf8-11eb-8c34-359e5323d24c.png",
+            "title":"Java",
+            "img":"resource/img/icons8-java-144.png",
             "detail":[
                 "주 사용 개발환경 : Android studio, Eclipse",
                 "주 사용 버전 : se 8",
-                "skill level 3 : 기초적인 수준에서 업무 수행 가능",
+                "기초적인 수준에서 업무 수행 가능",
                 "관련 경험이 있으며, 때때로 관련 라이브러리 API를 확인하거나 스택오버플로우와 깃허브 등의 다른 개발자들의 문제 해결 방식을 참고함"
             ],
             "level":3
         },
         {
-            "title":"python",
-            "img":"https://user-images.githubusercontent.com/48902155/116791911-6c44ed80-aaf8-11eb-8d8c-684a15744265.png",
+            "title":"Python",
+            "img":"resource/img/icons8-python-144.png",
             "detail":[
                 "주 사용 개발환경 : Jupyter Notebook",
-                "skill level 3 : 기초적인 수준에서 업무 수행 가능",
+                "기초적인 수준에서 업무 수행 가능",
                 "pandas와 matplotlib 라이브러리를 이용해 데이터를 분석/시각화할 때 주로 활용함. 해당 언어를 활용해 가벼운 머신러닝을 구현해본 경험이 있음"
             ],
-            "level":2
+            "level":3
         }
     ],
     "Front-end":[
         {
-            "title":"android",
-            "img":"https://user-images.githubusercontent.com/48902155/116793268-c47fed80-ab00-11eb-88ee-e8e1ca5b2c08.png",
+            "title":"Android",
+            "img":"resource/img/icons8-android-os-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
         },
         {
-            "title":"html5",
-            "img":"https://user-images.githubusercontent.com/48902155/116793366-5daf0400-ab01-11eb-9393-478c13d55b80.png",
+            "title":"HTML5",
+            "img":"resource/img/icons8-html-5-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
         },
         {
-            "title":"css3",
-            "img":"https://user-images.githubusercontent.com/48902155/116793383-73bcc480-ab01-11eb-9880-474bb9cb25bc.png",
+            "title":"CSS3",
+            "img":"resource/img/icons8-css3-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
+        },
+        {
+            "title":"Java Script",
+            "img":"resource/img/icons8-javascript-144.png",
+            "detail":[
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
+            ],
+            "level":2
+
         }
     ],
     "Editor":[
         {
-            "title":"visual studio",
-            "img":"https://user-images.githubusercontent.com/48902155/116792956-d8c2eb00-aafe-11eb-864e-cecd07d65397.png",
+            "title":"Visual Studio",
+            "img":"resource/img/icons8-visual-studio-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
         },
         {
-            "title":"visual studio code",
-            "img":"https://user-images.githubusercontent.com/48902155/116792987-0dcf3d80-aaff-11eb-9002-1e2f67ec640d.png",
+            "title":"Visual Studio Code",
+            "img":"resource/img/icons8-visual-studio-code-2019-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
         }
     ],
     "etc":[
         {
-            "title":"git",
-            "img":"https://user-images.githubusercontent.com/48902155/116790294-4f0b2180-aaee-11eb-9eac-bf4253fbc02b.png",
+            "title":"Git",
+            "img":"resource/img/icons8-git-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
         },
         {
-            "title":"notion",
-            "img":"https://user-images.githubusercontent.com/48902155/116793234-897dba00-ab00-11eb-9d7f-8de737aa195c.png",
+            "title":"Notion",
+            "img":"resource/img/icons8-notion-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
         },
         {
-            "title":"unity",
-            "img":"https://user-images.githubusercontent.com/48902155/116793072-82a27780-aaff-11eb-84b4-8a03d3c0fd3e.png",
+            "title":"Unity",
+            "img":"resource/img/icons8-unity-144.png",
             "detail":[
-                "default"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
             ],
             "level":2
         }

@@ -22,21 +22,7 @@ window.onload=function(){
         .then((Response)=>Response.json())
         .then((json)=>json)
     }
-    load_json().then((data)=>{
-        console.log(data);
-        arr = data;
-        //skill event
-        for(let i=0; i<contains.length; i++){
-            for(let j=0; j<contains[i].childElementCount; j++){
-                contains[i].children[j].addEventListener('click', function(){
-                    current_data = [i, j];
-                    setContent(contains[i].id, j);
-                    open_modal();
-                });
-            }
-        }
-    
-    });
+    load_json().then((data)=>{arr = data;});
 
     function setContent(kind, num) {
         var content = arr[kind][num];
@@ -111,6 +97,15 @@ window.onload=function(){
     };
     
     //click event
+    for(let i=0; i<contains.length; i++){
+        for(let j=0; j<contains[i].childElementCount; j++){
+            contains[i].children[j].addEventListener('click', function(){
+                current_data = [i, j];
+                setContent(contains[i].id, j);
+                open_modal();
+            });
+        }
+    }
 
     modal_left.addEventListener('click', function(){
         var num_kind = current_data[0];

@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+window.onload=function(){
 
     let id_modal = 'my_modal';
     let id_modal_layer = 'modal_layer';
@@ -156,4 +156,4 @@ window.addEventListener('load', function(){
         current_data = [num_kind, num_value];
         setContent(contains[num_kind].id, num_value);
     });
-});
+}

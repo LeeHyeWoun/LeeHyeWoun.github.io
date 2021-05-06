@@ -5,6 +5,7 @@ window.onload=function(){
     let url = "resource/json/skills.json";
 
     var contains = document.getElementsByClassName("contain");
+    var skills = document.getElementsByClassName("skill");
     var modal = document.getElementById(id_modal);    
     var modal_img = modal.querySelector('.modal_img');
     var modal_title = modal.querySelector('.modal_title');
@@ -18,8 +19,13 @@ window.onload=function(){
 
     //json parsing
     fetch(url)
-        .then((Response)=>Response.json())
+        .then((res)=>res.json())
         .then((data)=>{arr = data;})
+        .then((res)=>{
+            if(res.success){
+                skills.style.display = 'block';
+            }
+        })
 
     function setContent(kind, num) {
         var content = arr[kind][num];

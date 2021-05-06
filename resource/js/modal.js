@@ -50,7 +50,7 @@ window.onload=function(){
         modal_title.innerText = content.title;
         var out = content.level_info[content.level]+'\n';
         for(let i=0; i<content.detail.length; i++){
-            out+=content.detail[i]+'\n';
+            out+='\n'+content.detail[i];
         }
         modal_detail.innerText = out;
 

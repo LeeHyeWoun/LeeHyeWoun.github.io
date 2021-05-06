@@ -24,13 +24,13 @@ window.onload=function(){
     .then((res)=>res.json())
     .then((data)=>{arr = data;})
     .then(function(){
-        intervalID = setInterval(fade_in,100);
+        intervalID = setInterval(fade_in,50);
     })
     .catch(error=>console.error(error));
 
     function fade_in(){
 		if(opacity<1){
-			opacity = opacity+0.1;
+			opacity = opacity+0.05;
 			skills.style.opacity=opacity;
 		}
 		else{

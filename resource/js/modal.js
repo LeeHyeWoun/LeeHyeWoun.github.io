@@ -5,7 +5,7 @@ window.onload=function(){
     let url = "resource/json/skills.json";
 
     var contains = document.getElementsByClassName("contain");
-    var skills = document.getElementsByClassName("skill");
+    var skills = document.querySelector("skill");
     var modal = document.getElementById(id_modal);    
     var modal_img = modal.querySelector('.modal_img');
     var modal_title = modal.querySelector('.modal_title');
@@ -22,7 +22,7 @@ window.onload=function(){
         .then((res)=>res.json())
         .then((data)=>{arr = data;})
         .then(function(){
-            skills.style.display = 'block';
+            skills.classList.toggle(".skill_act");
         })
         .catch(error=>console.error(error));
 

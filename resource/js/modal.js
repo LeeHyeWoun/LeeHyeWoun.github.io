@@ -23,7 +23,7 @@ window.onload=function(){
         .then((data)=>{arr = data;})
         .catch(error=>console.error(error));
     
-    skills.classList.toggle(".skill_act");
+    skills.classList.toggle("skill_act");
 
     function setContent(kind, num) {
         var content = arr[kind][num];

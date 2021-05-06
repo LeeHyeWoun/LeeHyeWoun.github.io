@@ -3,7 +3,6 @@ window.onload=function(){
     var opacity =0;
     var intervalID=0;
 
-    layer.classList.add("layer");
     layer.setStyle({
         position: 'fixed',
         zIndex: '30',
@@ -15,7 +14,6 @@ window.onload=function(){
     });
     document.body.append(layer);
 
-
     setTimeout(stop_loading(), 3000);
 
     async function stop_loading(){
@@ -26,7 +24,7 @@ window.onload=function(){
     function fade_in(){
         if(opacity<1){
             opacity = opacity+0.05;
-            skills.style.opacity=opacity;
+            layer.style.opacity=opacity;
         }
         else{
             clearInterval(intervalID);

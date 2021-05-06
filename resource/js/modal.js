@@ -21,11 +21,10 @@ window.onload=function(){
     fetch(url)
         .then((res)=>res.json())
         .then((data)=>{arr = data;})
-        .then((res)=>{
-            if(res.success){
-                skills.style.display = 'block';
-            }
+        .then(function(){
+            skills.style.display = 'block';
         })
+        .catch(error=>console.error(error));
 
     function setContent(kind, num) {
         var content = arr[kind][num];

@@ -2,7 +2,7 @@ window.onload=function(){
 
     let id_modal = 'my_modal';
     let id_modal_layer = 'modal_layer';
-    let url = "resource/json/skills.json";
+    let url_skill = "resource/json/skills.json";
 
     var contains = document.getElementsByClassName("contain");
     var modal = document.getElementById(id_modal);    
@@ -17,14 +17,19 @@ window.onload=function(){
 
     //json parsing
     var arr;
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+    function load_json(url){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.overrideMimeType("application/json");
+        xmlhttp.open("GET", url, true);
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
                 arr = JSON.parse(xmlhttp.responseText);
-        }
-    };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
+            }
+        };
+        xmlhttp.send();    
+    }
+
+    load_json(url_skill);
 
     function setContent(kind, num) {
         var content = arr[kind][num];

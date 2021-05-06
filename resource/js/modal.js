@@ -29,9 +29,6 @@ window.onload=function(){
     .catch(error=>console.error(error));
 
     function fade_in(){
-        var div = document.getElementById("img1");
-		opacity = Number(window.getComputedStyle(div).getPropertyValue("opacity"));
-		
 		if(opacity<1){
         	//Fade in 핵심 부분
 			opacity = opacity+0.1;

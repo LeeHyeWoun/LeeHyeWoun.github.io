@@ -110,7 +110,9 @@
             "title":"Git",
             "img":"resource/img/icons8-git-144.png",
             "detail":[
-                "관련 능력/지식이 제한적이며, 배우고 있는 단계"
+                "관련 능력/지식이 제한적이며, 배우고 있는 단계",
+                "git을 초기화하고 설정할 수 있습니다.",
+                "add, commit push, pull, reset 명령어를 활용할 수 있습니다."
             ],
             "level":2
         },

@@ -44,8 +44,26 @@ window.onload=function(){
 
         modal_img.src = content.img;
         modal_title.innerText = content.title;
-        
+
         var out ='';
+        switch(content.level){
+            case 1:
+                out+="관련 경험이 없거나 거의 없음\n";
+                break;
+            case 2:
+                out+="관련 능력/지식이 제한적이며, 배우고 있는 단계\n";
+                break;
+            case 3:
+                out+="기초적인 수준에서 업무 수행 가능\n";
+                break;
+            case 3:
+                out+="업무 수행에 도움이 거의 필요 없음\n";
+                break;
+            default:
+                out+="업무 수행에 도움이 필요 없으며, 다른 사람을 리드하고 교육할 수 있음\n";
+                break;        
+        }
+
         for(let i=0; i<content.detail.length; i++){
             out+=content.detail[i]+'\n';
         }

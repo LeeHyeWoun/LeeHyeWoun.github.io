@@ -1,10 +1,9 @@
-window.addEventListener('load', function(){
+window.onload=function(){
 
     let id_modal = 'my_modal';
     let id_modal_layer = 'modal_layer';
     let url = "resource/json/skills.json";
 
-    var skills = document.querySelector(".skill");
     var contains = document.getElementsByClassName("contain");
     var modal = document.getElementById(id_modal);    
     var modal_img = modal.querySelector('.modal_img');
@@ -14,47 +13,34 @@ window.addEventListener('load', function(){
     var modal_left = modal.querySelector('.modal_left_btn');
     var modal_right = modal.querySelector('.modal_right_btn');
     var modal_layer;
-    var arr;
-    var opacity =0;
-    var intervalID=0;
     var current_data=[0, 0];
 
     //json parsing
-    fetch(url)
-    .then((res)=>res.json())
-    .then((data)=>{arr = data;})
-    .then(function(){
-        intervalID = setInterval(fade_in,50);
-    })
-    .catch(error=>console.error(error));
-
-    function fade_in(){
-		if(opacity<1){
-			opacity = opacity+0.05;
-			skills.style.opacity=opacity;
-		}
-		else{
-			clearInterval(intervalID);
-		}
-    }
-
+    var arr;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if(this.status == 200){
+                arr = JSON.parse(xmlhttp.responseText);
+            }
+            else{
+                alert(this.status + " : "+ this.statusText); 
+            }
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
 
     function setContent(kind, num) {
         var content = arr[kind][num];
-
         modal_img.src = content.img;
         modal_title.innerText = content.title;
-        
         var out ='';
         for(let i=0; i<content.detail.length; i++){
             out+=content.detail[i]+'\n';
         }
         modal_detail.innerText = out;
 
-        setArrow();
-    }
-
-    function setArrow(){
         if(current_data[0] == 0){
             if(current_data[1] == 0){
                 modal_left.style.display = 'none';
@@ -68,7 +54,7 @@ window.addEventListener('load', function(){
             }
         }
         modal_left.style.display = 'block';
-        modal_right.style.display = 'block';
+        modal_right.style.display = 'block';        
     }
 
     function open_modal() {
@@ -78,13 +64,18 @@ window.addEventListener('load', function(){
         document.body.append(modal_layer);
 
         //close modal
-        modal_layer.addEventListener('click', function() {
+        function close_modal(){
             modal_layer.remove();
             modal.style.display = 'none';
+            modal_img.src = "";
+            modal_title.innerText = "";
+            modal_detail.innerText = "";
+        }
+        modal_layer.addEventListener('click', function() {
+            close_modal();
         });
         modal_close.addEventListener('click', function() {
-            modal_layer.remove();
-            modal.style.display = 'none';
+            close_modal();
         });
     
         modal.setStyle({
@@ -156,4 +147,5 @@ window.addEventListener('load', function(){
         current_data = [num_kind, num_value];
         setContent(contains[num_kind].id, num_value);
     });
-});
+}
+

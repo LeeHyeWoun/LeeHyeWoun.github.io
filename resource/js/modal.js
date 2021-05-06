@@ -24,16 +24,14 @@ window.onload=function(){
     .then((res)=>res.json())
     .then((data)=>{arr = data;})
     .then(function(){
-        intervalID = setInterval(fade_in,200);
+        intervalID = setInterval(fade_in,100);
     })
     .catch(error=>console.error(error));
 
     function fade_in(){
 		if(opacity<1){
-        	//Fade in 핵심 부분
 			opacity = opacity+0.1;
 			skills.style.opacity=opacity;
-			//img.style.opacity=opacity;
 		}
 		else{
 			clearInterval(intervalID);

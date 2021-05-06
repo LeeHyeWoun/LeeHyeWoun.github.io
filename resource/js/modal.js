@@ -4,8 +4,8 @@ window.onload=function(){
     let id_modal_layer = 'modal_layer';
     let url = "resource/json/skills.json";
 
+    var skills = document.querySelector(".skill");
     var contains = document.getElementsByClassName("contain");
-    var skills = document.querySelector("skill");
     var modal = document.getElementById(id_modal);    
     var modal_img = modal.querySelector('.modal_img');
     var modal_title = modal.querySelector('.modal_title');

@@ -12,6 +12,10 @@ body{
     user-select:none;
     */
 }
+body.not_scroll{
+    overflow: hidden;
+}
+
 main{
     padding: 30px;
     margin: 30px 10vw;

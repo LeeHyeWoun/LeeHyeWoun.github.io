@@ -80,14 +80,19 @@ window.onload=function(){
         modal_layer.id = id_modal_layer;
         document.body.append(modal_layer);
 
+        document.body.classList.add('not_scroll');
+
         //close modal
-        modal_layer.addEventListener('click', function() {
+        function close_modal(){
             modal_layer.remove();
             modal.style.display = 'none';
+            document.body.classList.remove('not_scroll');
+        }
+        modal_layer.addEventListener('click', function() {
+            close_modal();
         });
         modal_close.addEventListener('click', function() {
-            modal_layer.remove();
-            modal.style.display = 'none';
+            close_modal();
         });
     
         modal.setStyle({

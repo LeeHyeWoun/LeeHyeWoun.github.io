@@ -54,7 +54,6 @@
     max-height: 300px;;
     overflow: auto;
 }
-
 #modal_layer{
     position: fixed;
     z-index: 10;

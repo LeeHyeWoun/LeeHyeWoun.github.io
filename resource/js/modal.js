@@ -48,7 +48,7 @@ window.onload=function(){
 
         modal_img.src = content.img;
         modal_title.innerText = content.title;
-        var out = content.level_info[content.level]+'\n';
+        var out = level[content.level-1]+'\n';
         for(let i=0; i<content.detail.length; i++){
             out+='\n'+content.detail[i];
         }

@@ -60,7 +60,7 @@
                 "title":"Android",
                 "img":"resource/img/icons8-android-os-144.png",
                 "detail":[
-                    "<default>"
+                    "주 사용 개발환경 : android studio, unity"
                 ],
                 "level":2
             },
@@ -68,7 +68,7 @@
                 "title":"HTML5",
                 "img":"resource/img/icons8-html-5-144.png",
                 "detail":[
-                    "<default>"
+                    "주 사용 개발환경 : Visual Studio Code"
                 ],
                 "level":2
             },
@@ -76,7 +76,7 @@
                 "title":"CSS3",
                 "img":"resource/img/icons8-css3-144.png",
                 "detail":[
-                    "<default>"
+                    "주 사용 개발환경 : Visual Studio Code"
                 ],
                 "level":2
             },
@@ -84,7 +84,7 @@
                 "title":"Java Script",
                 "img":"resource/img/icons8-javascript-144.png",
                 "detail":[
-                    "<default>"
+                    "주 사용 개발환경 : Visual Studio Code"
                 ],
                 "level":2
     

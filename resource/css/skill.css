@@ -30,94 +30,10 @@
 .contain> button:hover img, .contain> button:focus img{
     filter: blur(1px);
 }
-#my_modal {
-    display: none;
-    height: 300px;
-    width: 500px;
-    padding: 20px 40px;
-    background-color: #fefefe;
-    border-radius: 8px;
-
-    /*
-    position: fixed;
-    display: block;
-    box-Shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: zIndex + 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: (-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    */
-}
-.modal_close_btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px;
-    width: 24px;
-    height: 24px;
-}
-.modal_left_btn, .modal_right_btn{
-    position: absolute;
-    top: 50%;
-    padding: 5px;
-    width: 50px;
-}
-.modal_left_btn:hover, .modal_right_btn:hover{
-    filter: brightness(0.5);
-}
-.modal_left_btn{
-    left: -80px;
-    transform: translate(0, -50%) rotate(180deg)
-}
-.modal_right_btn{
-    right: -80px;
-    transform: translate(-0, -50%);
-}
-.modal_img{
-    float: left;
-    height: 72px;
-    width: 72px;
-    margin-right: 20px;
-}
-.modal_detail{
-    float: left;
-    max-height: 300px;;
-    overflow: auto;
-}
-
-#modal_layer{
-    position: fixed;
-    z-index: 10;
-    left: 0px;
-    top: 0px;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.4);
-}
 
 @media only screen and (min-width: 480px) and (max-width: 800px){
     .contain{
         width: 336px;
-    }
-    #my_modal {
-        width: 400px;
-        padding-bottom: 70px;
-    }
-    .modal_left_btn, .modal_right_btn{
-        top: auto;
-        bottom: 20px;
-        width: 30px;
-    }
-    .modal_left_btn{
-        left: 20px;
-        transform: rotate(180deg)
-    }
-    .modal_right_btn{
-        right: 20px;
-        transform: none;
     }
 }
 
@@ -134,39 +50,4 @@
         margin: 5px;
         font-size: 8pt;
     }
-    #my_modal {
-        height: 300px;
-        width: calc(100vw - 100px);
-        padding: 20px 30px 70px 30px;
-    }
-    .modal_left_btn, .modal_right_btn{
-        top: auto;
-        bottom: 20px;
-        width: 30px;
-    }
-    .modal_left_btn{
-        left: 20px;
-        transform: rotate(180deg)
-    }
-    .modal_right_btn{
-        right: 20px;
-        transform: none;
-    }
-    .modal_img{
-        float: none;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .modal_detail{
-        max-height: 300px;
-    }
 }
-
-/*다크 모드 버전*/
-@media (prefers-color-scheme: dark) {
-    #modal_layer{
-        background-color: rgba(0,0,0,0.9);
-    }
-}
-  

@@ -4,7 +4,7 @@ html {
 nav{
     position: fixed; 
     top: 0; 
-    left: calc(100vw);
+    left: calc(100vw - 450px);
     width: 400px;
     height: 50px; 
     padding-top: 15px;

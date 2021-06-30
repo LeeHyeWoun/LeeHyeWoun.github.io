@@ -1,7 +1,6 @@
 body{
     padding: 0; 
     margin: 0; 
-    width: 100vw;
     word-break: break-all;
 
     /*드래그 비허용*/

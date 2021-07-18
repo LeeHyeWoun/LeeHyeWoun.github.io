@@ -20,8 +20,10 @@ body.not_scroll{
 }
 
 main> section{
+    position: relative;
+    height: 100vh;
     padding: 30px;
-    margin: 30px 10vw;
+    margin: 0px;
 }
 @media only screen and (max-width: 480px){
     main{

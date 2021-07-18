@@ -1,11 +1,8 @@
-header { 
-    position: relative; 
-    height: 100vh;
-    margin: 0px auto; 
+.header { 
     overflow: hidden;
     background-color: black; 
 }
-header> video { 
+.header> video { 
     position: absolute; 
     bottom: 0px;
     height: 100%; 

@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sacramento&display=swap');
-@font-face {
-    font-family: 'CookieRunOTF-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
 }
-body{font-family: 'Noto Sans KR', sans-serif;}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.title-text{ 
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center; 
+ }
 
 /*모바일 버전*/
 @media only screen and (max-width: 480px){

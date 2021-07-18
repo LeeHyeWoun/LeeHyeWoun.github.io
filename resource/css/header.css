@@ -20,14 +20,12 @@ header> video {
 .title-text h1 { 
     margin-top: -24px; 
     text-align: center; 
-    font-family: 'CookieRunOTF-Bold', sans-serif;
     font-size: 48px; 
     color: #ffffff; 
 }
 .title-text p { 
     margin-top: -24px; 
     text-align: center; 
-    font-family: 'Courgette', sans-serif;
     font-size: 24px; 
     color: #979797; 
 }

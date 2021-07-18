@@ -1,10 +1,6 @@
 #skill{
     padding: 30px 10px;
     margin: 10px;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -o-animation: fadein 2s;
 }
 #skill > h3{
     text-align: center;
@@ -35,39 +31,6 @@
 }
 .contain> button:hover img, .contain> button:focus img{
     filter: blur(1px);
-}
-
-@keyframes fadein{
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@-moz-keyframes fadein{ /*Firefox*/
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@-webkit-keyframes fadein{ /*Chrome, Safari*/
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@-o-keyframes fadein{ /*Opera*/
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
 
 /*모바일 버전*/

@@ -70,13 +70,6 @@
     }
 }
 
-/*좁게 보기*/
-@media only screen and (min-width: 480px) and (max-width: 800px){
-    .contain{
-        width: 336px;
-    }
-}
-
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
     .contain{

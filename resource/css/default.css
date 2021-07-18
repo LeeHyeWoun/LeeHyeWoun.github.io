@@ -19,7 +19,7 @@ body.not_scroll{
     overflow: hidden;
 }
 
-main{
+main> section{
     padding: 30px;
     margin: 30px 10vw;
 }

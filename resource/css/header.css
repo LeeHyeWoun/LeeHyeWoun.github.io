@@ -9,31 +9,47 @@
     height: 100vh;
     background-color: black; 
 }
-.title-text {
+.header-content {
     position: absolute; 
     top: 40%; 
     width: 100%;
     text-align: center;
 }
-.title-text h1 {
+.header-content h1 {
     margin-top: -24px; 
     font-size: 48px; 
     color: #ffffff;
 }
-.title-text p { 
+.header-content p { 
     margin-top: -24px; 
     font-size: 24px; 
     color: #979797; 
 }
-
+.header-content button{
+    background-color:transparent;
+    border-color: transparent;
+    border: none;
+    border-radius: 15px;
+}
+.header-content button:hover, .header-content button:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.header-content img{
+    margin: auto;
+    vertical-align: middle;
+    width: 40px;
+}
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
-    .title-text h1{
+    .header-content h1{
         margin-top: -20px; 
         font-size: 24pt;
     }
-    .title-text p{
+    .header-content p{
         margin-top: -20px; 
         font-size: 16pt;
+    }
+    .header-content img{
+        width: 30px;
     }
 }

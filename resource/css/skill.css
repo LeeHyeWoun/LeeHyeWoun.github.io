@@ -1,11 +1,13 @@
-.skill{
-    padding: 10px;
+#skill{
+    padding: 30px 10px;
     margin: 10px;
-    text-align: center;
     animation: fadein 2s;
     -moz-animation: fadein 2s;
     -webkit-animation: fadein 2s;
     -o-animation: fadein 2s;
+}
+#skill > h3{
+    text-align: center;
 }
 .contain{
     display: table;

@@ -1,4 +1,4 @@
-nav{
+.nav{
     position: fixed; 
     top: 0; 
     left: calc(100vw - 420px);
@@ -6,13 +6,11 @@ nav{
     height: 50px; 
     padding-top: 15px;
     background-color: rgba( 0, 0, 0, 0.5 );
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
     z-index: 1;
 }
-nav> table{
-    margin-right: auto;
-    margin-left: auto;
+.nav table{
+    margin: auto;
 }
 .nav a{
     color: white; 
@@ -39,9 +37,8 @@ nav> table{
         height: 40px; 
         padding-top: 10px;
         background-color: none;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        }
+        border-radius: 0px;
+    }
     nav> table{
         float:none; 
         margin: auto;

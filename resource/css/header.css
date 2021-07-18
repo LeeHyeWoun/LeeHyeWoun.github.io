@@ -27,7 +27,8 @@
 }
 .header-content h1 {
     display: inline-block;
-    margin-top: -24px; 
+    margin-top: -24px;
+    margin-right: 8px;
     font-size: 48px; 
     color: #ffffff;
 }

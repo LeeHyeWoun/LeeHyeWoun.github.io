@@ -4,7 +4,6 @@ window.onload=function(){
     let id_modal_layer = 'modal_layer';
     let url = "resource/json/skills.json";
 
-    var skills = document.querySelector(".skill");
     var contains = document.getElementsByClassName("contain");
     var modal = document.getElementById(id_modal);    
     var modal_img = modal.querySelector('.modal_img');
@@ -16,8 +15,6 @@ window.onload=function(){
     var modal_layer;
     var arr;
     var level;
-    var opacity =0;
-    var intervalID=0;
     var current_data=[0, 0];
 
     //json parsing
@@ -27,20 +24,7 @@ window.onload=function(){
         arr = data.skills;
         level = data.level_info;
     })
-    .then(function(){
-        intervalID = setInterval(fade_in,50);
-    })
     .catch(error=>console.error(error));
-
-    function fade_in(){
-		if(opacity<1){
-			opacity = opacity+0.05;
-			skills.style.opacity=opacity;
-		}
-		else{
-			clearInterval(intervalID);
-		}
-    }
 
 
     function setContent(kind, num) {

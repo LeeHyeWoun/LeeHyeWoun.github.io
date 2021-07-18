@@ -1,4 +1,6 @@
 .skill{
+    padding: 10px;
+    margin: 10px;
     text-align: center;
     animation: fadein 2s;
     -moz-animation: fadein 2s;

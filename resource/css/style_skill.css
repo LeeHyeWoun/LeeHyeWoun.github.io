@@ -1,14 +1,19 @@
 section#skill{
-    padding: 30px 10px;
-    margin: 10px;
+    padding: 40px;
 }
-section#skill> h3{
+section#skill> h1{
     text-align: center;
+    font-size:2em;
+    font-weight:bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color:rgb(218, 218, 218);
+
 }
 section#skill> .contain{
     display: table;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 section#skill> .contain img{
     height: 48px;

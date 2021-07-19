@@ -24,12 +24,11 @@ main> section{
     min-height: 100vh;
 }
 
-section#about{
-    background-color: rgb(248, 248, 248);
-}
+section#about,
 section#work{
     background-color: rgb(248, 248, 248);
 }
+
 p.tmp{
     display:block;
     position:absolute;

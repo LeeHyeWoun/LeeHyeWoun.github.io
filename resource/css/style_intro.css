@@ -1,9 +1,9 @@
-.intro { 
+section.intro { 
     height: 100vh;
     overflow: hidden;
     background-color: black; 
 }
-.intro> video {
+section.intro > video {
     /*Full screen background*/
     position: absolute; 
     bottom: 0px;
@@ -13,7 +13,7 @@
     height: auto;
     background-color: black; 
 }
-.intro-content {
+section.intro > .content {
     position: absolute;
     top: 40%;
     width: 100%;
@@ -25,89 +25,65 @@
     -webkit-animation: fadein 3s;
     -o-animation: fadein 3s;
 }
-.intro-content h1 {
+section.intro > .content > h1 {
     display: inline-block;
     margin-top: -24px;
     margin-right: 8px;
     font-size: 40px; 
     color: #ffffff;
 }
-.intro-content h1:first-child{
+section.intro > .content > h1:first-child{
     display: block;
 }
-.intro-content p { 
-    margin-top: -24px; 
-    font-size: 24px; 
-    color: #979797; 
-}
-.intro-content button{
+section.intro > .content button{
     width: 50px;
     height: 50px;
     background-color:transparent;
     border: 0;
     border-radius: 15px;
 }
-.intro-content button:hover, .intro-content button:focus{
+section.intro > .content button:hover,
+section.intro > .content button:focus{
     background-color: rgba(255, 255, 255, 0.05);
     outline: 0;
 }
-.intro-content img{
+section.intro > .content img{
     margin: auto;
     vertical-align: middle;
     width: 40px;
 }
 
-/*movile*/
+/*mobile*/
 @media only screen and (max-width: 480px){
-    .intro> video {
+    section.intro > video {
         min-width: none;
         min-height: none;
         width: auto;
         height: 100vh;
     }    
-    .intro-content h1{
+    section.intro > .content > h1{
         margin-top: -20px; 
         font-size: 16pt;
     }
-    .intro-content p{
-        margin-top: -20px; 
-        font-size: 16pt;
-    }
-    .intro-content img{
+    section.intro > .content img{
         width: 30px;
     }
 }
 
 /*animation*/
 @keyframes fadein{
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+    from    {opacity: 0;}
+    to      {opacity: 1;}
 }
-@-moz-keyframes fadein{ /*Firefox*/
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@-moz-keyframes fadein{     /*Firefox*/
+    from    {opacity: 0;}
+    to      {opacity: 1;}
 }
-@-webkit-keyframes fadein{ /*Chrome, Safari*/
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@-webkit-keyframes fadein{  /*Chrome, Safari*/
+    from    {opacity: 0;}
+    to      {opacity: 1;}
 }
-@-o-keyframes fadein{ /*Opera*/
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+@-o-keyframes fadein{       /*Opera*/
+    from    {opacity: 0;}
+    to      {opacity: 1;}
 }

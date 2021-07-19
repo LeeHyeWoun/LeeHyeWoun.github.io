@@ -1,20 +1,20 @@
-#skill{
+section#skill{
     padding: 30px 10px;
     margin: 10px;
 }
-#skill > h3{
+section#skill> h3{
     text-align: center;
 }
-.contain{
+section#skill> .contain{
     display: table;
     margin: auto;
     margin-bottom: 40px;
 }
-.contain img{
+section#skill> .contain img{
     height: 48px;
     width: 48px;
 }
-.contain> button{
+section#skill> .contain> button{
     float: left;
     margin: 10px;
     padding: 5px;
@@ -25,20 +25,22 @@
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
-.contain> button:hover, .contain> button:focus{
+section#skill> .contain> button:hover, 
+section#skill> .contain> button:focus{
     filter: brightness(70%);
     outline: 0;
 }
-.contain> button:hover img, .contain> button:focus img{
+section#skill> .contain> button:hover img,
+section#skill> .contain> button:focus img{
     filter: blur(1px);
 }
 
-/*모바일 버전*/
+/*mobile*/
 @media only screen and (max-width: 480px){
-    .contain{
+    section#skill> .contain{
         width: 272px;
     }
-    .contain> button{
+    section#skill> .contain> button{
         margin: 5px;
         font-size: 8pt;
     }

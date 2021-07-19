@@ -42,3 +42,10 @@ p.tmp{
     font-size:4em;
     font-weight:bold;
 }
+
+/*mobile*/
+@media only screen and (max-width: 480px){
+    main> section:not(.intro){
+        padding: 30px 10px;
+    }
+}

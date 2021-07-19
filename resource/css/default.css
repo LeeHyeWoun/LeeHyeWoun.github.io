@@ -23,6 +23,9 @@ main> section{
     position: relative;
     min-height: 100vh;
 }
+main> section:not(.intro){
+    padding: 40px;
+}
 
 section#about,
 section#work{

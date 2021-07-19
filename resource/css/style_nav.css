@@ -1,4 +1,4 @@
-.nav{
+ul.nav{
     list-style: none;
     position: fixed;
     top: 0; 
@@ -9,14 +9,14 @@
     border-radius: 0px 0px 15px 15px;
     z-index: 1;
 }
-.nav li{
+ul.nav > li{
     float: left;
 }
-.nav li.current a{
+ul.nav > li.current > a{
     color: #08FDD8;
     font-weight: 700;
 }
-.nav a{
+ul.nav a{
     display: inline-block;
     text-align: center;
     width: 75px;
@@ -24,20 +24,20 @@
     color: white;
     text-decoration: none;
 }
-.nav a:hover {
+ul.nav a:hover {
     color: #08FDD8; 
     text-decoration: none;
 }
 
-/*movile*/
+/*mobile*/
 @media only screen and (max-width: 480px){
-    .nav{
+    ul.nav{
         left: 0;
         padding: 0;
         width: 100vw;
         border-radius: 0px;
     }
-    .nav a{
+    ul.nav a{
         font-size: 10pt;
         margin: 10px 4.5vw;
         width: 15vw;

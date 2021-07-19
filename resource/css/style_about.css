@@ -1,5 +1,6 @@
 section#about > img{
     display: block;
-    width: 400px;
+    width: 300px;
     margin: auto;
+    border-radius: 15px;
 }

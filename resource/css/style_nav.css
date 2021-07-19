@@ -1,49 +1,45 @@
 .nav{
-    position: fixed; 
+    list-style: none;
+    position: fixed;
     top: 0; 
-    left: calc(100vw - 420px);
-    width: 400px;
-    height: 50px; 
-    padding-top: 15px;
+    right: 10px;
+    margin: 0;
+    padding: 15px;
     background-color: rgba( 0, 0, 0, 0.5 );
     border-radius: 0px 0px 15px 15px;
     z-index: 1;
 }
-.nav table{
-    margin: auto;
+.nav li{
+    float: left;
+}
+.nav li.current a{
+    color: #08FDD8;
+    font-weight: 700;
 }
 .nav a{
-    color: white; 
+    display: inline-block;
+    text-align: center;
+    width: 75px;
+    margin: 0px 5px;
+    color: white;
     text-decoration: none;
 }
 .nav a:hover {
     color: #08FDD8; 
     text-decoration: none;
 }
-.nav td{
-    text-align: center; 
-    width: 80px;
-}
-#here{
-    color: #08FDD8;
-    font-weight: 700;
-}
 
-/*모바일 버전*/
+/*movile*/
 @media only screen and (max-width: 480px){
     .nav{
         left: 0;
+        padding: 0;
         width: 100vw;
-        height: 40px; 
-        padding-top: 10px;
-        background-color: none;
         border-radius: 0px;
-    }
-    .nav table{
-        float:none; 
-        margin: auto;
     }
     .nav a{
         font-size: 10pt;
+        margin: 10px 4.5vw;
+        width: 15vw;
     }
 }

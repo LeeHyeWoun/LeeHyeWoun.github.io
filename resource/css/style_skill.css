@@ -1,4 +1,13 @@
-section#skill> h1{
+section#skill> div.content{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+}
+section#skill> div.content> h2{
     text-align: center;
     font-weight:bold;
     margin-top: 20px;
@@ -6,42 +15,41 @@ section#skill> h1{
     color:rgb(218, 218, 218);
 
 }
-section#skill> .contain{
+section#skill> div.content> .contain{
     display: table;
     margin: auto;
     margin-bottom: 20px;
 }
-section#skill> .contain img{
+section#skill> div.content> .contain img{
     height: 48px;
     width: 48px;
 }
-section#skill> .contain> button{
+section#skill> div.content> .contain> button{
     float: left;
     margin: 10px;
     padding: 5px;
     background-color: white;
     border-radius: 10%;
     border: 0;
-    /*clip-path: circle(40px at center);*/
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
-section#skill> .contain> button:hover, 
-section#skill> .contain> button:focus{
+section#skill> div.content> .contain> button:hover, 
+section#skill> div.content> .contain> button:focus{
     filter: brightness(70%);
     outline: 0;
 }
-section#skill> .contain> button:hover img,
-section#skill> .contain> button:focus img{
+section#skill> div.content> .contain> button:hover img,
+section#skill> div.content> .contain> button:focus img{
     filter: blur(1px);
 }
 
 /*mobile*/
 @media only screen and (max-width: 480px){
-    section#skill> .contain{
+    section#skill> div.content> .contain{
         width: 272px;
     }
-    section#skill> .contain> button{
+    section#skill> div.content> .contain> button{
         margin: 5px;
         font-size: 8pt;
     }

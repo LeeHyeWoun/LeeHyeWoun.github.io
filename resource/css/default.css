@@ -46,6 +46,6 @@ p.tmp{
 /*mobile*/
 @media only screen and (max-width: 480px){
     main> section:not(.intro){
-        padding: 60px 10px;
+        padding: 40px 10px;
     }
 }

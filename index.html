@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="resource/css/style_intro.css"/>
 		<link rel="stylesheet" href="resource/css/style_about.css"/>
 		<link rel="stylesheet" href="resource/css/style_skill.css"/>
+		<link rel="stylesheet" href="resource/css/style_contect.css"/>
 		<link rel="stylesheet" href="resource/css/style_modal.css"/>
 		<link rel="stylesheet" href="resource/css/font.css"/>
 		
@@ -142,8 +143,18 @@
 				<p class="tmp">Section 4 : work</p>
 			</section>
 			<section id="contect">
-				<p class="tmp">Section 5 : contect</p>
-			</section>
+				<h1>Contect Me!</h1>
+				<form id="contact_form" class="contact-form" action="mailto:silro812@naver.com" method="POST">
+					<h1>silro812@naver.com</h1>
+					<div class="form_who">
+						<input id="form_name" type="text" name="name" class="form-control" placeholder="your name" required="required" data-error="Name is required.">
+						<input id="form_email" type="email" name="email" class="form-control" placeholder="your email-address" required="required" data-error="Valid email is required.">
+					</div>
+					<button>Send<br>Message</button>
+					<input id="form_title" type="text" name="title" class="form-control" placeholder="message title" required="required" data-error="Subject is required.">
+					<textarea id="form_message" name="message" class="form-control" placeholder="Please give me a message." rows="7" required="required" data-error="Please, leave me a message."></textarea>
+			  </form>
+		</section>
 		</main>
 	</body>
 </html>

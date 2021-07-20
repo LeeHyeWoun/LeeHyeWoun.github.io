@@ -73,6 +73,7 @@ section#contect> form> button{
     }
     section#contect> form input,
     section#contect> form> textarea{
+        margin: 10px;
         float: none;
         display: block;
         margin-left: auto;

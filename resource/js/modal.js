@@ -1,17 +1,16 @@
 window.onload=function(){
 
-    let id_modal = 'my_modal';
     let id_modal_layer = 'modal_layer';
     let url = "resource/json/skills.json";
 
     var contains = document.getElementsByClassName("contain");
-    var modal = document.getElementById(id_modal);    
-    var modal_img = modal.querySelector('.modal_img');
-    var modal_title = modal.querySelector('.modal_title');
-    var modal_detail = modal.querySelector('.modal_detail');
-    var modal_close = modal.querySelector('.modal_close_btn');
-    var modal_left = modal.querySelector('.left');
-    var modal_right = modal.querySelector('.right');
+    var modal = document.getElementById('modal');    
+    var modal_img = modal.querySelector('img:first-child');
+    var modal_title = modal.querySelector('h2');
+    var modal_detail = modal.querySelector('p');
+    var modal_close = modal.querySelector('img.close');
+    var modal_left = modal.querySelector('button.left');
+    var modal_right = modal.querySelector('button.right');
     var modal_layer;
     var arr;
     var level;

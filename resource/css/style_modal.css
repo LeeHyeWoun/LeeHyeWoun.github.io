@@ -1,4 +1,4 @@
-#my_modal {
+#modal {
     display: none;
     height: 300px;
     width: 500px;
@@ -18,7 +18,18 @@
     -webkit-transform: translate(-50%, -50%);
     */
 }
-.modal_close_btn {
+#modal> img:first-child{
+    float: left;
+    height: 72px;
+    width: 72px;
+    margin-right: 20px;
+}
+#modal> p{
+    float: left;
+    max-height: 300px;;
+    overflow: auto;
+}
+#modal> img.close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -27,7 +38,7 @@
     height: 24px;
 }
 
-button.arrow {
+#modal> button.arrow {
     position: absolute;
     top: 50%;
     width: 30px;
@@ -37,31 +48,20 @@ button.arrow {
     display: inline-block;
     background-color:transparent;
 }  
-button.arrow:hover{
+#modal> button.arrow:hover{
     filter: brightness(0.5);
 }
-button.left {
+#modal> button.left {
     left: -60px;
     transform: translate(0, -50%) rotate(135deg);
     -webkit-transform: translate(0, -50%) rotate(135deg);
     -moz-transform: translate(0, -50%) rotate(135deg);
 }
-button.right {
+#modal> button.right {
     right: -60px;
     transform: translate(-0, -50%) rotate(-45deg);
     -webkit-transform: translate(-0, -50%)  rotate(-45deg);
     -moz-transform: translate(-0, -50%) rotate(-45deg);
-}
-.modal_img{
-    float: left;
-    height: 72px;
-    width: 72px;
-    margin-right: 20px;
-}
-.modal_detail{
-    float: left;
-    max-height: 300px;;
-    overflow: auto;
 }
 #modal_layer{
     position: fixed;
@@ -76,35 +76,35 @@ button.right {
 
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
-    #my_modal {
+    #modal {
         height: 300px;
         width: calc(100vw - 100px);
         padding: 20px 30px 70px 30px;
     }
-    button.arrow {
-        top: auto;
-        bottom: 10px;
-        width: 25px;
-        height: 25px;
-    }
-    button.left {
-        left: 20px;
-        transform: translate(0, -50%) rotate(135deg);
-        -webkit-transform: translate(0, -50%) rotate(135deg);
-    }
-    button.right {
-        right: 20px;
-        transform: translate(-0, -50%) rotate(-45deg);
-        -webkit-transform: translate(-0, -50%)  rotate(-45deg);
-    }
-    .modal_img{
+    #modal> img:first-child{
         float: none;
         display: block;
         margin-right: auto;
         margin-left: auto;
     }
-    .modal_detail{
+    #modal> p{
         max-height: 300px;
+    }
+    #modal> button.arrow {
+        top: auto;
+        bottom: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    #modal> button.left {
+        left: 20px;
+        transform: translate(0, -50%) rotate(135deg);
+        -webkit-transform: translate(0, -50%) rotate(135deg);
+    }
+    #modal> button.right {
+        right: 20px;
+        transform: translate(-0, -50%) rotate(-45deg);
+        -webkit-transform: translate(-0, -50%)  rotate(-45deg);
     }
 }
 

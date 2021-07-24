@@ -44,14 +44,14 @@ button.left {
     left: -60px;
     transform: translate(0, -50%) rotate(135deg);
     -webkit-transform: translate(0, -50%) rotate(135deg);
+    -moz-transform: translate(0, -50%) rotate(135deg);
 }
 button.right {
     right: -60px;
     transform: translate(-0, -50%) rotate(-45deg);
     -webkit-transform: translate(-0, -50%)  rotate(-45deg);
+    -moz-transform: translate(-0, -50%) rotate(-45deg);
 }
-  
-
 .modal_img{
     float: left;
     height: 72px;
@@ -74,30 +74,6 @@ button.right {
     background-color: rgba(0,0,0,0.4);
 }
 
-@media only screen and (min-width: 480px) and (max-width: 800px){
-    #my_modal {
-        width: 400px;
-        padding-bottom: 70px;
-    }
-    .arrow {
-        top: auto;
-        bottom: 10px;
-        width: 25px;
-        height: 25px;
-    }
-    .left {
-        left: 20px;
-        transform: translate(0, -50%) rotate(135deg);
-        -webkit-transform: translate(0, -50%) rotate(135deg);
-    }
-    .right {
-        right: 20px;
-        transform: translate(-0, -50%) rotate(-45deg);
-        -webkit-transform: translate(-0, -50%)  rotate(-45deg);
-    }
-      
-}
-
 /*모바일 버전*/
 @media only screen and (max-width: 480px){
     #my_modal {
@@ -105,23 +81,22 @@ button.right {
         width: calc(100vw - 100px);
         padding: 20px 30px 70px 30px;
     }
-    .arrow {
+    button.arrow {
         top: auto;
-        bottom: 20px;
+        bottom: 10px;
         width: 25px;
         height: 25px;
     }
-    .left {
+    button.left {
         left: 20px;
         transform: translate(0, -50%) rotate(135deg);
         -webkit-transform: translate(0, -50%) rotate(135deg);
     }
-    .right {
+    button.right {
         right: 20px;
         transform: translate(-0, -50%) rotate(-45deg);
         -webkit-transform: translate(-0, -50%)  rotate(-45deg);
     }
-
     .modal_img{
         float: none;
         display: block;

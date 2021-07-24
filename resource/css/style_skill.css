@@ -1,4 +1,4 @@
-section#skill> div.content{
+#skill> div.content{
     margin: 0;
     padding: 0;
     position: absolute;
@@ -7,7 +7,7 @@ section#skill> div.content{
     transform: translate(-50%, -50%);
     width: 90vw;
 }
-section#skill> div.content> h2{
+#skill h2{
     text-align: center;
     font-weight:bold;
     margin-top: 20px;
@@ -15,16 +15,16 @@ section#skill> div.content> h2{
     color:rgb(218, 218, 218);
 
 }
-section#skill> div.content> .contain{
+#skill .contain{
     display: table;
     margin: auto;
     margin-bottom: 20px;
 }
-section#skill> div.content> .contain img{
+#skill img{
     height: 48px;
     width: 48px;
 }
-section#skill> div.content> .contain> button{
+#skill button{
     float: left;
     margin: 10px;
     padding: 5px;
@@ -34,22 +34,22 @@ section#skill> div.content> .contain> button{
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
-section#skill> div.content> .contain> button:hover, 
-section#skill> div.content> .contain> button:focus{
+#skill button:hover, 
+#skill button:focus{
     filter: brightness(70%);
     outline: 0;
 }
-section#skill> div.content> .contain> button:hover img,
-section#skill> div.content> .contain> button:focus img{
+#skill button:hover img,
+#skill button:focus img{
     filter: blur(1px);
 }
 
 /*mobile*/
 @media only screen and (max-width: 480px){
-    section#skill> div.content> .contain{
+    #skill .contain{
         width: 272px;
     }
-    section#skill> div.content> .contain> button{
+    #skill button{
         margin: 5px;
         font-size: 8pt;
     }

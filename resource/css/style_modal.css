@@ -26,23 +26,32 @@
     width: 24px;
     height: 24px;
 }
-.modal_left_btn, .modal_right_btn{
+
+button.arrow {
     position: absolute;
     top: 50%;
-    padding: 5px;
-    width: 50px;
-}
-.modal_left_btn:hover, .modal_right_btn:hover{
+    width: 30px;
+    height: 30px;
+    border: solid rgb(109, 109, 109);
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    background-color:transparent;
+}  
+button.arrow:hover{
     filter: brightness(0.5);
 }
-.modal_left_btn{
-    left: -80px;
-    transform: translate(0, -50%) rotate(180deg)
+button.left {
+    left: -60px;
+    transform: translate(0, -50%) rotate(135deg);
+    -webkit-transform: translate(0, -50%) rotate(135deg);
 }
-.modal_right_btn{
-    right: -80px;
-    transform: translate(-0, -50%);
+button.right {
+    right: -60px;
+    transform: translate(-0, -50%) rotate(-45deg);
+    -webkit-transform: translate(-0, -50%)  rotate(-45deg);
 }
+  
+
 .modal_img{
     float: left;
     height: 72px;
@@ -70,19 +79,23 @@
         width: 400px;
         padding-bottom: 70px;
     }
-    .modal_left_btn, .modal_right_btn{
+    .arrow {
         top: auto;
-        bottom: 20px;
-        width: 30px;
+        bottom: 10px;
+        width: 25px;
+        height: 25px;
     }
-    .modal_left_btn{
+    .left {
         left: 20px;
-        transform: rotate(180deg)
+        transform: translate(0, -50%) rotate(135deg);
+        -webkit-transform: translate(0, -50%) rotate(135deg);
     }
-    .modal_right_btn{
+    .right {
         right: 20px;
-        transform: none;
+        transform: translate(-0, -50%) rotate(-45deg);
+        -webkit-transform: translate(-0, -50%)  rotate(-45deg);
     }
+      
 }
 
 /*모바일 버전*/
@@ -92,19 +105,23 @@
         width: calc(100vw - 100px);
         padding: 20px 30px 70px 30px;
     }
-    .modal_left_btn, .modal_right_btn{
+    .arrow {
         top: auto;
         bottom: 20px;
-        width: 30px;
+        width: 25px;
+        height: 25px;
     }
-    .modal_left_btn{
+    .left {
         left: 20px;
-        transform: rotate(180deg)
+        transform: translate(0, -50%) rotate(135deg);
+        -webkit-transform: translate(0, -50%) rotate(135deg);
     }
-    .modal_right_btn{
+    .right {
         right: 20px;
-        transform: none;
+        transform: translate(-0, -50%) rotate(-45deg);
+        -webkit-transform: translate(-0, -50%)  rotate(-45deg);
     }
+
     .modal_img{
         float: none;
         display: block;

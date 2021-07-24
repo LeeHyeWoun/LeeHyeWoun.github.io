@@ -10,8 +10,8 @@ window.onload=function(){
     var modal_title = modal.querySelector('.modal_title');
     var modal_detail = modal.querySelector('.modal_detail');
     var modal_close = modal.querySelector('.modal_close_btn');
-    var modal_left = modal.querySelector('.modal_left_btn');
-    var modal_right = modal.querySelector('.modal_right_btn');
+    var modal_left = modal.querySelector('.left');
+    var modal_right = modal.querySelector('.right');
     var modal_layer;
     var arr;
     var level;

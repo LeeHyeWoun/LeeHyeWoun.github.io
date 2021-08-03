@@ -31,9 +31,7 @@ section#contect> form> textarea{
     width: 570px;
     height: 30vh;
 }
-section#contect> form input,
-section#contect> form> textarea,
-section#contect> form> button{
+section#contect> form :is(input, textarea, button){
     margin: 5px;
     padding: 5px 10px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -43,8 +41,7 @@ section#contect> form> button{
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     border: 0;
 }
-section#contect> form input::placeholder,
-section#contect> form> textarea::placeholder,
+section#contect> form :is(input, textarea)::placeholder,
 section#contect> form> button{
     color:rgb(214, 214, 214);
     font-family: 'Noto Sans KR', sans-serif;
@@ -71,8 +68,7 @@ section#contect> form> button{
     section#contect> form> textarea{
         height: 30vh;
     }
-    section#contect> form input,
-    section#contect> form> textarea{
+    section#contect> form :is(input, textarea){
         margin: 10px;
         float: none;
         display: block;

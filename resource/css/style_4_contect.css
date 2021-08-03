@@ -44,6 +44,7 @@ section#contect> form> button{
 
 /*mobile, form보다 화면이 작을 때*/
 @media only screen and (max-width: 650px){
+    section#contect> form,
     section#contect> form div.form_who{
         width: 90vw;
     }    

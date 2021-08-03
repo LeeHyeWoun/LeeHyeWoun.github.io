@@ -16,31 +16,27 @@
 
 }
 #skill .contain{
-    display: table;
-    margin: auto;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
 }
 #skill img{
     height: 48px;
     width: 48px;
 }
 #skill button{
-    float: left;
-    margin: 10px;
-    padding: 5px;
     background-color: white;
     border-radius: 10%;
     border: 0;
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
-#skill button:hover, 
-#skill button:focus{
+#skill button:is(:hover,:focus){
     filter: brightness(70%);
     outline: 0;
 }
-#skill button:hover img,
-#skill button:focus img{
+#skill button:is(:hover, :focus) img{
     filter: blur(1px);
 }
 

@@ -1,7 +1,6 @@
 section#contect> form{
     width: 600px;
 }
-
 section#contect> form> h1{
     text-align: center;
     color: rgb(124, 124, 124);
@@ -45,6 +44,9 @@ section#contect> form> button{
 
 /*mobile, form보다 화면이 작을 때*/
 @media only screen and (max-width: 650px){
+    section#contect> form div.form_who{
+        width: 90vw;
+    }    
     section#contect> form div.form_who> input{
         width: 80vw;
     }

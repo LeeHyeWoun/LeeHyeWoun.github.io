@@ -33,3 +33,11 @@
 #skill button:is(:hover, :focus) img{
     filter: blur(1px);
 }
+
+/*mobile*/
+@media only screen and (max-width: 480px){
+    #skill img{
+        height: 36px;
+        width: 36px;
+    }
+}

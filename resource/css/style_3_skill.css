@@ -1,10 +1,4 @@
 #skill> div.content{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90vw;
 }
 #skill h2{
@@ -38,15 +32,4 @@
 }
 #skill button:is(:hover, :focus) img{
     filter: blur(1px);
-}
-
-/*mobile*/
-@media only screen and (max-width: 480px){
-    #skill .contain{
-        width: 272px;
-    }
-    #skill button{
-        margin: 5px;
-        font-size: 8pt;
-    }
 }

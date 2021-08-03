@@ -1,29 +1,42 @@
 html {
     scroll-behavior: smooth;
 }
+
 body{
     padding: 0; 
     margin: 0; 
     word-break: break-all;
+    overflow:auto;
+    scroll-snap-type: y mandatory;
 }
+
 body.not_scroll{
     overflow: hidden;
-}
-main{
-    scroll-snap-type: y mandatory;
 }
 
 main> section{
     position: relative;
     min-height: 100vh;
+
     scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 main> section:not(.intro){
     padding: 40px;
 }
 
-section:nth-child(even){
+main> section:nth-child(even){
     background-color: rgb(248, 248, 248);
+}
+
+main> section> h1{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
 
 /*mobile*/

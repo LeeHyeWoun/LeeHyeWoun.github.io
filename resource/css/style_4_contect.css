@@ -1,9 +1,4 @@
 section#contect> form{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 600px;
 }
 
@@ -50,23 +45,18 @@ section#contect> form> button{
 
 /*mobile, form보다 화면이 작을 때*/
 @media only screen and (max-width: 650px){
-    section#contect> form,
-    section#contect> form div.form_who{
-        width: 90vw;
-    }
     section#contect> form div.form_who> input{
         width: 80vw;
     }
     section#contect> form> button{
-        float: none;
         position: absolute;
-        bottom: -110px;
+        bottom: 0px;
         left: 50%;
         transform:translate(-50%, -50%);
         height: 60px;
     }  
     section#contect> form> textarea{
-        height: 30vh;
+        height: 40vh;
     }
     section#contect> form :is(input, textarea){
         margin: 10px;

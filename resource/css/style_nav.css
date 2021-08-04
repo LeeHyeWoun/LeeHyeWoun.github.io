@@ -1,45 +1,81 @@
-ul.nav{
-    list-style: none;
+.nav {
     position: fixed;
-    top: 0; 
-    right: 10px;
-    margin: 0;
-    padding: 15px;
-    background-color: rgba( 0, 0, 0, 0.5 );
-    border-radius: 0px 0px 15px 15px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    transition: 0.4s;
 }
-ul.nav > li{
-    float: left;
+
+.change_nav{
+    width: 250px;
+    height: 100vh;
+    background-color: rgba( 0, 0, 0, 0.9 );
 }
-ul.nav > li.current > a{
-    color: #08FDD8;
-    font-weight: 700;
+
+.menu{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
 }
-ul.nav a{
-    display: inline-block;
+
+.nav .menu> div {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change_nav .menu> div{
+    background-color: white;
+}
+
+.change_nav .menu> div:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change_nav .menu> div:nth-child(2) {
+    opacity: 0;
+}
+
+.change_nav .menu> div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav ul{
+    list-style: none;
+    display: none;
+    padding: 0;
+}
+
+.change_nav ul{
+    display: block;
     text-align: center;
-    width: 75px;
-    margin: 0px 5px;
+}
+
+.nav a{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
     color: white;
     text-decoration: none;
 }
-ul.nav a:hover {
-    color: #08FDD8; 
-    text-decoration: none;
+
+.nav a:hover {
+    color: #08FDD8;
+    font-weight: bold;
 }
+
+
 
 /*mobile*/
 @media only screen and (max-width: 480px){
-    ul.nav{
-        left: 0;
-        padding: 0;
-        width: 100vw;
-        border-radius: 0px;
-    }
-    ul.nav a{
-        font-size: 10pt;
-        margin: 10px 4.5vw;
-        width: 15vw;
+    .change_nav{
+        width: 96vw;
     }
 }

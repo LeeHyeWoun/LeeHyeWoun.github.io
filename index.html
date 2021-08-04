@@ -33,12 +33,20 @@
 	</head>
 	<body>
 		<!--네비게이션-->
-		<ul class="nav">
-			<li class="current" data-tab="intro"><a href="#" id="here">HOME</a></li>
-			<li data-tab="about"><a href="#about">ABOUT</a></li>
-			<li data-tab="skill"><a href="#skill">SKILL</a></li>
-			<li data-tab="work"><a href="#work">WORK</a></li>
-		</ul>
+		<div class="nav" onclick="toggle_menu(this)">
+			<div class="menu">
+				<div></div>
+				<div></div>
+				<div></div>	
+			</div>
+			<ul>
+				<li data-tab="intro"><a href="#" id="here">HOME</a></li>
+				<li data-tab="about"><a href="#about">ABOUT</a></li>
+				<li data-tab="skill"><a href="#skill">SKILL</a></li>
+				<li data-tab="work"><a href="#work">WORK</a></li>
+				<li data-tab="contect"><a href="#contect">CONTECT</a></li>
+			</ul>
+		</div>
 		<!--모달-->
 		<div id="modal">
 			<img alt="로고 이미지"/>
@@ -160,5 +168,10 @@
 			  </form>
 		</section>
 		</main>
+		<script>
+			function toggle_menu(x) {
+			  x.classList.toggle("change_nav");
+			}
+		</script>
 	</body>
 </html>

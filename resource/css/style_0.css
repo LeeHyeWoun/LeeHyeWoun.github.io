@@ -17,6 +17,7 @@ body.not_scroll{
 main> section{
     position: relative;
     min-height: 90vh;
+    height: 700px;
 
     scroll-snap-align: center;
     display: flex;
@@ -34,8 +35,9 @@ main> section:nth-child(even){
 
 main> section> h1{
     position: absolute;
-    top: 10%;
-    left: 20%;
+    top: 15px;
+    left: 130px;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 

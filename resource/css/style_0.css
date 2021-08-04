@@ -16,7 +16,7 @@ body.not_scroll{
 
 main> section{
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
 
     scroll-snap-align: center;
     display: flex;

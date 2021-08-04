@@ -1,42 +1,41 @@
-section#contect> form{
+form{
     width: 600px;
 }
-section#contect> form> h1{
+form> h1{
     text-align: center;
     color: rgb(124, 124, 124);
 }
-section#contect> form div.form_who{
+form div.form_who{
     float: left;
     width: 480px;
 }
-section#contect> form> button{
+form> button{
     float: left;
     width: 110px;
     height: 77px;
     background-color: rgb(97, 97, 97);
 }
-section#contect> form div.form_who> input{
+form div.form_who> input{
     width: 450px;
 }
-section#contect> form> input{
+form> input{
     width: 570px;
 }
-section#contect> form> textarea{
+form> textarea{
     width: 570px;
-    height: 30vh;
+    height: 250px;
 }
-section#contect> form :is(input, textarea, button){
+form :-webkit-any(input, textarea, button){
     margin: 5px;
     padding: 5px 10px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1em;
-    color: rgb(63, 63, 63);
     border-radius: 5px;
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     border: 0;
 }
-section#contect> form :is(input, textarea)::placeholder,
-section#contect> form> button{
+form :-webkit-any(input, textarea)::placeholder,
+form> button{
     color:rgb(214, 214, 214);
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: bold;
@@ -44,24 +43,25 @@ section#contect> form> button{
 
 /*mobile, form보다 화면이 작을 때*/
 @media only screen and (max-width: 650px){
-    section#contect> form,
-    section#contect> form div.form_who{
+    form,
+    form div.form_who{
         width: 90vw;
     }    
-    section#contect> form div.form_who> input{
+    form div.form_who> input{
         width: 80vw;
     }
-    section#contect> form> button{
+    form> button{
         position: absolute;
         bottom: 0px;
         left: 50%;
         transform:translate(-50%, -50%);
         height: 60px;
     }  
-    section#contect> form> textarea{
+    form> textarea{
+        min-height: 200px;
         height: 40vh;
     }
-    section#contect> form :is(input, textarea){
+    form :-webkit-any(input, textarea){
         margin: 10px;
         float: none;
         display: block;

@@ -6,44 +6,44 @@ body{
     padding: 0; 
     margin: 0; 
     word-break: break-all;
-    overflow:auto;
-    scroll-snap-type: y mandatory;
 }
 
 body.not_scroll{
     overflow: hidden;
 }
 
-main> section{
+section{
     position: relative;
     min-height: 90vh;
     height: 700px;
-
-    scroll-snap-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-main> section:not(.intro){
-    padding: 40px;
+section:not(.intro){
+    padding: 40px 70px;
 }
 
-main> section:nth-child(even){
+section:nth-child(even){
     background-color: rgb(248, 248, 248);
 }
 
-main> section> h1{
-    position: absolute;
-    top: 15px;
-    left: 130px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+section> h1{
+    height:50px;
+    position:sticky;
+    top:18px;
+    color: #333;
 }
+.content{
+    width: 100%;
+}
+
 
 /*mobile*/
 @media only screen and (max-width: 480px){
-    main> section:not(.intro){
+    section:not(.intro){
         padding: 40px 10px;
+    }
+    section> h1{
+        top:20px;
+        margin-left: 50px;
     }
 }

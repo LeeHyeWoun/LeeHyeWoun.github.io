@@ -41,6 +41,7 @@ section.intro > .content button{
     background-color:transparent;
     border: 0;
     border-radius: 15px;
+    cursor: pointer;
 }
 section.intro > .content button:hover,
 section.intro > .content button:focus{

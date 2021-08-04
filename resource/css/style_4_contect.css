@@ -1,5 +1,11 @@
 form{
+    position: absolute;
+    bottom: 0px;
+    top: 45%;
+    left: 50%;
     width: 600px;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
 }
 form> h1{
     text-align: center;
@@ -52,15 +58,11 @@ form> button{
     }
     form> button{
         position: absolute;
-        bottom: 0px;
+        bottom: -200px;
         left: 50%;
         height: 60px;
         -webkit-transform:translate(-50%, -50%);
         transform:translate(-50%, -50%);
-    }  
-    form> textarea{
-        min-height: 200px;
-        height: 40vh;
     }
     form :-webkit-any(input, textarea){
         margin: 10px;

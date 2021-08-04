@@ -1,11 +1,5 @@
 form{
-    position: absolute;
-    bottom: 0px;
-    top: 45%;
-    left: 50%;
     width: 600px;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
 }
 form> h1{
     text-align: center;
@@ -58,7 +52,7 @@ form> button{
     }
     form> button{
         position: absolute;
-        bottom: -200px;
+        bottom: -100px;
         left: 50%;
         height: 60px;
         -webkit-transform:translate(-50%, -50%);

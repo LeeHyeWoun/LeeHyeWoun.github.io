@@ -2,15 +2,12 @@
     position: fixed;
     z-index: 2;
     display: flex;
-    align-items: center;
-    justify-content: center;    
-    transition: 0.4s;
+    align-items:center;
 }
 
 .change_nav{
-    width: 250px;
+    width: 100vw;
     height: 100vh;
-    background-color: var(--color-layer);
 }
 
 .menu{
@@ -46,14 +43,24 @@
 }
 
 .nav ul{
+    visibility: hidden;
+    opacity: 0;
+    width: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
-    display: none;
     padding: 0;
+    background-color: var(--color-layer);
 }
 
 .change_nav ul{
-    display: block;
-    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    width: 250px;
+    transition: 0.4s;
 }
 
 .nav a{
@@ -73,7 +80,18 @@
 
 /*mobile*/
 @media only screen and (max-width: 480px){
-    .change_nav{
+    .nav ul{
+        display: none;
         width: 100vw;
+    }
+    .change_nav ul{
+        display: flex;
+        width: 100vw;
+        
+        /*fadein animation*/
+        animation: fadein 0.4s;
+        -moz-animation: fadein 0.4s;
+        -webkit-animation: fadein 0.4s;
+        -o-animation: fadein 0.4s;
     }
 }

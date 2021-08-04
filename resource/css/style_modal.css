@@ -5,18 +5,6 @@
     padding: 20px 40px;
     background-color: #fefefe;
     border-radius: 8px;
-
-    /*
-    position: fixed;
-    display: block;
-    box-Shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: zIndex + 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: (-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    */
 }
 #modal> img:first-child{
     float: left;
@@ -29,7 +17,7 @@
     max-height: 300px;;
     overflow: auto;
 }
-#modal> img.close {
+#modal> .close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -38,26 +26,32 @@
     height: 24px;
 }
 
-#modal> button.arrow {
+#modal> .arrow {
     position: absolute;
     top: 50%;
     width: 30px;
     height: 30px;
-    border: solid rgb(109, 109, 109);
+    border: solid white;
     border-width: 0 7px 7px 0;
+    border-radius: 5px;
     display: inline-block;
     background-color:transparent;
+    cursor: pointer;
 }  
-#modal> button.arrow:hover{
+#modal> .arrow:hover{
     filter: brightness(0.5);
+    outline: 0;
 }
-#modal> button.left {
+#modal> .arrow:focus{
+    outline: 0;
+}
+#modal> .left {
     left: -60px;
     transform: translate(0, -50%) rotate(135deg);
     -webkit-transform: translate(0, -50%) rotate(135deg);
     -moz-transform: translate(0, -50%) rotate(135deg);
 }
-#modal> button.right {
+#modal> .right {
     right: -60px;
     transform: translate(-0, -50%) rotate(-45deg);
     -webkit-transform: translate(-0, -50%)  rotate(-45deg);
@@ -71,7 +65,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.4);
+    background-color:var(--color-layer);
 }
 
 /*모바일 버전*/
@@ -90,18 +84,19 @@
     #modal> p{
         max-height: 300px;
     }
-    #modal> button.arrow {
+    #modal> .arrow {
         top: auto;
         bottom: 10px;
         width: 25px;
         height: 25px;
+        border-color: var(--color-default);
     }
-    #modal> button.left {
+    #modal> .left {
         left: 20px;
         transform: translate(0, -50%) rotate(135deg);
         -webkit-transform: translate(0, -50%) rotate(135deg);
     }
-    #modal> button.right {
+    #modal> .right {
         right: 20px;
         transform: translate(-0, -50%) rotate(-45deg);
         -webkit-transform: translate(-0, -50%)  rotate(-45deg);

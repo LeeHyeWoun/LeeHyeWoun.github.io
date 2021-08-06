@@ -52,7 +52,7 @@ form> button{
     }
     form> button{
         position: absolute;
-        bottom: -100px;
+        bottom: 100px;
         left: 50%;
         height: 60px;
         -webkit-transform:translate(-50%, -50%);

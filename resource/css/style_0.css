@@ -9,10 +9,9 @@ html {
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     padding: 0; 
     margin: 0; 
-    overflow-x:hidden; 
 }
 
 body.not_scroll{
@@ -23,7 +22,6 @@ section{
     position: relative;
     min-height: 100vh;
     height: 750px;
-    /*background-color: green;*/
 }
 
 section:nth-child(odd){
@@ -47,14 +45,26 @@ section:nth-child(odd)> h1{
     background-color: rgba(248, 248, 248, 0.8);
 }
 
-section:not(.intro) .content{
+section .content{
+    /*
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%);
+    */
     display: block;
+    margin: 0 100px 70px 100px;
 }
+
+
+/*mobile*/
+@media only screen and (max-width: 480px){
+    section .content{
+        margin: 0 20px 70px 20px;
+    }
+}
+
 
 /*animation*/
 @keyframes fadein{

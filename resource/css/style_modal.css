@@ -85,20 +85,16 @@
     }
     #modal> .arrow {
         top: auto;
-        bottom: 10px;
-        width: 25px;
-        height: 25px;
-        border-color: var(--color-default);
+        bottom: 0px;
+        border-width: 20px 24px;
     }
     #modal> .left {
         left: 20px;
-        transform: translate(0, -50%) rotate(135deg);
-        -webkit-transform: translate(0, -50%) rotate(135deg);
+        border-color:transparent var(--color-default) transparent transparent;
     }
     #modal> .right {
         right: 20px;
-        transform: translate(-0, -50%) rotate(-45deg);
-        -webkit-transform: translate(-0, -50%)  rotate(-45deg);
+        border-color:transparent transparent transparent var(--color-default);
     }
 }
 

@@ -19,9 +19,8 @@ body.not_scroll{
 }
 
 section{
-    position: relative;
+    position: flex;
     min-height: 100vh;
-    height: 750px;
 }
 
 section:nth-child(odd){
@@ -54,7 +53,14 @@ section .content{
     transform:translate(-50%, -50%);
     */
     display: block;
-    margin: 0 0 70px 0;
+    padding-bottom:70px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 480px){
+    section .content{
+        padding: 0 10px 70px 10px;
+    }
 }
 
 

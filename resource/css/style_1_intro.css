@@ -68,16 +68,3 @@ section.intro > .content img{
     }
 }
 
-/*animation*/
-@keyframes fadein{
-    from    {opacity: 0;}
-    to      {opacity: 1;}
-}
-@-moz-keyframes fadein{     /*Firefox*/
-    from    {opacity: 0;}
-    to      {opacity: 1;}
-}
-@-webkit-keyframes fadein{  /*Chrome, Safari*/
-    from    {opacity: 0;}
-    to      {opacity: 1;}
-}

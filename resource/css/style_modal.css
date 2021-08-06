@@ -48,11 +48,11 @@
 #modal> .arrow:focus{
     outline: 0;
 }
-#modal> .left {
+#modal> .arrow.left {
     left: -100px;
     border-color:transparent white transparent transparent; 
 }
-#modal> .right {
+#modal> .arrow.right {
     right: -100px;
     border-color:transparent transparent transparent white;
 }
@@ -88,11 +88,11 @@
         bottom: 0px;
         border-width: 20px 24px;
     }
-    #modal> .left {
+    #modal> .arrow.left {
         left: 20px;
         border-color:transparent var(--color-default) transparent transparent;
     }
-    #modal> .right {
+    #modal> .arrow.right {
         right: 20px;
         border-color:transparent transparent transparent var(--color-default);
     }

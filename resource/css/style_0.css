@@ -54,15 +54,7 @@ section .content{
     transform:translate(-50%, -50%);
     */
     display: block;
-    margin: 0 100px 70px 100px;
-}
-
-
-/*mobile*/
-@media only screen and (max-width: 480px){
-    section .content{
-        margin: 0 20px 70px 20px;
-    }
+    margin: 0 0 70px 0;
 }
 
 

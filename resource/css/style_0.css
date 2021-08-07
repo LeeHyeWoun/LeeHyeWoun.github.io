@@ -1,7 +1,9 @@
 :root{
-    --color-layer:rgba( 0, 0, 0, 0.9 );
-    --color-default:#333;
     --color-point:#08FDD8;
+    --color-light:rgb(240, 240, 240);
+    --color-dark:#333;
+    --color-layer:rgba( 0, 0, 0, 0.9 );
+    --color-odd:rgb(248, 248, 248);
 }
 
 html {
@@ -24,31 +26,38 @@ section{
 }
 
 section:nth-child(odd){
-    background-color:rgb(248, 248, 248);/*red;*/
+    background-color: var(--color-odd);
 }
 
 section> h1{
     position:sticky;
     top:0;
     z-index: 1;
-    height:70px;
+    height:100px;
     line-height: 70px;
     padding-left: 80px;
     margin: 0;
-    color:var(--color-default);
+    color:var(--color-dark);
     vertical-align: middle;
-    background-color: rgba(256, 256, 256, 0.8);
+    background: linear-gradient(to bottom, white, transparent);
 }
 
 section:nth-child(odd)> h1{
-    background-color: rgba(248, 248, 248, 0.8);
+    background: linear-gradient(to bottom, var(--color-odd), transparent);
 }
 
 .content{
     display: block;
     max-width: 600px;
-    padding: 0 10px;
+    padding: 0 70px;
     margin: auto;
+}
+
+
+@media only screen and (max-width: 480px){
+    .content{
+        padding: 0 10px;
+    }
 }
 
 

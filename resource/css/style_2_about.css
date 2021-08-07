@@ -1,13 +1,12 @@
 #about img{
-    float: left;
-    width: 250px;
+    display: block;
+    width: 180px;
     border-radius: 15px;
-    margin: 15px;
+    margin: auto;
 }
 #about #info{
-    display: inline-block;
-    width: 350px;
-    padding: 50px 0;
+    width: 100%;
+    background-color:darkmagenta;
 }
 
 #about #info> dt{
@@ -22,18 +21,4 @@
 #about #info> dd{
     margin: 0;
     line-height: 30px;
-}
-
-/*mobile*/
-@media only screen and (max-width: 480px){
-    #about img{
-        float: none;
-        display: block;
-        margin: 40px auto 20px auto;
-        width: 180px;
-    }
-    #about #info{
-        padding: 0;
-        width: 100%;
-    }
 }

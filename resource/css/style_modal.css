@@ -90,11 +90,11 @@
     }
     #modal> .arrow.left {
         left: 20px;
-        border-color:transparent var(--color-default) transparent transparent;
+        border-color:transparent var(--color-dark) transparent transparent;
     }
     #modal> .arrow.right {
         right: 20px;
-        border-color:transparent transparent transparent var(--color-default);
+        border-color:transparent transparent transparent var(--color-dark);
     }
 }
 

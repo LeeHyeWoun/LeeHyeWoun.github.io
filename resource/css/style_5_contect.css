@@ -1,40 +1,32 @@
-form{
-    position: relative;
-    width: 600px;
+#contect .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:flex-end;
+    gap: 10px;
 }
 form> h1{
     text-align: center;
     color: rgb(124, 124, 124);
 }
-form div.form_who{
-    float: left;
-    width: 480px;
-}
-form> button{
-    float: left;
-    width: 110px;
-    height: 77px;
-    background-color: rgb(97, 97, 97);
-}
-form div.form_who> input{
-    width: 450px;
-}
-form> input{
-    width: 570px;
-}
 form> textarea{
-    width: 570px;
     height: 250px;
 }
+form> button{
+    width: 110px;
+    height: 77px;
+    margin: auto;
+    background-color: rgb(97, 97, 97);
+}
+
 form :-webkit-any(input, textarea, button){
-    margin: 5px;
-    padding: 5px 10px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1em;
     border-radius: 5px;
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.2);
     border: 0;
 }
+
 form :-webkit-any(input, textarea)::placeholder,
 form> button{
     color:rgb(214, 214, 214);
@@ -42,29 +34,6 @@ form> button{
     font-weight: bold;
 }
 
-/*mobile, form보다 화면이 작을 때*/
-@media only screen and (max-width: 650px){
-    form,
-    form div.form_who{
-        width: 90vw;
-    }    
-    form div.form_who> input{
-        width: 80vw;
-    }
-    form> button{
-        position: absolute;
-        bottom: -50px;
-        left: 50%;
-        height: 60px;
-        -webkit-transform:translate(-50%, -50%);
-        transform:translate(-50%, -50%);
-    }
-    form :-webkit-any(input, textarea){
-        margin: 10px;
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80vw;
-    }
+/*mobile*/
+@media only screen and (max-width: 480px){
 }

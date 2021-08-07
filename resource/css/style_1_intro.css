@@ -2,8 +2,8 @@
     height: 100vh;
 }
 .intro > video {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: left;
     background-color: black; 
@@ -35,6 +35,100 @@
     display: block;
 }
 
+.intro > a span{
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 4px solid var(--color-light);
+  border-bottom: 4px solid var(--color-light);
+
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) (-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+
+.intro > a span::before {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    z-index: -1;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: stir 1.5s infinite;
+    animation: stir 1.5s infinite;
+    box-sizing: border-box;
+    filter: blur(4px);
+  }
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes stir {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes stir {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    width:70px;
+    height: 70px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*mobile*/
 @media only screen and (max-width: 480px){
     .intro > .content > h2{

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
+
 :root{
     --color-point:#08FDD8;
     --color-light:rgb(240, 240, 240);
@@ -14,9 +16,9 @@ body{
     width: 100%;
     padding: 0; 
     margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 10pt;
 }
-
 body.not_scroll{
     overflow: hidden;
 }
@@ -25,12 +27,11 @@ section{
     position: flex;
     min-height: 100vh;
 }
-
 section:nth-child(odd){
     background-color: var(--color-odd);
 }
 
-section> h1{
+h1{
     position:sticky;
     top:0;
     z-index: 1;
@@ -42,13 +43,11 @@ section> h1{
     vertical-align: middle;
     background: linear-gradient(to bottom, white, transparent);
 }
-
-section> h1::before{ content: "{ "; }
-section> h1::after{ content: " }";}
-
-section:nth-child(odd)> h1{
+h1:nth-child(odd){
     background: linear-gradient(to bottom, var(--color-odd), transparent);
 }
+h1::before  { content: "{ "; }
+h1::after   { content: " }"; }
 
 .content{
     display: block;
@@ -78,6 +77,10 @@ section:nth-child(odd)> h1{
 @media only screen and (max-width: 480px){
     .content{
         padding: 0 10px;
+    }
+    section> h1{
+        padding-left: 0px;
+        text-align: center;
     }
 }
 

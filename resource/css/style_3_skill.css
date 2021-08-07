@@ -4,13 +4,6 @@
     margin: 0;
     color:rgb(218, 218, 218);
 }
-.contain{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 0 50px 0;
-}
 #skill img{
     height: 48px;
     width: 48px;
@@ -27,15 +20,6 @@
     filter: brightness(90%);
     outline: 0;
 }
-
-.box{
-    display: block;
-    width: 100%;
-    padding: 5px 20px;
-    background-color: rgb(240, 240, 240);
-    border-radius: 15px;
-}
-
 
 
 /*mobile*/

@@ -40,6 +40,10 @@ window.onload=function(){
             contains[i].children[j].addEventListener('click', function(){
                 setContent(i, j);
                 boxs[i].classList.add("expand");
+                for(let k=0; k<boxs.length; k++){
+                    if(k==i){continue;}
+                    boxs[k].classList.remove("expand");
+                }
             });
         }
     }

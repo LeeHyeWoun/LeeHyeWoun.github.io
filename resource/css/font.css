@@ -12,8 +12,3 @@ section.intro > .content > h1{
     font-family: 'Nanum Gothic', sans-serif;
  }
 */
-
-/*모바일 버전*/
-@media only screen and (max-width: 480px){
-    body{font-size: 10pt;}
-}

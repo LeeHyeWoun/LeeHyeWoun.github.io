@@ -13,7 +13,8 @@ html {
 body{
     width: 100%;
     padding: 0; 
-    margin: 0; 
+    margin: 0;
+    font-size: 10pt;
 }
 
 body.not_scroll{

@@ -42,6 +42,9 @@ section> h1{
     background: linear-gradient(to bottom, white, transparent);
 }
 
+section> h1::before{ content: "{ "; }
+section> h1::after{ content: " }";}
+
 section:nth-child(odd)> h1{
     background: linear-gradient(to bottom, var(--color-odd), transparent);
 }

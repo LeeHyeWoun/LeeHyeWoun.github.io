@@ -6,19 +6,19 @@
     gap: 10px;
 }
 
-#contect .content button{
-    width: 50px;
-    height: 50px;
-    background-color:var(--color-light);
+#contect button{
+    padding: 15px;
+    text-align: left;
     border: 0;
     border-radius: 15px;
+    background-color:var(--color-light);
     cursor: pointer;
 }
-#contect .content button:-webkit-any(:hover, :focus){
-    background-color: rgba(255, 255, 255, 0.05);
+#contect button:-webkit-any(:hover, :focus){
     outline: 0;
+    filter: brightness(90%);
 }
-#contect .content img{
+#contect img{
     margin: auto;
     vertical-align: middle;
     width: 40px;

@@ -1,9 +1,4 @@
-#contect .box{
-    position: relative;
-    height: 80px;
-}
 #contect a{
-    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,6 +11,7 @@
     vertical-align: middle;
     color: white;
     background-color: var(--color-layer);
+    opacity: 0;
 }
 #contect a:hover{
     opacity: 0.7;
@@ -34,6 +30,31 @@
     background: linear-gradient(135deg, #515BD4, #8134AF, #DD2A7B, #F58529);
     color: var(--color-light);
 }
+#contect .box::after{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 48px;    
+    height: 48px;
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    opacity: 0.4;
+}
+#contect .box:nth-child(1)::after{
+    background-image: url(../img/icons8-chat-50.png);
+}
+#contect .box:nth-child(2)::after{
+    background-image: url(../img/naver.png);
+}
+#contect .box:nth-child(3)::after{
+    background-image: url(../img/icons8-github-48.png);
+}
+#contect .box:nth-child(4)::after{
+    background-image: url(../img/icons8-instagram-48.png);
+}
+
 
 /*
 form> h1{

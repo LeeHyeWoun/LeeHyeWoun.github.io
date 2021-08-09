@@ -55,7 +55,7 @@ article{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px 10px;
-    padding: 10px 70px 30px 70px;
+    padding: 0 70px 30px 70px;
     max-width: 600px;
     margin: auto;
 }
@@ -75,7 +75,7 @@ article{
 /*mobile*/
 @media only screen and (max-width: 480px){
     article{
-        padding: 0 10px;
+        padding: 10px;
     }
     section> h1{
         padding-left: 0px;

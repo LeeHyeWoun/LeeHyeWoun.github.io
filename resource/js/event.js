@@ -13,6 +13,7 @@ window.onload=function(){
     var skill = document.getElementById('skill');
     var contains = skill.querySelectorAll("article");
     var boxs = skill.getElementsByClassName('box');
+    var imgs = document.querySelectorAll('img');
     var arr;
 
     //json parsing
@@ -50,5 +51,8 @@ window.onload=function(){
             });
         }
     }
-
+    for(let i=0; i<imgs.length; i++){
+        imgs[i].oncontextmenu = function(){return false};
+        imgs[i].ondragstart = function(){return false};
+    }
 }

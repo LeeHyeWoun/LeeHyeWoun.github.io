@@ -25,22 +25,23 @@
     -webkit-animation: fadein 3s;
     -o-animation: fadein 3s;
 }
-.intro > article > h2 {
+.intro h2 {
     display: inline-block;
-    margin: 0px 4px;
+    margin: 0;
     font-size: 40px; 
     color: #ffffff;
 }
-.intro > article > h2:first-child{
+.intro h2:first-child{
     display: block;
+    width: 100%;
 }
 
-.intro > a span{
+.intro span{
   position: absolute;
-  bottom: 200px;
+  bottom: -200px;
   left: 50%;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   margin-left: -12px;
   border-left: 4px solid var(--color-light);
   border-bottom: 4px solid var(--color-light);
@@ -52,7 +53,7 @@
   box-sizing: border-box;
 }
 
-.intro > a span::before {
+.intro span::before {
     position: absolute;
     top: 70%;
     left: 30%;
@@ -101,12 +102,12 @@
   0% {
     opacity: 0;
   }
-  30% {
+  40% {
     opacity: 1;
   }
-  60% {
-    width: 70px;
-    height: 70px;
+  70% {
+    width: 100px;
+    height: 100px;
     opacity: 0;
   }
   100% {
@@ -117,12 +118,12 @@
   0% {
     opacity: 0;
   }
-  30% {
+  40% {
     opacity: 1;
   }
-  60% {
-    width:70px;
-    height: 70px;
+  70% {
+    width:100px;
+    height: 100px;
     opacity: 0;
   }
   100% {
@@ -131,8 +132,13 @@
 }
 /*mobile*/
 @media only screen and (max-width: 480px){
-    .intro > article > h2{
+    .intro h2{
         font-size: 16pt;
+    }
+    .intro span{
+      bottom: -100px;
+      width: 30px;
+      height: 30px;
     }
 }
 

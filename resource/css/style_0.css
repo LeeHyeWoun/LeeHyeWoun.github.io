@@ -86,7 +86,6 @@ article{
         position:relative;
         background: transparent;
     }
-    h1:nth-child(odd), 
     section:nth-child(odd){
         background: transparent;
     }    

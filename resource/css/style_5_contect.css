@@ -17,20 +17,11 @@
     opacity: 0.7;
 }
 
-#contect .box:nth-child(1){
-    background: linear-gradient(135deg, #F9E000, #F9E00088);
-}
-#contect .box:nth-child(2){
-    background: linear-gradient(135deg, #2DB400, #2DB40088);
-}
-#contect .box:nth-child(3){
-    background: linear-gradient(135deg, #171515, #17151588);
-    color: var(--color-light);
-}
-#contect .box:nth-child(4){
-    background: linear-gradient(135deg, #515BD4, #8134AF, #DD2A7B, #F58529);
-    color: var(--color-light);
-}
+#contect .box:nth-child(1){background: linear-gradient(135deg, #F9E000, #F9E00088);}
+#contect .box:nth-child(2){background: linear-gradient(135deg, #2DB400, #2DB40088);}
+#contect .box:nth-child(3){background: linear-gradient(135deg, #171515, #17151588); color: var(--color-light);}
+#contect .box:nth-child(4){background: linear-gradient(135deg, #515BD4, #8134AF, #DD2A7B, #F58529); color: var(--color-light);}
+
 #contect .box::after{
     position: absolute;
     bottom: 15px;
@@ -43,19 +34,10 @@
     background-size: 48px;
     opacity: 0.4;
 }
-#contect .box:nth-child(1)::after{
-    background-image: url(../img/icons8-chat-50.png);
-}
-#contect .box:nth-child(2)::after{
-    background-image: url(../img/naver.png);
-}
-#contect .box:nth-child(3)::after{
-    background-image: url(../img/icons8-github-48.png);
-}
-#contect .box:nth-child(4)::after{
-    background-image: url(../img/icons8-instagram-48.png);
-
-}
+#contect .box:nth-child(1)::after{background-image: url(../img/icons8-chat-50.png);}
+#contect .box:nth-child(2)::after{background-image: url(../img/naver.png);}
+#contect .box:nth-child(3)::after{background-image: url(../img/icons8-github-48.png);}
+#contect .box:nth-child(4)::after{background-image: url(../img/icons8-instagram-48.png);}
 
 
 /*인쇄 시*/

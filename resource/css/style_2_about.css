@@ -6,10 +6,13 @@
 }
 
 #about dl{
+    /*
     text-align: center;
+    */
 }
 
 #about #info> dt{
+    /*
     position:absolute;
     left: 120px;
     width: 80px;
@@ -17,6 +20,7 @@
     line-height: 30px;
     font-weight: bold;
     color: rgb(124, 124, 124);
+    */
 }
 
 #about #info> dd{

@@ -26,7 +26,7 @@ body.not_scroll{
 section{
     position: flex;
     max-height: 1000px;
-    height: 100vh;
+    min-height: 100vh;
 }
 section:nth-child(odd){
     background-color: var(--color-odd);

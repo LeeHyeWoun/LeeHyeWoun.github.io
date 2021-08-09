@@ -26,6 +26,7 @@ body.not_scroll{
 section{
     position: flex;
     min-height: 100vh;
+    height: 1000px;
 }
 section:nth-child(odd){
     background-color: var(--color-odd);
@@ -81,7 +82,7 @@ h2{
 }
 
 
-
+/*mobile*/
 @media only screen and (max-width: 480px){
     .content{
         padding: 0 10px;
@@ -92,6 +93,17 @@ h2{
     }
 }
 
+/*인쇄 시*/
+@media only print{
+    h1{
+        position:relative;
+        background: transparent;
+    }
+    h1:nth-child(odd), 
+    section:nth-child(odd){
+        background: transparent;
+    }    
+}
 
 /*animation*/
 @keyframes fadein{

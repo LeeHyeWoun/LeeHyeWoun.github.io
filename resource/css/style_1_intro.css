@@ -8,7 +8,7 @@
     object-position: left;
     background-color: black; 
 }
-.intro > .content {
+.intro > article {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -25,13 +25,13 @@
     -webkit-animation: fadein 3s;
     -o-animation: fadein 3s;
 }
-.intro > .content > h2 {
+.intro > article > h2 {
     display: inline-block;
     margin: 0px 4px;
     font-size: 40px; 
     color: #ffffff;
 }
-.intro > .content > h2:first-child{
+.intro > article > h2:first-child{
     display: block;
 }
 
@@ -131,7 +131,7 @@
 }
 /*mobile*/
 @media only screen and (max-width: 480px){
-    .intro > .content > h2{
+    .intro > article > h2{
         font-size: 16pt;
     }
 }

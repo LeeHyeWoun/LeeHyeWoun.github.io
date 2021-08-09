@@ -1,4 +1,4 @@
-.nav {
+nav {
     position: fixed;
     z-index: 2;
     display: flex;
@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-.nav .menu> div {
+nav .menu> div {
     width: 35px;
     height: 5px;
     background-color:var(--color-dark);
@@ -42,7 +42,7 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.nav ul{
+nav ul{
     visibility: hidden;
     opacity: 0;
     width: 0px;
@@ -63,7 +63,7 @@
     transition: 0.4s;
 }
 
-.nav a{
+nav a{
     display: inline-block;
     margin: 10px;
     padding: 10px;
@@ -71,7 +71,7 @@
     text-decoration: none;
 }
 
-.nav a:hover {
+nav a:hover {
     color:var(--color-point);
     font-weight: bold;
 }
@@ -80,7 +80,7 @@
 
 /*mobile*/
 @media only screen and (max-width: 480px){
-    .nav ul{
+    nav ul{
         display: none;
         width: 100vw;
     }

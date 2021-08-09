@@ -36,6 +36,7 @@
     overflow: hidden;
     min-height: 0;
     max-height: 0;
+    padding-bottom: 30px;
 }
 #skill .box.expand{
     visibility:visible;

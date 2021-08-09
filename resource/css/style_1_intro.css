@@ -36,7 +36,7 @@
     width: 100%;
 }
 
-.intro span{
+.intro a{
   position: absolute;
   bottom: -200px;
   left: 50%;
@@ -53,7 +53,7 @@
   box-sizing: border-box;
 }
 
-.intro span::before {
+.intro a::before {
     position: absolute;
     top: 70%;
     left: 30%;
@@ -135,7 +135,7 @@
     .intro h2{
         font-size: 16pt;
     }
-    .intro span{
+    .intro a{
       bottom: -100px;
       width: 30px;
       height: 30px;

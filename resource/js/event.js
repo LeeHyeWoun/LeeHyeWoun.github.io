@@ -2,6 +2,9 @@ function toggle_menu(x) {
     x.classList.toggle("change_nav");
     document.body.classList.toggle('not_scroll');
 }
+function click_close(x){
+    x.parentNode.classList.remove("expand");
+}
 
 window.onload=function(){
 

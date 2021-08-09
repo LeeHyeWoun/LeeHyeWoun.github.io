@@ -5,13 +5,13 @@
                 "title":"C언어",
                 "img":"resource/img/icons8-c-programming-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Visual Studio, Visual Studio Code",
+                    "주 사용 개발환경 : Visual Studio, Visual Studio Code\n",
                     "관련 경험이 있으며, 때때로 인터넷 검색 혹은 책을 참고하여 문제를 해결함"
                 ]
             },
             {
                 "title":"C++",
-                "img":"resource/img/icons8-c++-144.png",
+                "img":"resource/img/icons8-c++-144.png\n",
                 "detail":[
                     "주 사용 개발환경 : Visual Studio, Visual Studio Code",
                     "관련 경험이 있으며, 때때로 인터넷 검색 혹은 책을 참고하여 문제를 해결함"
@@ -21,7 +21,7 @@
                 "title":"C#",
                 "img":"resource/img/icons8-c-sharp-logo-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Unity",
+                    "주 사용 개발환경 : Unity\n",
                     "관련 경험이 있으며, 때때로 관련 라이브러리 API를 확인하거나 스택오버플로우와 깃허브 등의 다른 개발자들의 문제 해결 방식을 참고함. 해당 언어로 게임을 제작한 경험이 있으며 이는 플레이스토어에 출시됨."
                 ]
             },
@@ -29,7 +29,7 @@
                 "title":"Java",
                 "img":"resource/img/icons8-java-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Android studio, Eclipse",
+                    "주 사용 개발환경 : Android studio, Eclipse\n",
                     "주 사용 버전 : se 8",
                     "관련 경험이 있으며, 때때로 관련 라이브러리 API를 확인하거나 스택오버플로우와 깃허브 등의 다른 개발자들의 문제 해결 방식을 참고합니다.",
                     "동적 웹페이지 프로그래밍을 위해 JSP 또는 Servlet 환경을 구축하고 "
@@ -39,7 +39,7 @@
                 "title":"Python",
                 "img":"resource/img/icons8-python-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Jupyter Notebook",
+                    "주 사용 개발환경 : Jupyter Notebook\n",
                     "pandas와 matplotlib 라이브러리를 이용해 데이터를 분석/시각화할 때 주로 활용함. 해당 언어를 활용해 가벼운 머신러닝을 구현해본 경험이 있음"
                 ]
             }
@@ -49,14 +49,14 @@
                 "title":"Android",
                 "img":"resource/img/icons8-android-os-144.png",
                 "detail":[
-                    "주 사용 개발환경 : android studio, unity"
+                    "주 사용 개발환경 : android studio, unity\n"
                 ]
             },
             {
                 "title":"HTML5",
                 "img":"resource/img/icons8-html-5-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Visual Studio Code",
+                    "주 사용 개발환경 : Visual Studio Code\n",
                     "css와 js를 인라인 방식 혹은 내/외부 스타일 시트를 사용하는 방식으로 적용할 수 있습니다.",
                     "XSS 공격에 취약하고 성능저하 요소가 있는 innerHTML를 지양합니다."
                 ]
@@ -65,7 +65,7 @@
                 "title":"CSS3",
                 "img":"resource/img/icons8-css3-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Visual Studio Code",
+                    "주 사용 개발환경 : Visual Studio Code\n",
                     "클래스와 가상요소를 활용해 효율적이고 자유롭게 레이아웃을 구성할 수 있습니다.",
                     "자바스크립트 없이도 간단한 애니메이션 효과를 줄 수 있습니다.",
                     "웹 브라우저별 호환성을 고려합니다. (참고 : https://caniuse.com)",
@@ -76,7 +76,7 @@
                 "title":"Java Script",
                 "img":"resource/img/icons8-javascript-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Visual Studio Code",
+                    "주 사용 개발환경 : Visual Studio Code\n",
                     ""
                 ]
     

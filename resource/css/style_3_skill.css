@@ -16,12 +16,14 @@
 }
 
 #skill .box{
-    visibility: hidden;
+    visibility:hidden;
+    overflow: hidden;
     height: 0;
 }
 #skill .box.expand{
-    visibility: visible;
-    height: auto;
+    visibility:visible;
+    height: 200px;
+    transition: 0.4s;
 }
 
 

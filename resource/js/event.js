@@ -1,56 +1,49 @@
 function toggle_menu(x) {
-    x.classList.toggle("change_nav");
+    x.classList.toggle('change_nav');
     document.body.classList.toggle('not_scroll');
 }
 function click_close(x){
-    x.parentNode.classList.remove("expand");
+    x.parentNode.classList.remove('expand');
 }
 
 window.onload=function(){
 
-    let url = "resource/json/skills.json";
-
-    var skill = document.getElementById('skill');
-    var contains = skill.querySelectorAll("article");
-    var boxs = skill.getElementsByClassName('box');
-    var imgs = document.querySelectorAll('img');
     var arr;
+    var section_skill = document.getElementById('skill');
+    var items = section_skill.querySelectorAll('article');
+    var boxs = section_skill.getElementsByClassName('box');
 
     //json parsing
-    fetch(url)
+    fetch('resource/json/skills.json')
     .then((res)=>res.json())
-    .then((data)=>{
-        arr = data.skills;
-    })
+    .then((data)=>{arr = data.skills;})
     .catch(error=>console.error(error));
 
-
     function setContent(kind, num) {
-        var content = arr[contains[kind].id][num]; //0:languege, 1:c++
-
-        boxs[kind].children[0].innerText = content.title;
         var out = '';
-        for(let i=0; i<content.detail.length; i++){
-            out+='- '+content.detail[i]+'\n';
-        }
+        let pick = arr[items[kind].id][num]; //1:back-end, 1:c++
+        
+        pick.detail.forEach(string=>{out+='- '+string+'\n';});
         boxs[kind].children[1].innerText = out;
+        boxs[kind].children[0].innerText = pick.title;
 
+        for(let i=0; i<boxs.length; i++){
+            if(i==kind){boxs[i].classList.add('expand');}
+            else{boxs[i].classList.remove('expand');}            
+        }
     }
-
     
     //Add Event Listener
-    for(let i=0; i<contains.length; i++){
-        for(let j=0; j<contains[i].childElementCount-1; j++){
-            contains[i].children[j].addEventListener('click', function(){
+    for(let i=0; i<items.length; i++){
+        for(let j=0; j<items[i].childElementCount-1; j++){
+            items[i].children[j].addEventListener('click', function(){
                 setContent(i, j);
-                boxs[i].classList.add("expand");
-                for(let k=0; k<boxs.length; k++){
-                    if(k==i){continue;}
-                    boxs[k].classList.remove("expand");
-                }
             });
         }
     }
+
+    //이미지 복사 금지
+    var imgs = document.querySelectorAll('img');
     for(let i=0; i<imgs.length; i++){
         imgs[i].oncontextmenu = function(){return false};
         imgs[i].ondragstart = function(){return false};

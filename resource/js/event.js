@@ -25,9 +25,9 @@ window.onload=function(){
         var content = arr[contains[kind].id][num]; //0:languege, 1:c++
 
         boxs[kind].children[0].innerText = content.title;
-        var out = "";
-        for(let i=0; i<content.detail.length; i++){
-            out+=content.detail[i]+'\n';
+        var out = content.detail[0]+'\n\n';
+        for(let i=1; i<content.detail.length; i++){
+            out+='- '+content.detail[i]+'\n';
         }
         boxs[kind].children[1].innerText = out;
 

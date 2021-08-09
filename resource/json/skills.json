@@ -62,7 +62,9 @@
                 "title":"CSS3",
                 "img":"resource/img/icons8-css3-144.png",
                 "detail":[
-                    "주 사용 개발환경 : Visual Studio Code"
+                    "주 사용 개발환경 : Visual Studio Code",
+                    "웹 브라우저별 호환성을 고려합니다.",
+                    "반응형 웹 프로그래밍이 가능합니다."
                 ]
             },
             {

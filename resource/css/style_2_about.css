@@ -1,3 +1,7 @@
+#about .box{
+    background-color: var(--color-odd);
+}
+
 #about img{
     display: block;
     float: left;

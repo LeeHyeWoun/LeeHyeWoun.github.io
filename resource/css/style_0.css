@@ -39,13 +39,10 @@ h1{
     height:100px;
     line-height: 70px;
     padding-left: 80px;
-    margin: 0;
+    margin: 40px 0 0 0;
     color:var(--color-dark);
     vertical-align: middle;
-    background: linear-gradient(to bottom, white, transparent);
-}
-h1:nth-child(odd){
-    background: linear-gradient(to bottom, var(--color-odd), transparent);
+    background:linear-gradient(to bottom, white, transparent);
 }
 h1::before  {content: "{ ";}
 h1::after   {content: " }";}

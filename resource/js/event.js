@@ -8,7 +8,7 @@ window.onload=function(){
     let url = "resource/json/skills.json";
 
     var skill = document.getElementById('skill');
-    var contains = skill.getElementsByClassName("contain");
+    var contains = skill.querySelectorAll("article");
     var boxs = skill.getElementsByClassName('box');
     var arr;
 

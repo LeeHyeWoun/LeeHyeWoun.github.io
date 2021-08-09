@@ -73,63 +73,29 @@
   }
 
 @-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
+  0%    {opacity: 0; -webkit-transform: rotate(-45deg) translate(0, 0);}
+  50%   {opacity: 1;}
+  100%  {opacity: 0; -webkit-transform: rotate(-45deg) translate(-20px, 20px);}
 }
 @keyframes sdb {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
+  0%    {opacity: 0; -webkit-transform: rotate(-45deg) translate(0, 0);}
+  50%   {opacity: 1;}
+  100%  {opacity: 0; -webkit-transform: rotate(-45deg) translate(-20px, 20px);}
 }
 @-webkit-keyframes stir {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  70% {
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%    {opacity: 0;}
+  40%   {opacity: 1;}
+  70%   {opacity: 0; width: 100px; height: 100px;}
+  100%  {opacity: 0;}
 }
 @keyframes stir {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  70% {
-    width:100px;
-    height: 100px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%    {opacity: 0;}
+  40%   {opacity: 1;}
+  70%   {opacity: 0; width: 100px; height: 100px;}
+  100%  {opacity: 0;}
 }
+
+
 /*mobile*/
 @media only screen and (max-width: 480px){
     .intro h2{

@@ -28,7 +28,7 @@ section{
     max-height: 1000px;
     min-height: 100vh;
 }
-section:nth-child(odd){
+section:nth-child(even){
     background-color: var(--color-odd);
 }
 
@@ -94,7 +94,7 @@ img, h1{
         position:relative;
         background: transparent;
     }
-    section:nth-child(odd){
+    section:nth-child(even){
         background: transparent;
     }    
 }

@@ -24,7 +24,7 @@ dt{
 }
 dt:first-child{margin-top: 0;}
 
-dd span{
+dl span{
     color: gray;
     font-size: 8px;
     margin-left: 8px;

@@ -54,7 +54,7 @@
 			</ul>
 		</nav>
 		<!--대문-->
-		<section class="intro">
+		<header>
 			<video muted preload autoplay loop>
 				<source src="resource/videos/title.mp4" type="video/mp4"/>
 				<strong>Your browser does not support the video tag.</strong>
@@ -65,100 +65,102 @@
 				<h2>이혜원입니다.</h2>
 				<a href="#about"></a>
 			</article>
-		</section>
-		<!--자기소개-->
-		<section id="about">
-			<h1>About</h1>
-			<article>
-				<div class="box">
-					<img alt="본인 사진" src="resource/img/me.jpg">
-					<dl id="info">
-						<dt>이름</dt>
-						<dd>이혜원<span>Lee Hyewon</span></dd>
-						<dt>나이</dt>
-						<dd>25<span>1997.08.12</span></dd>
-						<dt>주소</dt>
-						<dd>(05286) 서울 강동구 고덕로98길 160</dd>
-						<dt>연락처</dt>
-						<dd>+82 10-9080-5520</dd>
-						<dd>silro912@naver.com</dd>
-						<dt>학력</dt>
-						<dd>가좌고등학교<span>일산, 2013.03 ~ 2016.02</span></dd>
-						<dd>서울여자대학교<span>노원, 2017.03 ~ 2021.02</span></dd>
-					</dl>		
-				</div>
-			</article>
-		</section>
-		<!--스킬 스택-->
-		<section id="skill">
-			<h1>Skill</h1>
-			<article id="Front-end">
-				<button><img alt="html5" src="resource/img/icons8-html-5-144.png"/></button>
-				<button><img alt="css3" src="resource/img/icons8-css3-144.png"/></button>
-				<button><img alt="javascript" src="resource/img/icons8-javascript-144.png"/></button>
-				<button><img alt="android" src="resource/img/icons8-android-os-144.png"/></button>
-				<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>
-			</article>
-			<article id="Back-end">
-				<button><img alt="c언어" src="resource/img/icons8-c-programming-144.png"/></button>
-				<button><img alt="c++" src="resource/img/icons8-c++-144.png"/></button>
-				<button><img alt="c#" src="resource/img/icons8-c-sharp-logo-144.png"></button>
-				<button><img alt="java" src="resource/img/icons8-java-144.png"></button>
-				<button><img alt="python" src="resource/img/icons8-python-144.png"></button>
-				<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>
-			</article>
-			<article id="Editor">
-				<button><img alt="visual Studio" src="resource/img/icons8-visual-studio-144.png"/></button>
-				<button><img alt="vscode" src="resource/img/icons8-visual-studio-code-2019-144.png"/></button>
-				<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>	
-			</article>
-			<article id="etc">
-				<button><img alt="git" src="resource/img/icons8-git-144.png"/></button>
-				<button><img alt="notion" src="resource/img/icons8-notion-144.png"/></button>
-				<button><img alt="unity" src="resource/img/icons8-unity-144.png"/></button>
-				<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>	
-			</article>
-		</section>
-		<section id="projects">
-			<h1>Projects</h1>
-			<article>
-			</article>
-		</section>
-		<section id="contect">
-			<h1>Contect</h1>
-			<article>
-				<div class="box">
-					<h3>Kakao talk</h3>
-					<p>1:1 오픈채팅으로 간편한 문의가 가능합니다.</p>
-					<a href="https://open.kakao.com/o/sZxn2Zsd">1:1 오픈채팅 참여하기</a>
-				</div>
-				<div class="box">
-					<h3>Naver blog</h3>
-					<p>공부와 정보 공유를 목적으로 하는 블로그입니다.</p>
-					<a href="https://blog.naver.com/silro812/221615433658">옹주의 개발블로그</a>
-				</div>	
-				<div class="box">
-					<h3>GitHub</h3>
-					<p>개인 프로젝트 및 학습용 소스 코드 저장소입니다.</p>
-					<a href="https://github.com/LeeHyeWoun">LeeHyeWoun</a>
-				</div>
-				<div class="box">
-					<h3>Instagram</h3>
-					<p>프로젝트 시연 영상 및 이미지를 볼 수 있습니다.</p>
-					<a href="https://www.instagram.com/h.w812/">@h.w812</a>
-				</div>
-				<p>© 2021. Lee Hye Won. All rights reserved.</p>
-		</article>>
-			<!--
-			<form class="content" action="mailto:silro812@naver.com" method="POST">
-					<h1>silro812@naver.com</h1>
-					<input id="form_name" type="text" name="name" class="form-control" placeholder="your name" required="required" data-error="Name is required.">
-					<input id="form_email" type="email" name="email" class="form-control" placeholder="your email-address" required="required" data-error="Valid email is required.">
-					<input id="form_title" type="text" name="title" class="form-control" placeholder="message title" required="required" data-error="Subject is required.">
-					<textarea id="form_message" name="message" class="form-control" placeholder="Please give me a message." rows="7" required="required" data-error="Please, leave me a message."></textarea>
-					<button>Send<br>Message</button>
-			  </form>
-			  -->
-		</section>
+		</header>
+		<main>			
+			<!--자기소개-->
+			<section id="about">
+				<h1>About</h1>
+				<article>
+					<div class="box">
+						<img alt="본인 사진" src="resource/img/me.jpg">
+						<dl id="info">
+							<dt>이름</dt>
+							<dd>이혜원<span>Lee Hyewon</span></dd>
+							<dt>나이</dt>
+							<dd>25<span>1997.08.12</span></dd>
+							<dt>주소</dt>
+							<dd>(05286) 서울 강동구 고덕로98길 160</dd>
+							<dt>연락처</dt>
+							<dd>+82 10-9080-5520</dd>
+							<dd>silro912@naver.com</dd>
+							<dt>학력</dt>
+							<dd>가좌고등학교<span>일산, 2013.03 ~ 2016.02</span></dd>
+							<dd>서울여자대학교<span>노원, 2017.03 ~ 2021.02</span></dd>
+						</dl>		
+					</div>
+				</article>
+			</section>
+			<!--스킬 스택-->
+			<section id="skill">
+				<h1>Skill</h1>
+				<article id="Front-end">
+					<button><img alt="html5" src="resource/img/icons8-html-5-144.png"/></button>
+					<button><img alt="css3" src="resource/img/icons8-css3-144.png"/></button>
+					<button><img alt="javascript" src="resource/img/icons8-javascript-144.png"/></button>
+					<button><img alt="android" src="resource/img/icons8-android-os-144.png"/></button>
+					<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>
+				</article>
+				<article id="Back-end">
+					<button><img alt="c언어" src="resource/img/icons8-c-programming-144.png"/></button>
+					<button><img alt="c++" src="resource/img/icons8-c++-144.png"/></button>
+					<button><img alt="c#" src="resource/img/icons8-c-sharp-logo-144.png"></button>
+					<button><img alt="java" src="resource/img/icons8-java-144.png"></button>
+					<button><img alt="python" src="resource/img/icons8-python-144.png"></button>
+					<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>
+				</article>
+				<article id="Editor">
+					<button><img alt="visual Studio" src="resource/img/icons8-visual-studio-144.png"/></button>
+					<button><img alt="vscode" src="resource/img/icons8-visual-studio-code-2019-144.png"/></button>
+					<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>	
+				</article>
+				<article id="etc">
+					<button><img alt="git" src="resource/img/icons8-git-144.png"/></button>
+					<button><img alt="notion" src="resource/img/icons8-notion-144.png"/></button>
+					<button><img alt="unity" src="resource/img/icons8-unity-144.png"/></button>
+					<div class="box"><h3>name</h3><p>detail</p><b onclick="click_close(this)">close</b></div>	
+				</article>
+			</section>
+			<section id="projects">
+				<h1>Projects</h1>
+				<article>
+				</article>
+			</section>
+			<section id="contect">
+				<h1>Contect</h1>
+				<article>
+					<div class="box">
+						<h3>Kakao talk</h3>
+						<p>1:1 오픈채팅으로 간편한 문의가 가능합니다.</p>
+						<a href="https://open.kakao.com/o/sZxn2Zsd">1:1 오픈채팅 참여하기</a>
+					</div>
+					<div class="box">
+						<h3>Naver blog</h3>
+						<p>공부와 정보 공유를 목적으로 하는 블로그입니다.</p>
+						<a href="https://blog.naver.com/silro812/221615433658">옹주의 개발블로그</a>
+					</div>	
+					<div class="box">
+						<h3>GitHub</h3>
+						<p>개인 프로젝트 및 학습용 소스 코드 저장소입니다.</p>
+						<a href="https://github.com/LeeHyeWoun">LeeHyeWoun</a>
+					</div>
+					<div class="box">
+						<h3>Instagram</h3>
+						<p>프로젝트 시연 영상 및 이미지를 볼 수 있습니다.</p>
+						<a href="https://www.instagram.com/h.w812/">@h.w812</a>
+					</div>
+					<p>© 2021. Lee Hye Won. All rights reserved.</p>
+			</article>>
+				<!--
+				<form class="content" action="mailto:silro812@naver.com" method="POST">
+						<h1>silro812@naver.com</h1>
+						<input id="form_name" type="text" name="name" class="form-control" placeholder="your name" required="required" data-error="Name is required.">
+						<input id="form_email" type="email" name="email" class="form-control" placeholder="your email-address" required="required" data-error="Valid email is required.">
+						<input id="form_title" type="text" name="title" class="form-control" placeholder="message title" required="required" data-error="Subject is required.">
+						<textarea id="form_message" name="message" class="form-control" placeholder="Please give me a message." rows="7" required="required" data-error="Please, leave me a message."></textarea>
+						<button>Send<br>Message</button>
+				</form>
+				-->
+			</section>
+		</main>
 	</body>
 </html>

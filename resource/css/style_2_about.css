@@ -54,6 +54,15 @@
 @media only screen and (max-width: 480px){
 
     .timeline ul{
-        margin-left: 40%;
+        padding-left: 80px;
+        margin-left: 10px;
     }
+    .timeline li{
+        margin: 30px;
+    }
+    .timeline li::before{
+        position: absolute;
+        left: 20px;
+    }    
+    
 }

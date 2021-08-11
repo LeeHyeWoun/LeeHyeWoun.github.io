@@ -1,6 +1,12 @@
+aside{
+    display: block;
+    width: 400px;
+    background-color: var(--color-light);
+}
+
 #about .box{
     background-color: var(--color-odd);
-}
+}    
 
 #about .box> div{
     display: block;
@@ -8,31 +14,77 @@
     margin: 30px 10px;
     text-align: center;
     line-height: 10px;
-}
+}    
 
 #about img{
     width: 120px;
+    margin-bottom: 10px;
     border-radius: 100%;
-}
-dl{
+}    
+
+#about span{
     display: block;
-    float: left;
-    width: 250px;
-    margin: 30px;
-}
-
-dt{
-    font-weight:bold;
-    margin-top: 10px;
-    color:var(--color-dark);
-}
-dt:first-child{margin-top: 0;}
-
-#about .box span{
     color: gray;
     font-size: 8px;
     margin-left: 8px;
 }
+
+.timeline ul {
+    border-left: 4px solid var(--color-gray);
+    max-width: 200px;
+    list-style: none;
+}    
+
+.timeline li::before{
+    position: absolute;
+    left:10px;
+    margin-left: 10px;
+    content: attr(data-date);
+    text-align: right;
+    left: 0;
+}
+
+/*
+.event {
+    border-bottom: 1px dashed fade(black, 10%);
+    padding-bottom: (50px * 0.5);
+    margin-bottom: 50px;  
+    position: relative;
+
+    &:last-of-type { 
+    padding-bottom: 0;
+    margin-bottom: 0; 
+    border: none;      
+    }
+
+    &:before, &:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    }
+
+    &:before {
+    left: (((@date * 0.6) + 50px + @line + @dot + (@dotborder * 2)) * 1.5) * -1;    
+    color: fade(black, 40%);    
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;    
+    font-size: 0.9em;
+    min-width: @date;
+    }
+
+    &:after {
+    box-shadow: 0 0 0 @dotborder fade(@color-primary,100%);    
+    left: (50px + @line + (@dot * 0.35)) * -1;        
+    background: lighten(@background,5%);    
+    border-radius: 50%;  
+    height: @dot;
+    width: @dot;
+    content: "";
+    top: 5px;
+    }
+}
+*/
 
 /*mobile*/
 @media only screen and (max-width: 480px){
@@ -44,9 +96,5 @@ dt:first-child{margin-top: 0;}
     #about .box> div{
         float: none;
         margin: auto;
-    }
-    dl{
-        float: none;
-        margin: 20px auto;
     }
 }

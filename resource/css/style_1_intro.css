@@ -24,6 +24,8 @@ header > article {
   -webkit-animation: fadein 3s;
   -o-animation: fadein 3s;
 }
+
+header article{padding: 0;}
 header h2 {
   display: block;
   width: 100%;
@@ -35,7 +37,6 @@ header a{
   width: 100px;
   height: 100px;
   padding: 10px;
-  border-radius: 100%;
 
   -webkit-animation: sdb 1.5s infinite;
   animation: sdb 1.5s infinite;

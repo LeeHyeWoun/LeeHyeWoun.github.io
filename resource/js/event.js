@@ -28,8 +28,8 @@ window.onload=function(){
         boxs[kind].children[0].innerText = pick.title;
 
         for(let i=0; i<boxs.length; i++){
-            if(i==kind){boxs[i].classList.add('expand');}
-            else{boxs[i].classList.remove('expand');}            
+            if(i!=kind){boxs[i].classList.remove('expand');}
+            else{boxs[i].classList.add('expand');}            
         }
     }
     

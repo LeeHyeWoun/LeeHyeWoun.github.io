@@ -35,6 +35,13 @@
                 "detail":[
                     "주 사용 개발환경 : android studio, unity\n"
                 ]
+            },
+            {
+                "title":"Unity",
+                "img":"resource/img/icons8-unity-144.png",
+                "detail":[
+                    "<default>"
+                ]
             }
         ],
         "Back-end":[
@@ -99,7 +106,7 @@
                 ]
             }
         ],
-        "etc":[
+        "ETC":[
             {
                 "title":"Git",
                 "img":"resource/img/icons8-git-144.png",
@@ -111,13 +118,6 @@
             {
                 "title":"Notion",
                 "img":"resource/img/icons8-notion-144.png",
-                "detail":[
-                    "<default>"
-                ]
-            },
-            {
-                "title":"Unity",
-                "img":"resource/img/icons8-unity-144.png",
                 "detail":[
                     "<default>"
                 ]

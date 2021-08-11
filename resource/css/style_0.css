@@ -54,6 +54,7 @@ article{
     padding: 0 70px 30px 70px;
     max-width: 600px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .box{
